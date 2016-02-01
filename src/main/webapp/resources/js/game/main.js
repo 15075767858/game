@@ -2,41 +2,50 @@
  * Created by Administrator on 2016/1/28.
  */
 
-function form(formid, type, url, attr, success, error) {
-	this.oFrom = document.getElementById(formid);
-	if (this.oFrom == null) {
-		console.log("error this id for "+formid+" form not find");
-		return;
-	}
-	this.type = type;
-	this.url = url;
-	var _this = this;
-	//找到下面所有name 不为空的input 
-	this.data = function() {
-		var datas = {};
-		var aInput=$(_this.oFrom).find("input["+attr+"]");
-		for(var i=0;i<aInput.length;i++){
-		datas[$(aInput[i]).attr(attr)]=$(aInput[i]).val();
+var util= (function (){
+	function userForm(formid, type, url, attr, success, error) {
+		this.oFrom = document.getElementById(formid);
+		if (this.oFrom == null) {
+			console.log("error this id for "+formid+" form not find");
+			return;
 		}
-		console.log(datas);
-		return datas;
-	};
-	this.error = error || function(result) {
-		document.write(result.responseText);
-	};
-	this.oFrom.onsubmit = function submitevent(e) {
+		this.type = type;
+		this.url = url;
+		var _this = this;
+		//找到下面所有name 不为空的input 
+		this.data = function() {
+			var datas = {};
+			var aInput=$(_this.oFrom).find("input["+attr+"]");
+			for(var i=0;i<aInput.length;i++){
+			datas[$(aInput[i]).attr(attr)]=$(aInput[i]).val();
+			}
+			console.log(datas);
+			return datas;
+		};
+		this.error = error || function(result) {
+			document.write(result.responseText);
+		};
+		this.oFrom.onsubmit = function submitevent(e) {
 
-		e.preventDefault();
-		$.ajax({
-			type : _this.type,
-			url : _this.url,
-			data : _this.data(),
-			dataType : 'json',
-			success : success,
-			error : _this.error
-		});
+			e.preventDefault();
+			$.ajax({
+				type : _this.type,
+				url : _this.url,
+				data : _this.data(),
+				dataType : 'json',
+				success : success,
+				error : _this.error
+			});
+		};
 	};
-};
+	
+	
+return{
+	userForm:userForm
+}
+
+})();
+
 
 // 登陆验证码码
 function loadimage() {
@@ -69,7 +78,7 @@ function loadimage() {
 			break;
 		}
 	}
-	new form(formid, method, url, attr, success);
+	new util.userForm(formid, method, url, attr, success);
 })();
 
 // 用户注册部分
@@ -94,7 +103,7 @@ function loadimage() {
 			break;
 		}
 	}
-	new form(formid, method, url, attr, success);
+	new util.userForm(formid, method, url, attr, success);
 })();
 
 //修改用户名
@@ -116,7 +125,7 @@ function loadimage() {
 			break;
 		}
 	}
-	new form(formid, method, url, attr, success);
+	new util.userForm(formid, method, url, attr, success);
 })();
 
 //修改密码
@@ -138,7 +147,7 @@ function loadimage() {
 			break;
 		}
 	}
-	new form(formid, method, url, attr, success);
+	new util.userForm(formid, method, url, attr, success);
 })();
 
 
