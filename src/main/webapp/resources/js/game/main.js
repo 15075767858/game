@@ -2,50 +2,56 @@
  * Created by Administrator on 2016/1/28.
  */
 
-var util= (function (){
-	function userForm(formid, type, url, attr, success, error) {
-		this.oFrom = document.getElementById(formid);
-		if (this.oFrom == null) {
-			console.log("error this id for "+formid+" form not find");
-			return;
+var util = {};
+util.userForm=function (formid, type, url, attr, success, error) {
+	this.oFrom = document.getElementById(formid);
+	if (this.oFrom == null) {
+		console.log("error this id for "+formid+" form not find");
+		return;
+	}
+	this.type = type;
+	this.url = url;
+	var _this = this;
+	//找到下面所有name 不为空的input 
+	this.data = function() {
+		var datas = {};
+		var aInput=$(_this.oFrom).find("input["+attr+"]");
+		for(var i=0;i<aInput.length;i++){
+		datas[$(aInput[i]).attr(attr)]=$(aInput[i]).val();
 		}
-		this.type = type;
-		this.url = url;
-		var _this = this;
-		//找到下面所有name 不为空的input 
-		this.data = function() {
-			var datas = {};
-			var aInput=$(_this.oFrom).find("input["+attr+"]");
-			for(var i=0;i<aInput.length;i++){
-			datas[$(aInput[i]).attr(attr)]=$(aInput[i]).val();
-			}
-			console.log(datas);
-			return datas;
-		};
-		this.error = error || function(result) {
-			document.write(result.responseText);
-		};
-		this.oFrom.onsubmit = function submitevent(e) {
-
-			e.preventDefault();
-			$.ajax({
-				type : _this.type,
-				url : _this.url,
-				data : _this.data(),
-				dataType : 'json',
-				success : success,
-				error : _this.error
-			});
-		};
+		console.log(datas);
+		return datas;
 	};
+	this.error = error || function(result) {
+		document.write(result.responseText);
+	};
+	this.oFrom.onsubmit = function submitevent(e) {
+
+		e.preventDefault();
+		$.ajax({
+			type : _this.type,
+			url : _this.url,
+			data : _this.data(),
+			dataType : 'json',
+			success : success,
+			error : _this.error
+		});
+	};
+};
+
+util.gameForm=function(){
 	
+}
+util.tabChange=function(){
 	
-return{
-	userForm:userForm
 }
 
-})();
+(function (){
+for(var i in util.userForm.prototype){
+	util.gameForm.prototype[i]=util.userForm[i];
+}
 
+})()
 
 // 登陆验证码码
 function loadimage() {
@@ -78,7 +84,7 @@ function loadimage() {
 			break;
 		}
 	}
-	new util.userForm(formid, method, url, attr, success);
+	new util.gameForm(formid, method, url, attr, success);
 })();
 
 // 用户注册部分
