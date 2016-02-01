@@ -10,9 +10,9 @@
 <head>
 <meta charset="utf-8">
 <title>好孩子</title>
-<link href="/game/resources/css/game/style.css" rel="stylesheet"
+<link href="<%=basePath%>resources/css/game/style.css" rel="stylesheet"
 	type="text/css" />
-<link href="/game/resources/css/game/change.css" rel="stylesheet"
+<link href="<%=basePath%>resources/css/game/change.css" rel="stylesheet"
 	type="text/css" />
 </head>
 
@@ -149,10 +149,10 @@
 	</div>
 	<!-- 底部结束 -->
 
-	<script src="/game/resources/js/game/jquery-1.8.2.min.js"></script>
-	<script src="/game/resources/js/game/selectivizr.js"></script>
-	<script src="/game/resources/js/game/content.js"></script>
-	<script src="/game/resources/js/game/main.js"></script>
+	<script src="<%=basePath%>resources/js/game/jquery-1.8.2.min.js"></script>
+	<script src="<%=basePath%>resources/js/game/selectivizr.js"></script>
+	<script src="<%=basePath%>resources/js/game/content.js"></script>
+	<script src="<%=basePath%>resources/js/game/main.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			//密码判断部分

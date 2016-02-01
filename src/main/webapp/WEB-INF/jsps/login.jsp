@@ -10,8 +10,8 @@
 <head>
     <meta charset="utf-8">
     <title>好孩子</title>
-    <link href="/game/resources/css/game/style.css" rel="stylesheet" type="text/css"/>
-    <link href="/game/resources/css/game/login.css" rel="stylesheet" type="text/css"/>
+    <link href="<%=basePath%>resources/css/game/style.css" rel="stylesheet" type="text/css"/>
+    <link href="<%=basePath%>resources/css/game/login.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 <div class="head">
     <div class="header wrap">
         <div class="logo fl">
-            <img title="好孩子" src="/game/resources/images/logo.png"/>
+            <img title="好孩子" src="<%=basePath%>resources/images/logo.png"/>
         </div>
         <div class="login_w fr">
             <div class="bg"></div>
@@ -43,7 +43,7 @@
                         <span><input type="text" name="yzm" ></span>
                         <span><img
 							onclick="javascript:loadimage();" title="换一张试试" name="randImage"
-							id="randImage" src="/game/resources/images/image.jsp" width="136" height="44" border="1"
+							id="randImage" src="<%=basePath%>resources/images/image.jsp" width="136" height="44" border="1"
 							align="absmiddle"></span>
                     </div>
                     <div class="btns">
@@ -66,28 +66,28 @@
     <ul>
         <li>
             <a href="javascript:;">
-                <img src="/game/resources/images/pic1.png"/>
+                <img src="<%=basePath%>resources/images/pic1.png"/>
                 <div class="li_bg"></div>
                 <p>APP开发</p>
             </a>
         </li>
         <li>
             <a href="javascript:;">
-                <img src="/game/resources/images/pic2.png"/>
+                <img src="<%=basePath%>resources/images/pic2.png"/>
                 <div class="li_bg"></div>
                 <p>微赢佳</p>
             </a>
         </li>
         <li>
             <a href="javascript:;">
-                <img src="/game/resources/images/pic3.png"/>
+                <img src="<%=basePath%>resources/images/pic3.png"/>
                 <div class="li_bg"></div>
                 <p>小蚂蚁二维码</p>
             </a>
         </li>
         <li class="noMargin">
             <a href="javascript:;">
-                <img src="/game/resources/images/pic4.png"/>
+                <img src="<%=basePath%>resources/images/pic4.png"/>
                 <div class="li_bg"></div>
                 <p>高端定制</p>
             </a>
@@ -110,8 +110,8 @@
     </div>
 </div>
 <!-- 底部结束 -->
-<script src="/game/resources/js/game/jquery-1.8.2.min.js"></script>
-<script src="/game/resources/js/game/selectivizr.js"></script>
-<script src="/game/resources/js/game/main.js"></script>
+<script src="<%=basePath%>resources/js/game/jquery-1.8.2.min.js"></script>
+<script src="<%=basePath%>resources/js/game/selectivizr.js"></script>
+<script src="<%=basePath%>resources/js/game/main.js"></script>
 </body>
 </html>
