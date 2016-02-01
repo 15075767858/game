@@ -58,7 +58,7 @@ function loadimage() {
 	var formid = "loginFrom";
 	var attr="name";
 	var method = "post";
-	var url = "http://localhost:8080/game/json/userLogin";
+	var url = "/game/json/userLogin";
 	var success = function(result) {
 		switch (result) {
 		case 0:
