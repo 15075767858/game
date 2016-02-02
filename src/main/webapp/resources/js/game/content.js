@@ -149,6 +149,8 @@ $(function(){
 	//期号切换部分
 	$(".num_i").click(function(){
 		$(this).addClass("num_cur").siblings().removeClass("num_cur");
+		$(this).attr("is","on").siblings().attr("is","off");
+		
 	})
 	
 	

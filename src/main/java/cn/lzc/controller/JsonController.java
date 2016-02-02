@@ -86,7 +86,18 @@ public class JsonController {
 		return 0;
 	}
 
-	
+	@RequestMapping(value = "lengre", produces = "application/json; charset=utf-8")
+	public @ResponseBody
+	Object lengre(@RequestBody String ps) {
+		System.out.println(ps);//用户发送的登陆请求参数 用户名,密码,验证码
+		/**业务逻辑部分
+		 * 成功返回0
+		 * 用户修改失败返回1
+		 * 如有其他情况可以返回任意参数 但不可以是字符串 可以是字符串数组
+		 */
+		String [] s ={"aa","bb","好了"};
+		return s;
+	}
 	
 	/*
 	@RequestMapping(value = "userOutLogin", produces = "application/json; charset=utf-8")

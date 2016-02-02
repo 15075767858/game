@@ -1,8 +1,14 @@
 /**
  * Created by Administrator on 2016/1/28.
  */
+// 登陆验证码码
+function loadimage() {
+	document.getElementById("randImage").src = "/game/resources/images/image.jsp?"
+			+ Math.random();
+}
 
 var util = {};
+
 util.userForm=function (formid, type, url, attr, success, error) {
 	this.oFrom = document.getElementById(formid);
 	if (this.oFrom == null) {
@@ -11,8 +17,8 @@ util.userForm=function (formid, type, url, attr, success, error) {
 	}
 	this.type = type;
 	this.url = url;
+	this.attr=attr;
 	var _this = this;
-	//找到下面所有name 不为空的input 
 	this.data = function() {
 		var datas = {};
 		var aInput=$(_this.oFrom).find("input["+attr+"]");
@@ -26,7 +32,7 @@ util.userForm=function (formid, type, url, attr, success, error) {
 		document.write(result.responseText);
 	};
 	this.oFrom.onsubmit = function submitevent(e) {
-
+		
 		e.preventDefault();
 		$.ajax({
 			type : _this.type,
@@ -39,28 +45,75 @@ util.userForm=function (formid, type, url, attr, success, error) {
 	};
 };
 
-util.gameForm=function(){
+util.getGameData = function(oFrom,attr) {
+	var datas = {};
+	var aDiv=$(oFrom).find("*["+attr+"]");
 	
-}
-util.tabChange=function(){
+	for(var i=0;i<aDiv.length;i++){
+		var aI=$(aDiv[i]).find("i");
+		var str="";
+		for(var j=0;j<aI.length;j++){
+			if($(aI[j]).attr("is")=="on")
+			str+=$(aI[j]).attr("value");
+			
+		}
+		datas[$(aDiv[i]).attr(attr)]=str;
+	}
 	
-}
+	console.log(datas);
 
-(function (){
-for(var i in util.userForm.prototype){
-	util.gameForm.prototype[i]=util.userForm[i];
-}
+	return datas;
+};
 
-})()
 
-// 登陆验证码码
-function loadimage() {
-	document.getElementById("randImage").src = "/game/resources/images/image.jsp?"
-			+ Math.random();
-}
+
+$(function(){
+	var oFrom = $("#lengreForm");
+	var attr="name";
+	var method = "post";
+	var url = "/game/json/lengre";
+	var success = function(result) {
+		switch (result) {
+		case 0:
+			alert("登陆成功");
+			break;
+		case 1:
+			alert("用户不存在");
+			break;
+		case 2:
+			alert("密码错误");
+			break;
+		case 3:
+			alert("验证码错误")
+			break;
+		default:
+			alert(result);
+			break;
+		}
+	}
+	
+	oFrom.submit(function() {
+		var data=new util.getGameData(oFrom,attr);
+		data["wanfa"]="lengre";
+		console.log(data);
+		alert(data)
+		e.preventDefault();
+		$.ajax({
+			type :"post",
+			url : "/game/json/lengre",
+			data : data,
+			dataType : 'json',
+			success : function(a){alert(a)}
+		});
+	});
+	
+}		
+)
+
+
 
 // 用户登录部分
-(function () {
+$(function () {
 	var formid = "loginFrom";
 	var attr="name";
 	var method = "post";
@@ -84,8 +137,8 @@ function loadimage() {
 			break;
 		}
 	}
-	new util.gameForm(formid, method, url, attr, success);
-})();
+	new util.userForm(formid, method, url, attr, success);
+});
 
 // 用户注册部分
 (function () {

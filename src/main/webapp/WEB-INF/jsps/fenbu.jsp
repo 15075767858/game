@@ -104,65 +104,68 @@
 			<!-- 主体头部结束-->
 			<!-- 选择种类开始 -->
 			<div class="kind">
-				<div class="kind_f fl">
-					<!-- 首页部分 -->
-					<div class="styles index">
-						<!-- 位置开始 -->
-						<div class="style1 dec">
-							<span class="sty_t">位置</span>
-							<!-- 数字部分开始 -->
-							<i class="txt_i0 txt_i"></i> <i class="txt_i1 txt_i"></i> <i
-								class="txt_i2 txt_i"></i> <i class="txt_i3 txt_i"></i> <i
-								class="txt_i4 txt_i"></i>
-							<!-- 数字部分结束 -->
-							<span class="sty_s2 sty_s21">五星</span> <span
-								class="sty_s2 sty_s22">四星</span> <span class="sty_s2 sty_s23">前三</span>
-							<span class="sty_s2 sty_s24">中三</span> <span
-								class="sty_s2 sty_s25">后三</span> <span class="sty_s2 sty_s26">前二</span>
-							<span class="sty_s2 sty_s27">后二</span> <span
-								class="sty_s2 sty_s28">后一</span>
-							<div class="clear"></div>
-						</div>
-						<!-- 位置结束 -->
-						<!-- 号码开始 -->
-						<div class="style1">
-							<span class="sty_t">号码</span>
-							<!-- 数字部分开始 -->
-							<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-								class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-								class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-								class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-								class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-							<!-- 数字部分结束 -->
-							<span class="sty_s1 sty_s11">全</span> <span
-								class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-							<span class="sty_s1 sty_s14">奇</span> <span
-								class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-							<div class="clear"></div>
-						</div>
-						<!-- 号码结束 -->
-						<!-- 期号开始 -->
-						<div class="style1 noBorder">
-							<span class="sty_t">期号</span>
-							<!-- 数字部分开始 -->
-							<i class="num_i0 num_i num_cur"></i> <i class="num_i1 num_i"></i>
-							<i class="num_i2 num_i"></i> <i class="num_i3 num_i"></i> <i
-								class="num_i4 num_i"></i>
-							<!-- 数字部分结束 -->
-							<div class="rq">
-								<input id="time1" type="text" value="2016-01-12 20:46:55"
-									onfocus="var time2=$dp.$('time2');WdatePicker({onpicked:function(){time2.focus();},maxDate:'#F{$dp.$D(\'time2\')}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
-								<span>至</span> <input id="time2" type="text" value=""
-									onfocus="WdatePicker({minDate:'#F{$dp.$D(\'time1\')}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
+				<form id="lengreForm">
+					<div class="kind_f fl">
+						<!-- 首页部分 -->
+						<div class="styles index" >
+							<!-- 位置开始 -->
+							<div class="style1 dec" name="weizhi">
+								<span class="sty_t">位置</span>
+								<!-- 数字部分开始 -->
+								<i class="txt_i0 txt_i" value="wan"></i> <i class="txt_i1 txt_i" value="qian"></i> <i
+									class="txt_i2 txt_i" value="bai"></i> <i class="txt_i3 txt_i" value="bai"></i> <i
+									class="txt_i4 txt_i" value="ge"></i>
+								<!-- 数字部分结束 -->
+								<span class="sty_s2 sty_s21">五星</span> <span
+									class="sty_s2 sty_s22">四星</span> <span class="sty_s2 sty_s23">前三</span>
+								<span class="sty_s2 sty_s24">中三</span> <span
+									class="sty_s2 sty_s25">后三</span> <span class="sty_s2 sty_s26">前二</span>
+								<span class="sty_s2 sty_s27">后二</span> <span
+									class="sty_s2 sty_s28">后一</span>
+								<div class="clear"></div>
 							</div>
-							<div class="clear"></div>
+							<!-- 位置结束 -->
+							<!-- 号码开始 -->
+							<div class="style1" name="haoma">
+								<span class="sty_t">号码</span>
+								<!-- 数字部分开始 -->
+								<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i" value="1"></i> <i
+									class="sty_i2 sty_i" value="2"></i> <i class="sty_i3 sty_i" value="3"></i> <i
+									class="sty_i4 sty_i" value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+									class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i" value="7"></i> <i
+									class="sty_i8 sty_i" value="8"></i> <i class="sty_i9 sty_i" value="9"></i>
+								<!-- 数字部分结束 -->
+								<span class="sty_s1 sty_s11">全</span> <span
+									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+								<span class="sty_s1 sty_s14">奇</span> <span
+									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+								<div class="clear"></div>
+							</div>
+							<!-- 号码结束 -->
+							<!-- 期号开始 -->
+							<div class="style1 noBorder" name="qihao">
+								<span class="sty_t">期号</span>
+								<!-- 数字部分开始 -->
+								<i class="num_i0 num_i num_cur" value="jin30qi" is="on"></i> <i class="num_i1 num_i" value="jin50qi" is="off"></i>
+								<i class="num_i2 num_i" value="jintian" is="off"></i> <i class="num_i3 num_i" value="jin2tian" is="off"></i> <i
+									class="num_i4 num_i" value="jin5tian" is="off"></i>
+								<!-- 数字部分结束 -->
+								<div class="rq" name="riqi">
+									<input id="time1" type="text"
+										onfocus="var time2=$dp.$('time2');WdatePicker({onpicked:function(){time2.focus();},maxDate:'#F{$dp.$D(\'time2\')}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
+									<span>至</span> <input id="time2" type="text" 
+										onfocus="WdatePicker({minDate:'#F{$dp.$D(\'time1\')}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
+								</div>
+								<div class="clear"></div>
+							</div>
+							<!-- 期号结束 -->
 						</div>
-						<!-- 期号结束 -->
+						<div class="btn">
+							<input type="submit" value="确认验证" class="btnA" />
+						</div>
 					</div>
-					<div class="btn">
-						<a href="javascript:;" class="btnA">确认验证</a>
-					</div>
-				</div>
+				</form>
+
 				<div class="kind_r fr">
 					<p>
 						<span class="span1">奖期</span><span class="span2">开奖</span>
@@ -172,16 +175,11 @@
 					<ul class="kind_u">
 
 						<c:forEach items="${kaijianglist}" varStatus="i" var="k">
-							<li>
-									
-									<span class="li_s1">${k[0]}</span>
-									<span class="li_s2">${fn:substring(k[1], 0, 1)}</span>
-									<span class="li_s2">${fn:substring(k[1], 1, 2)}</span>
-									<span class="li_s2">${fn:substring(k[1], 2, 3)}</span>
-									<span class="li_s2">${fn:substring(k[1], 3, 4)}</span>
-									<span class="li_s2">${fn:substring(k[1], 4, 5)}</span></li>
-							
-						
+							<li><span class="li_s1">${k[0]}</span> <span class="li_s2">${fn:substring(k[1], 0, 1)}</span>
+								<span class="li_s2">${fn:substring(k[1], 1, 2)}</span> <span
+								class="li_s2">${fn:substring(k[1], 2, 3)}</span> <span
+								class="li_s2">${fn:substring(k[1], 3, 4)}</span> <span
+								class="li_s2">${fn:substring(k[1], 4, 5)}</span></li>
 						</c:forEach>
 
 					</ul>
@@ -328,9 +326,9 @@
 	<script src="<%=basePath%>resources/js/game/selectivizr.js"></script>
 	<script src="<%=basePath%>resources/js/game/main.js"></script>
 	<script src="<%=basePath%>resources/js/game/content.js"></script>
-<script>
-$(".kind_u>li>span.li_s2:nth-last-child(n)").addClass("li_ss");
-$(".kind_u>li:nth-child(1)>.li_s2:nth-child(n)").removeClass("li_ss");
-</script>
+	<script>
+		$(".kind_u>li>span.li_s2:nth-last-child(n)").addClass("li_ss");
+		$(".kind_u>li:nth-child(1)>.li_s2:nth-child(n)").removeClass("li_ss");
+	</script>
 </body>
 </html>
