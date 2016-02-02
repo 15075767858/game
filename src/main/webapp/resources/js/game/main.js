@@ -45,30 +45,29 @@ util.userForm=function (formid, type, url, attr, success, error) {
 	};
 };
 
-util.getGameData = function(oFrom,attr) {
+util.getGameData = function(oForm,attr) {
 	var datas = {};
-	var aDiv=$(oFrom).find("*["+attr+"]");
+	var aDiv=$(oForm).find("*["+attr+"]");
 	
 	for(var i=0;i<aDiv.length;i++){
 		var aI=$(aDiv[i]).find("i");
 		var str="";
 		for(var j=0;j<aI.length;j++){
 			if($(aI[j]).attr("is")=="on")
-			str+=$(aI[j]).attr("value");
+			str+=$(aI[j]).attr("value")+",";
 			
 		}
-		datas[$(aDiv[i]).attr(attr)]=str;
+		datas[$(aDiv[i]).attr(attr)]=str.substring(0, str.length-1);
 	}
-	
 	console.log(datas);
-
 	return datas;
 };
 
 
-
-$(function(){
-	var oFrom = $("#lengreForm");
+//冷热分布
+(function(){
+	var formid = "lengreForm";
+	
 	var attr="name";
 	var method = "post";
 	var url = "/game/json/lengre";
@@ -91,24 +90,24 @@ $(function(){
 			break;
 		}
 	}
-	
-	oFrom.submit(function() {
-		var data=new util.getGameData(oFrom,attr);
+	var oForm=document.getElementById(formid);
+	oForm.onsubmit=function (e) {
+		e.preventDefault();
+		var data=new util.getGameData(this,attr);
 		data["wanfa"]="lengre";
 		console.log(data);
-		alert(data)
-		e.preventDefault();
+		
 		$.ajax({
 			type :"post",
 			url : "/game/json/lengre",
-			data : data,
+			data :data,
 			dataType : 'json',
 			success : function(a){alert(a)}
 		});
-	});
+	};
 	
 }		
-)
+)()
 
 
 

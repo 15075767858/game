@@ -104,7 +104,7 @@
 			<!-- 主体头部结束-->
 			<!-- 选择种类开始 -->
 			<div class="kind">
-				<form id="lengreForm">
+				<form id="lengreForm" method="post">
 					<div class="kind_f fl">
 						<!-- 首页部分 -->
 						<div class="styles index" >
@@ -161,7 +161,8 @@
 							<!-- 期号结束 -->
 						</div>
 						<div class="btn">
-							<input type="submit" value="确认验证" class="btnA" />
+						
+							 <input type="submit" value="确认验证" class="btnA" />
 						</div>
 					</div>
 				</form>
