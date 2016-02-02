@@ -1,5 +1,6 @@
 package cn.lzc.controller;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -89,14 +90,32 @@ public class JsonController {
 	@RequestMapping(value = "lengre", produces = "application/json; charset=utf-8")
 	public @ResponseBody
 	Object lengre(@RequestBody String ps) {
-		System.out.println(ps);//用户发送的登陆请求参数 用户名,密码,验证码
+		System.out.println(ps);//用户发送的查询参数 转换成 Map或JSON
+		//查询条件的意义 wanfa代表玩法 weizhi代表位置 haoma代表号码 qihao代表期号   starttime代表开始时间 endtime代表结束时间 
+		
 		/**业务逻辑部分
-		 * 成功返回0
-		 * 用户修改失败返回1
-		 * 如有其他情况可以返回任意参数 但不可以是字符串 可以是字符串数组
+		 * 用户参数错误返回1
+		 * 成功的话返回一个 list 集合  集合中的元素是Sting数组 如下
 		 */
-		String [] s ={"aa","bb","好了"};
-		return s;
+		List l =new ArrayList();
+		String [] s ={"0123456789","##121","34561","小单","小双","组六"};
+		String [] s1 ={"0123456780","##122","34562","小单","小双","组六"};
+		String [] s2 ={"0123456781","##123","34563","小单","小双","组六"};
+		String [] s3 ={"0123456782","##124","34564","小单","小双","组六"};
+		String [] s4 ={"0123456783","##125","34565","小单","小双","组六"};
+		String [] s5 ={"0123456784","##126","34566","小单","小双","组六"};
+		String [] s6 ={"0123456785","##127","34567","小单","小双","组六"};
+		String [] s7 ={"0123456786","##128","34568","小单","小双","组六"};
+		
+		l.add(s);
+		l.add(s1);
+		l.add(s2);
+		l.add(s3);
+		l.add(s4);
+		l.add(s5);
+		l.add(s6);
+		l.add(s7);
+		return l;
 	}
 	
 	/*

@@ -151,7 +151,7 @@
 	<script src="<%=basePath%>resources/js/game/main.js"></script>
 
 	<script type="text/javascript">
-		$(function() {
+		(function() {
 			//头部列表部分
 			$(".head_u li a").click(
 					function() {
@@ -192,7 +192,33 @@
 				}
 			})
 
-		})
+		})();
+		
+// 用户注册部分
+(function () {
+	var formid = "registerForm";
+	var attr ="name";
+	var method = "post";
+	var url = "/game/json/userRegister";
+	var success = function(result) {
+		switch (result) {
+		case 0:
+			alert("注册成功");
+			break;
+		case 1:
+			alert("用户名已经存在");
+			break;
+		case 2:
+			alert("两次密码密码不一致");
+			break;
+		default:
+			alert(result);
+			break;
+		}
+	}
+	new util.userForm(formid, method, url, attr, success);
+})();
+
 	</script>
 </body>
 </html>

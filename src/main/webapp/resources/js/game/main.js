@@ -48,14 +48,12 @@ util.userForm=function (formid, type, url, attr, success, error) {
 util.getGameData = function(oForm,attr) {
 	var datas = {};
 	var aDiv=$(oForm).find("*["+attr+"]");
-	
 	for(var i=0;i<aDiv.length;i++){
 		var aI=$(aDiv[i]).find("i");
 		var str="";
 		for(var j=0;j<aI.length;j++){
 			if($(aI[j]).attr("is")=="on")
-			str+=$(aI[j]).attr("value")+",";
-			
+			str+=$(aI[j]).attr("value")+" ";
 		}
 		datas[$(aDiv[i]).attr(attr)]=str.substring(0, str.length-1);
 	}
@@ -64,105 +62,9 @@ util.getGameData = function(oForm,attr) {
 };
 
 
-//冷热分布
-(function(){
-	var formid = "lengreForm";
-	
-	var attr="name";
-	var method = "post";
-	var url = "/game/json/lengre";
-	var success = function(result) {
-		switch (result) {
-		case 0:
-			alert("登陆成功");
-			break;
-		case 1:
-			alert("用户不存在");
-			break;
-		case 2:
-			alert("密码错误");
-			break;
-		case 3:
-			alert("验证码错误")
-			break;
-		default:
-			alert(result);
-			break;
-		}
-	}
-	var oForm=document.getElementById(formid);
-	oForm.onsubmit=function (e) {
-		e.preventDefault();
-		var data=new util.getGameData(this,attr);
-		data["wanfa"]="lengre";
-		console.log(data);
-		
-		$.ajax({
-			type :"post",
-			url : "/game/json/lengre",
-			data :data,
-			dataType : 'json',
-			success : function(a){alert(a)}
-		});
-	};
-	
-}		
-)()
 
 
 
-// 用户登录部分
-$(function () {
-	var formid = "loginFrom";
-	var attr="name";
-	var method = "post";
-	var url = "/game/json/userLogin";
-	var success = function(result) {
-		switch (result) {
-		case 0:
-			alert("登陆成功");
-			break;
-		case 1:
-			alert("用户不存在");
-			break;
-		case 2:
-			alert("密码错误");
-			break;
-		case 3:
-			alert("验证码错误")
-			break;
-		default:
-			alert(result);
-			break;
-		}
-	}
-	new util.userForm(formid, method, url, attr, success);
-});
-
-// 用户注册部分
-(function () {
-	var formid = "registerForm";
-	var attr ="name";
-	var method = "post";
-	var url = "/game/json/userRegister";
-	var success = function(result) {
-		switch (result) {
-		case 0:
-			alert("注册成功");
-			break;
-		case 1:
-			alert("用户名已经存在");
-			break;
-		case 2:
-			alert("两次密码密码不一致");
-			break;
-		default:
-			alert(result);
-			break;
-		}
-	}
-	new util.userForm(formid, method, url, attr, success);
-})();
 
 //修改用户名
 (function (){

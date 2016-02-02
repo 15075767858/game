@@ -113,7 +113,7 @@
 								<span class="sty_t">位置</span>
 								<!-- 数字部分开始 -->
 								<i class="txt_i0 txt_i" value="wan"></i> <i class="txt_i1 txt_i" value="qian"></i> <i
-									class="txt_i2 txt_i" value="bai"></i> <i class="txt_i3 txt_i" value="bai"></i> <i
+									class="txt_i2 txt_i" value="bai"></i> <i class="txt_i3 txt_i" value="shi"></i> <i
 									class="txt_i4 txt_i" value="ge"></i>
 								<!-- 数字部分结束 -->
 								<span class="sty_s2 sty_s21">五星</span> <span
@@ -150,7 +150,7 @@
 								<i class="num_i2 num_i" value="jintian" is="off"></i> <i class="num_i3 num_i" value="jin2tian" is="off"></i> <i
 									class="num_i4 num_i" value="jin5tian" is="off"></i>
 								<!-- 数字部分结束 -->
-								<div class="rq" name="riqi">
+								<div class="rq" >
 									<input id="time1" type="text"
 										onfocus="var time2=$dp.$('time2');WdatePicker({onpicked:function(){time2.focus();},maxDate:'#F{$dp.$D(\'time2\')}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
 									<span>至</span> <input id="time2" type="text" 
@@ -195,7 +195,7 @@
 					<p>
 						<span>分布图</span> <span>后四 </span><b>01</b>
 					</p>
-					<table class="table">
+					<table class="table" id="lengreTable">
 						<tbody>
 							<tr class="tr1">
 								<td class="td1">期号</td>
@@ -330,6 +330,66 @@
 	<script>
 		$(".kind_u>li>span.li_s2:nth-last-child(n)").addClass("li_ss");
 		$(".kind_u>li:nth-child(1)>.li_s2:nth-child(n)").removeClass("li_ss");
+
+		//冷热分布
+		(function(){
+			var formid = "lengreForm";
+			
+			var attr="name";
+			var method = "post";
+			var url = "/game/json/lengre";
+			var success = function(result) {
+				switch (result) {
+				case 1:
+					alert("输入有误请重新输入");
+					break;
+				default:
+				$("#lengreTable .tr2").remove();
+				for(var i=0;i<result.length;i++){
+				$("#lengreTable tbody").append('<tr class="tr1 tr2">\
+				<td class="td1">'+result[i][0]+'</td>\
+				<td class="td2 colors dash">'+result[i][1]+'</td>\
+				<td class="td3">'+result[i][2]+'</td>\
+				<td class="td4">'+result[i][3]+'</td>\
+				<td class="td3">'+result[i][4]+'</td>\
+				<td class="td3">'+result[i][5]+'</td>\
+			</tr>')
+			};
+				/*<tr class="tr1 tr2">
+				<td class="td1">0123456789</td>
+				<td class="td2 colors dash">#*#45</td>
+				<td class="td3">45263</td>
+				<td class="td4">小单</td>
+				<td class="td3">小双</td>
+				<td class="td3">组六</td>
+			</tr>*/
+					console.log(result[0][0]);
+					break;
+				}
+			}
+			var oForm=document.getElementById(formid);
+			oForm.onsubmit=function (e) {
+				e.preventDefault();
+				var data=new util.getGameData(this,attr);
+				var starttime=$("#time1").val();//document.getElementById("time1").val;		
+				var endtime=$("#time2").val();//document.getElementById("time2").val;
+				data["starttime"]=starttime;
+				data["endtime"]=endtime;
+				data["wanfa"]="lengre";
+				
+				console.log(data);
+				$.ajax({
+					type :method,
+					url :url,
+					data :data,
+					dataType : 'json',
+					success :success
+				});
+			};
+			
+		}		
+		)()
+
 	</script>
 </body>
 </html>

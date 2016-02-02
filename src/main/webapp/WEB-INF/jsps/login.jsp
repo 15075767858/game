@@ -113,5 +113,35 @@
 <script src="<%=basePath%>resources/js/game/jquery-1.8.2.min.js"></script>
 <script src="<%=basePath%>resources/js/game/selectivizr.js"></script>
 <script src="<%=basePath%>resources/js/game/main.js"></script>
+<script type="text/javascript">
+//用户登录部分
+$(function () {
+	var formid = "loginFrom";
+	var attr="name";
+	var method = "post";
+	var url = "/game/json/userLogin";
+	var success = function(result) {
+		switch (result) {
+		case 0:
+			alert("登陆成功");
+			location.href = "/game/fenbu.html"
+			break;
+		case 1:
+			alert("用户不存在");
+			break;
+		case 2:
+			alert("密码错误");
+			break;
+		case 3:
+			alert("验证码错误")
+			break;
+		default:
+			alert(result);
+			break;
+		}
+	}
+	new util.userForm(formid, method, url, attr, success);
+});
+</script>
 </body>
 </html>
