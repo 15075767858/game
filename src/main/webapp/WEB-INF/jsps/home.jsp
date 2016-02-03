@@ -113,8 +113,11 @@
 					<div class="nva_w fl" value="housan">
 						<a href="javascript:;">后三</a>
 					</div>
-					<div class="nva_w fl" value="erxing">
-						<a href="javascript:;">二星</a>
+					<div class="nva_w fl" value="qianer">
+						<a href="javascript:;">前二</a>
+					</div>
+					<div class="nva_w fl" value="houer">
+						<a href="javascript:;">后二</a>
 					</div>
 					<div class="nva_w fl" value="yixing">
 						<a href="javascript:;">一星</a>
@@ -130,9 +133,8 @@
 				<!-- 选择种类开始 -->
 				<div class="kind">
 					<div class="kind_f fl">
-						<!-- 玩法信息显示层控制 -->
+						<!-- 玩法信息显示层控制五星 -->
 						<div data-view="wuxing">
-
 							<div name="wanfainfo">
 								<!-- 玩法信息行 -->
 								<div class="kind_t1 kind1">
@@ -147,13 +149,203 @@
 							</div>
 						</div>
 
+					<!-- 玩法信息显示层控制四星 -->
+					<div data-view="sixing" >
+							<div name="wanfainfo">
+								<!-- 玩法信息行 -->
+								<div class="kind_t1 kind1">
+									<span class="tit">组选</span> <span class="zx cur" index="5"
+										value="zuxuan24" is="on">组选24</span> <span class="zx"
+										index="6" value="zuxuan12" is="off">组选12</span> <span
+										class="zx" index="7" value="zuxuan6" is="off">组选6</span> <span
+										class="zx" index="8" value="zuxuan4" is="off">组选4</span>
+									<div class="clear"></div>
+								</div>
+								<div class="kind_t1 kind1">
+									<span class="tit">不定位</span>
+									 <span class="zx cur" index="5"	value="yimabudingwei" is="off">一码不定位</span> 
+										<span class="zx" index="6" value="ermabudingwei" is="off">二码不定位</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 玩法信息行结束 -->
+							</div>
+						</div>
+<!-- 玩法信息显示层控制前三 -->
+						<div data-view="qiansan" >
+							<div name="wanfainfo">
+								<!-- 玩法信息行 -->
+								<div class="kind_t1 kind1">
+									<span class="tit">直选</span>
+									 <span class="zx cur" index="5"	value="fushi" is="off">复式</span> 
+										<span class="zx" index="6" value="danshi" is="off">单式</span>
+										 <span class="zx" index="7" value="zuhe" is="off">组合</span> 
+									<div class="clear"></div>
+								</div>
+								<div class="kind_t1 kind1">
+									<span class="tit">组选</span>
+									 <span class="zx " index="5"	value="zuxuanfushi" is="off">组三复式</span> 
+										<span class="zx" index="6" value="zuliufushi" is="off">组六复式</span>
+										<span class="zx " index="5"	value="zusandanshi" is="off">组三单式</span> 
+										<span class="zx" index="6" value="zuliudanshi" is="off">组六单式</span>
+										<span class="zx " index="5"	value="hunhezuxuan" is="off">混合组选</span> 
+										<span class="zx" index="6" value="zuxuanbaodan" is="off">组选包胆</span>
+										<span class="zx" index="6" value="zuxuanhezhi" is="off">组选和值</span>
+										
+									<div class="clear"></div>
+								</div>
+
+								<div class="kind_t1 kind1">
+									<span class="tit">不定位</span>
+									 <span class="zx " index="5"	value="yimabudingwei" is="off">一码不定位</span> 
+										<span class="zx" index="6" value="ermabudingwei" is="off">二码不定位</span>
+										
+										
+									<div class="clear"></div>
+								</div>
+								<!-- 玩法信息行结束 -->
+							</div>
+						</div>
+
+<!-- 玩法信息显示层控制中三 -->
+						<div data-view="zhongsan" >
+							<div name="wanfainfo">
+								<!-- 玩法信息行 -->
+								<div class="kind_t1 kind1">
+									<span class="tit">直选</span>
+									 <span class="zx cur" index="5"	value="fushi" is="off">复式</span> 
+										<span class="zx" index="6" value="danshi" is="off">单式</span>
+										 <span class="zx" index="7" value="zuhe" is="off">组合</span> 
+									<div class="clear"></div>
+								</div>
+								<div class="kind_t1 kind1">
+									<span class="tit">组选</span>
+									 <span class="zx " index="5"	value="zuxuanfushi" is="off">组三复式</span> 
+										<span class="zx" index="6" value="zuliufushi" is="off">组六复式</span>
+										<span class="zx " index="5"	value="zusandanshi" is="off">组三单式</span> 
+										<span class="zx" index="6" value="zuliudanshi" is="off">组六单式</span>
+										<span class="zx " index="5"	value="hunhezuxuan" is="off">混合组选</span> 
+										<span class="zx" index="6" value="zuxuanbaodan" is="off">组选包胆</span>
+										<span class="zx" index="6" value="zuxuanhezhi" is="off">组选和值</span>
+										
+									<div class="clear"></div>
+								</div>
+
+								<div class="kind_t1 kind1">
+									<span class="tit">不定位</span>
+									 <span class="zx " index="5"	value="yimabudingwei" is="off">一码不定位</span> 
+										<span class="zx" index="6" value="ermabudingwei" is="off">二码不定位</span>
+										
+										
+									<div class="clear"></div>
+								</div>
+								<!-- 玩法信息行结束 -->
+							</div>
+						</div>
+<!-- 玩法信息显示层控制后三 -->
+						<div data-view="housan" >
+							<div name="wanfainfo">
+								<!-- 玩法信息行 -->
+								<div class="kind_t1 kind1">
+									<span class="tit">直选</span>
+									 <span class="zx cur" index="5"	value="fushi" is="off">复式</span> 
+										<span class="zx" index="6" value="danshi" is="off">单式</span>
+										 <span class="zx" index="7" value="zuhe" is="off">组合</span> 
+									<div class="clear"></div>
+								</div>
+								<div class="kind_t1 kind1">
+									<span class="tit">组选</span>
+									 <span class="zx " index="5"	value="zuxuanfushi" is="off">组三复式</span> 
+										<span class="zx" index="6" value="zuliufushi" is="off">组六复式</span>
+										<span class="zx " index="5"	value="zusandanshi" is="off">组三单式</span> 
+										<span class="zx" index="6" value="zuliudanshi" is="off">组六单式</span>
+										<span class="zx " index="5"	value="hunhezuxuan" is="off">混合组选</span> 
+										<span class="zx" index="6" value="zuxuanbaodan" is="off">组选包胆</span>
+										<span class="zx" index="6" value="zuxuanhezhi" is="off">组选和值</span>
+									<div class="clear"></div>
+								</div>
+
+								<div class="kind_t1 kind1">
+									<span class="tit">不定位</span>
+									 <span class="zx " index="5"	value="yimabudingwei" is="off">一码不定位</span> 
+										<span class="zx" index="6" value="ermabudingwei" is="off">二码不定位</span>
+										
+										
+									<div class="clear"></div>
+								</div>
+								<!-- 玩法信息行结束 -->
+							</div>
+						</div>
+
+<!-- 玩法信息显示层控制前二 -->
+						<div data-view="qianer" >
+							<div name="wanfainfo">
+								<!-- 玩法信息行 -->
+								<div class="kind_t1 kind1">
+									<span class="tit">直选</span>
+									 <span class="zx cur" index="5"	value="fushi" is="off">复式</span> 
+										<span class="zx" index="6" value="danshi" is="off">单式</span>
+										 <span class="zx" index="7" value="hezhi" is="off">和值</span> 
+										  <span class="zx" index="7" value="kuadu" is="off">跨度</span> 
+									<div class="clear"></div>
+								</div>
+								<div class="kind_t1 kind1">
+									<span class="tit">组选</span>
+									<span class="zx" index="5" value="zuxuanfushi" is="off">组选复式</span> 
+									<span class="zx" index="6" value="zuxuandanshi" is="off">组选单式</span>
+									<span class="zx" index="5" value="zuxuanhezhi" is="off">组选和值</span> 
+									<span class="zx" index="6" value="zuxuanbaodan" is="off">组选包胆</span>
+									<div class="clear"></div>
+								</div>
+
+								<!-- 玩法信息行结束 -->
+							</div>
+						</div>
+<!-- 玩法信息显示层控制后二 -->
+						<div data-view="houer" >
+							<div name="wanfainfo">
+								<!-- 玩法信息行 -->
+								<div class="kind_t1 kind1">
+									<span class="tit">直选</span>
+									<span class="zx cur" index="5"	value="fushi" is="off">复式</span> 
+									<span class="zx" index="6" value="danshi" is="off">单式</span>
+									<span class="zx" index="7" value="hezhi" is="off">和值</span> 
+									<span class="zx" index="7" value="kuadu" is="off">跨度</span> 
+									<div class="clear"></div>
+								</div>
+								<div class="kind_t1 kind1">
+									<span class="tit">组选</span>
+									<span class="zx" index="5" value="zuxuanfushi" is="off">组选复式</span> 
+									<span class="zx" index="6" value="zuxuandanshi" is="off">组选单式</span>
+									<span class="zx" index="5" value="zuxuanhezhi" is="off">组选和值</span> 
+									<span class="zx" index="6" value="zuxuanbaodan" is="off">组选包胆</span>
+									<div class="clear"></div>
+								</div>
+
+								<!-- 玩法信息行结束 -->
+							</div>
+						</div>
+
+<!-- 玩法信息显示层控制一星 -->
+						<div data-view="yixing" >
+							<div name="wanfainfo">
+								<!-- 玩法信息行 -->
+								<div class="kind_t1 kind1">
+									<span class="tit">定位胆</span>
+									 <span class="zx cur" index="5"	value="fushi" is="off">复式</span> 
+									<div class="clear"></div>
+								</div>
+								<!-- 玩法信息行结束 -->
+							</div>
+						</div>
+
+
 						<!-- 玩法数据号码控制 -->
 						<div class="wfsj">
 							<!-- 五星组选120 -->
 							<div class="styles " data-view="wuxingzuxuan120" is=on>
 								<!-- 号码开始 -->
 								<div class="style1">
-									<span class="sty_t" name="zuxuan120">组选</span>
+									<span class="sty_t" name="zuxuan120">组选120</span>
 									<!-- 数字部分开始 -->
 									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
 										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
@@ -302,6 +494,280 @@
 
 								<!-- 号码结束 -->
 							</div>
+						
+
+						<!-- 四星组选24 -->
+						<div class="styles " data-view="sixingzuxuan24" is=off>
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zuxuan24">组选24</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+
+								<!-- 号码结束 -->
+							</div>
+						
+							<!-- 四星组选12 -->
+							<div class="styles " data-view="sixingzuxuan12" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="erchonghao">二重号</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="danhao">单号</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 四星组选6 -->
+							<div class="styles " data-view="sixingzuxuan6" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="erchonghao">二重号</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								
+							</div>
+						
+				<!-- 四星组选4 -->
+							<div class="styles " data-view="sixingzuxuan4" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="sanchonghao">三重号</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="danhao">单号</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+				<!-- 四星一码不定位 -->
+							<div class="styles " data-view="sixingyimabudingwei" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="budingwei">不定位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								
+							</div>
+
+				<!-- 四星二码不定位 -->
+							<div class="styles " data-view="sixingermabudingwei" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="budingwei">不定位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								
+							</div>
+
+				<!-- 前三复式 -->
+							<div class="styles " data-view="qiansanfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="wanwei">万位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="qianwei">千位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="baiwei">百位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+
+
+
+<!-- 前三单式 -->
+
+ <div class="styles " data-view="qiansandanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+
+
+
 						</div>
 						<div class="btn">
 							<input class="btnA" value="确认验证" type="submit" />
@@ -480,6 +946,10 @@
 			$(".nva_w").click(function() {
 				$(this).addClass("current").siblings().removeClass("current");
 				$(this).attr("is", "on").siblings().attr("is", "off");
+				var sNavValue=$(this).attr("value");
+				console.log($(".kind_f>div[data-view="+sNavValue+"]"));
+				$(".kind_f>div[data-view="+sNavValue+"]").css("display","block");
+				$(".kind_f>div[data-view="+sNavValue+"]").siblings("div[data-view]").css("display","none");				
 			})
 			//直选切换/组选切换
 			$(".zx").click(
@@ -503,8 +973,12 @@
 
 				var oForm = document.getElementById("gameForm");
 				new util.getGameData(oForm);
-				alert(util.wanfatype + "       " + util.wanfainfo);
+				console.log(util.wanfatype + "       " + util.wanfainfo);
 			})
+
+			$(".styles input[type=file]").click(function(
+				$(this).parents(".styles")
+				));
 
 		})()
 
@@ -514,7 +988,7 @@
 			var method = "post";
 			var url = "/game/json/gameForm";
 			var oForm = document.getElementById(formid);
-			var data = new util.getGameData(oForm);
+			
 
 			var success = function(result) {
 				switch (result) {
@@ -531,8 +1005,9 @@
 			}
 
 			oForm.onsubmit = function (e) {
+				
 				e.preventDefault();
-				alert(util.wanfatype + "       " + util.wanfainfo);
+				var data = new util.getGameData(oForm);
 				$.ajax({
 					type : method,
 					url : url,

@@ -71,20 +71,38 @@ util.getGameData=function(oForm){
 	var sNavName=$(oNav).attr("name");
 	var sNavValue=$($(oNav).find(" div[is=on]")[0]).attr("value");
 	datas[sNavName]=sNavValue;
-	console.log(sNavName+"          "+sNavValue);
 	
 	//得到玩法信息  
-	var oWanFaInfo= $(oForm).find("div[name=wanfainfo]")[0];
-	var oWanFaInfoVal=$($(oWanFaInfo).find("span[is=on]")[0]).attr("value");
-	console.log($(oWanFaInfo).val()+"    "+oWanFaInfoVal);
+	var oWanFaInfo= $(oForm).find("div[data-view="+sNavValue+"] div[name=wanfainfo]")[0];
+	console.log(oWanFaInfo);
+	var oWanFaInfoVal=$($(oWanFaInfo).find(" span[is=on]")[0]).attr("value");
+	console.log("wanfainfo        "+oWanFaInfo+"    oWanFaInfoVal      "+oWanFaInfoVal);
 	datas["wanfainfo"]=oWanFaInfoVal;
 	
 	//设置玩法类型 和玩法信息
 	util.wanfatype=sNavValue;
 	util.wanfainfo=oWanFaInfoVal;
-	//得到值
-	//$(oForm).find
+	//得到选择的值
+	var aWfsjModel=$($(oForm).find(".kind .wfsj>div[data-view="+util.wanfatype+util.wanfainfo+"]")[0]).find(".style1");
+	console.log(aWfsjModel.length)
+	for(var i=0;i<aWfsjModel.length;i++){
+		var aI=$(aWfsjModel[i]).find("i,textarea");
+
+		var str="";
+		for(var j=0;j<aI.length;j++){
+			if($(aI[j]).attr("is")=="on"){
+			str+=$(aI[j]).attr("value")+" ";
+			console.log($(aI[j]).attr("value"));
+		}
+		}
+		datas[$(aWfsjModel[i]).find("span[name]").attr("name")]=str.substring(0, str.length-1);
+	}
+	
+	
+			//" span[name]").attr("name")
 	console.log(datas);
+	
+	
 	return datas;
 };
 
