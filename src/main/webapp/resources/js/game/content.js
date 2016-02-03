@@ -2,6 +2,7 @@ $(function(){
 	//头部列表部分
 	$(".head_u li a").click(function(){
 		$(this).addClass("current").parent().siblings().children("a").removeClass("current");
+		
 	})
 	$(".tan").click(function(){
 		$(this).children(".cai").toggle();
@@ -10,15 +11,8 @@ $(function(){
 	$(".small").click(function(){
 		$(this).next().toggle();
 	})
-	//首页种类分类导航
-	$(".nva_w").click(function(){
-		$(this).addClass("current").siblings().removeClass("current");
-	})
-	//直选切换/组选切换
-	$(".zx").click(function(){
-		$(this).parents(".kind_f").find(".zx").removeClass("cur");
-		$(this).addClass("cur");
-	})
+	
+	
 	//数字切换
 	$(".sty_i").attr("is","off");
 	$(".sty_i").click(function(){
@@ -35,6 +29,7 @@ $(function(){
 		var $this = $(this);
 		$(this).addClass("curr").siblings().removeClass("curr");
 	})
+	
 	//快捷按钮部分  
 	$(".style1").each(function() {
         var $this = $(this);

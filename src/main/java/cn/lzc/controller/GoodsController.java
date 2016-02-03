@@ -42,7 +42,20 @@ public class GoodsController {
 		
 		return "change";
 	}
-
+	@RequestMapping(value="/manage.html",method=RequestMethod.GET)
+	public String manage(Model model){
+		//User user = new User();
+		//model.addAttribute("user", user);
+		
+		return "manage";
+	}
+	@RequestMapping(value="/home.html",method=RequestMethod.GET)
+	public String home(Model model){
+		//User user = new User();
+		//model.addAttribute("user", user);
+		
+		return "home";
+	}
 
 	@RequestMapping(value="/fenbu.html",method=RequestMethod.GET)
 	public String fenbu(Model model){
@@ -68,6 +81,20 @@ public class GoodsController {
 		
 		return "fenbu";
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	@RequestMapping(value="/index.html",method=RequestMethod.GET)
 	public String show1(Model model){

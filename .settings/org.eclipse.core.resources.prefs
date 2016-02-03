@@ -1,6 +1,8 @@
 eclipse.preferences.version=1
 encoding//src/main/webapp/WEB-INF/jsps/change.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsps/fenbu.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsps/home.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsps/old/manage.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsps/register.jsp=UTF-8
 encoding//src/main/webapp/resources/css/game/change.css=UTF-8
 encoding//src/main/webapp/resources/css/game/content.css=UTF-8

@@ -45,7 +45,7 @@ util.userForm=function (formid, type, url, attr, success, error) {
 	};
 };
 
-util.getGameData = function(oForm,attr) {
+util.getfenbuData = function(oForm,attr) {
 	var datas = {};
 	var aDiv=$(oForm).find("*["+attr+"]");
 	for(var i=0;i<aDiv.length;i++){
@@ -61,10 +61,21 @@ util.getGameData = function(oForm,attr) {
 	return datas;
 };
 
-
-
-
-
+util.getGameData=function(oForm){
+	var datas={};
+	var oNav=$(oForm).find(".nav")[0];
+	var sNavName=$(oNav).attr("name");
+	var sNavValue=$($(oNav).find(" div[is=on]")[0]).attr("value");
+	datas[sNavName]=sNavValue;
+	console.log(sNavName+"          "+sNavValue);
+	var oWanFaInfo= $(oForm).find("div[data-name="+sNavValue+"]")[0];
+	var oWanFaInfoVal=$($(oWanFaInfo).find("span[is=on]")[0]).attr("value");
+	datas[$(oWanFaInfo).attr("name")]=oWanFaInfoVal;
+	
+	console.log(oWanFaInfo);
+	console.log(datas);
+	return datas;
+};
 
 //修改用户名
 (function (){

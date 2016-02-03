@@ -512,7 +512,7 @@
 	padding:30px 0;
 }
 .btnA{
-	
+	cursor:pointer;
 	display:block;
 	width:160px;
 	height:40px;

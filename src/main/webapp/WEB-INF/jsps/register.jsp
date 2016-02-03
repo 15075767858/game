@@ -204,6 +204,7 @@
 		switch (result) {
 		case 0:
 			alert("注册成功");
+			location.href = "/game/login.html"
 			break;
 		case 1:
 			alert("用户名已经存在");

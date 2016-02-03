@@ -355,14 +355,7 @@
 				<td class="td3">'+result[i][5]+'</td>\
 			</tr>')
 			};
-				/*<tr class="tr1 tr2">
-				<td class="td1">0123456789</td>
-				<td class="td2 colors dash">#*#45</td>
-				<td class="td3">45263</td>
-				<td class="td4">小单</td>
-				<td class="td3">小双</td>
-				<td class="td3">组六</td>
-			</tr>*/
+
 					console.log(result[0][0]);
 					break;
 				}
@@ -370,9 +363,9 @@
 			var oForm=document.getElementById(formid);
 			oForm.onsubmit=function (e) {
 				e.preventDefault();
-				var data=new util.getGameData(this,attr);
-				var starttime=$("#time1").val();//document.getElementById("time1").val;		
-				var endtime=$("#time2").val();//document.getElementById("time2").val;
+				var data=new util.getfenbuData(this,attr);
+				var starttime=$("#time1").val();	
+				var endtime=$("#time2").val();
 				data["starttime"]=starttime;
 				data["endtime"]=endtime;
 				data["wanfa"]="lengre";
