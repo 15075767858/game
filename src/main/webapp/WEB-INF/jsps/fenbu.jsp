@@ -203,6 +203,7 @@
 								<td class="td3">开奖号码</td>
 								<td class="td4">十位</td>
 								<td class="td3">个位</td>
+								<td class="td4">龙虎</td>
 								<td class="td4">后三</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -211,6 +212,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -219,6 +221,16 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
+								<td class="td3">组六</td> 
+							</tr>
+							<tr class="tr1 tr2">
+								<td class="td1">0123456789</td>
+								<td class="td2 colors dash">#*#45</td>
+								<td class="td3">45263</td>
+								<td class="td4">小单</td>
+								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -227,6 +239,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -235,6 +248,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -243,6 +257,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -251,6 +266,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -259,6 +275,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -267,6 +284,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -275,6 +293,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
@@ -283,14 +302,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
-								<td class="td3">组六</td>
-							</tr>
-							<tr class="tr1 tr2">
-								<td class="td1">0123456789</td>
-								<td class="td2 colors dash">#*#45</td>
-								<td class="td3">45263</td>
-								<td class="td4">小单</td>
-								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2 noBorder">
@@ -299,6 +311,7 @@
 								<td class="td3">45263</td>
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
+								<td class="td3">龙</td>
 								<td class="td3">组六</td>
 							</tr>
 						</tbody>
@@ -353,6 +366,7 @@
 				<td class="td4">'+result[i][3]+'</td>\
 				<td class="td3">'+result[i][4]+'</td>\
 				<td class="td3">'+result[i][5]+'</td>\
+				<td class="td3">'+result[i][6]+'</td>\
 			</tr>')
 			};
 

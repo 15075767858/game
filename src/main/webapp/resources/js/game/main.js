@@ -57,22 +57,33 @@ util.getfenbuData = function(oForm,attr) {
 		}
 		datas[$(aDiv[i]).attr(attr)]=str.substring(0, str.length-1);
 	}
+	
+	
 	console.log(datas);
 	return datas;
 };
-
+util.wanfatype="wuxing";
+util.wanfainfo="zuxuan120";
 util.getGameData=function(oForm){
 	var datas={};
 	var oNav=$(oForm).find(".nav")[0];
+	//得到玩法类型 wanfatype = wuxing 
 	var sNavName=$(oNav).attr("name");
 	var sNavValue=$($(oNav).find(" div[is=on]")[0]).attr("value");
 	datas[sNavName]=sNavValue;
 	console.log(sNavName+"          "+sNavValue);
-	var oWanFaInfo= $(oForm).find("div[data-name="+sNavValue+"]")[0];
-	var oWanFaInfoVal=$($(oWanFaInfo).find("span[is=on]")[0]).attr("value");
-	datas[$(oWanFaInfo).attr("name")]=oWanFaInfoVal;
 	
-	console.log(oWanFaInfo);
+	//得到玩法信息  
+	var oWanFaInfo= $(oForm).find("div[name=wanfainfo]")[0];
+	var oWanFaInfoVal=$($(oWanFaInfo).find("span[is=on]")[0]).attr("value");
+	console.log($(oWanFaInfo).val()+"    "+oWanFaInfoVal);
+	datas["wanfainfo"]=oWanFaInfoVal;
+	
+	//设置玩法类型 和玩法信息
+	util.wanfatype=sNavValue;
+	util.wanfainfo=oWanFaInfoVal;
+	//得到值
+	//$(oForm).find
 	console.log(datas);
 	return datas;
 };

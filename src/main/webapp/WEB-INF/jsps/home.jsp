@@ -129,246 +129,180 @@
 				<!-- 导航结束 -->
 				<!-- 选择种类开始 -->
 				<div class="kind">
-
-
 					<div class="kind_f fl">
-					<!-- 玩法信息显示层控制 -->
+						<!-- 玩法信息显示层控制 -->
 						<div data-view="wuxing">
 
 							<div name="wanfainfo">
-
+								<!-- 玩法信息行 -->
 								<div class="kind_t1 kind1">
-									<span class="tit" value="zhixuan">直选</span> <span
-										class="zx zx_fs cur" index="0" value="zhixuanfushi" is="on">直选复式</span>
-									<span class="zx zx_ds " index="1" value="zhixuandanshi"
-										is="off">直选单式</span> <span class="zx zx_zxhz" index="2"
-										value="zhixuanhezhi" is="off">直选和值</span> <span class="zx"
-										index="3" value="zhixuankuadu" is="off">直选跨度</span> <span
-										class="zx" index="4" value="zhixuanzuhe" is="off">直选组合</span>
-									<div class="clear"></div>
-								</div>
-								<div class="kind_t1 kind1">
-									<span class="tit">组选</span> <span class="zx zx_zs" index="5"
-										value="zusan" is="off">组三</span> <span class="zx" index="6"
-										value="zuxuan60" is="off">组选60</span> <span class="zx"
-										index="7" value="zuxuan30" is="off">组选30</span> <span
+									<span class="tit">组选</span> <span class="zx cur" index="5"
+										value="zuxuan120" is="on">组选120</span> <span class="zx"
+										index="6" value="zuxuan60" is="off">组选60</span> <span
+										class="zx" index="7" value="zuxuan30" is="off">组选30</span> <span
 										class="zx" index="8" value="zuxuan20" is="off">组选20</span>
-
 									<div class="clear"></div>
 								</div>
+								<!-- 玩法信息行结束 -->
 							</div>
-						
+						</div>
 
-						</div>
-						<!-- 首页部分 -->
-						<div class="styles">
-							<!-- 万位开始 -->
-							<div class="style1">
-								<span class="sty_t">万位</span>
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-								<!-- 数字部分结束 -->
-								<span class="sty_s1 sty_s11">全</span> <span
-									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-								<span class="sty_s1 sty_s14">奇</span> <span
-									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-								<div class="clear"></div>
-							</div>
-							<!-- 万位结束 -->
-							<!-- 千位开始 -->
-							<div class="style1">
-								<span class="sty_t">千位</span>
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-								<!-- 数字部分结束 -->
-								<span class="sty_s1 sty_s11">全</span> <span
-									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-								<span class="sty_s1 sty_s14">奇</span> <span
-									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-								<div class="clear"></div>
-							</div>
-							<!-- 千位结束 -->
-							<!-- 百位开始 -->
-							<div class="style1">
-								<span class="sty_t">百位</span>
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-								<!-- 数字部分结束 -->
-								<span class="sty_s1 sty_s11">全</span> <span
-									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-								<span class="sty_s1 sty_s14">奇</span> <span
-									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-								<div class="clear"></div>
-							</div>
-							<!-- 百位结束 -->
-							<!-- 十位开始 -->
-							<div class="style1">
-								<span class="sty_t">十位</span>
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-								<!-- 数字部分结束 -->
-								<span class="sty_s1 sty_s11">全</span> <span
-									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-								<span class="sty_s1 sty_s14">奇</span> <span
-									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-								<div class="clear"></div>
-							</div>
-							<!-- 十位结束 -->
-							<!-- 个位开始 -->
-							<div class="style1 noBorder">
-								<span class="sty_t">个位</span>
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-								<!-- 数字部分结束 -->
-								<span class="sty_s1 sty_s11">全</span> <span
-									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-								<span class="sty_s1 sty_s14">奇</span> <span
-									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-								<div class="clear"></div>
-							</div>
-							<!-- 个位结束 -->
-						</div>
-						<!-- 复式部分 -->
-						<div class="styles fs  index">
-							<!-- 百位开始 -->
-							<div class="style1">
-								<span class="sty_t">百位</span>
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-								<!-- 数字部分结束 -->
-								<span class="sty_s1 sty_s11">全</span> <span
-									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-								<span class="sty_s1 sty_s14">奇</span> <span
-									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-								<div class="clear"></div>
-							</div>
-							<!-- 百位结束 -->
-							<!-- 十位开始 -->
-							<div class="style1">
-								<span class="sty_t">十位</span>
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-								<!-- 数字部分结束 -->
-								<span class="sty_s1 sty_s11">全</span> <span
-									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-								<span class="sty_s1 sty_s14">奇</span> <span
-									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-								<div class="clear"></div>
-							</div>
-							<!-- 十位结束 -->
-							<!-- 个位开始 -->
-							<div class="style1 noBorder">
-								<span class="sty_t">个位</span>
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-								<!-- 数字部分结束 -->
-								<span class="sty_s1 sty_s11">全</span> <span
-									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-								<span class="sty_s1 sty_s14">奇</span> <span
-									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-								<div class="clear"></div>
-							</div>
-							<!-- 个位结束 -->
-						</div>
-						<!-- 单式部分 -->
-						<div class="styles ds">
-							<a href="javascript:;" class="enter">导入注单</a>
-							<div class="text">
-								<div class="bg"></div>
-								<textarea class="textarea">
-                            </textarea>
-								<div class="txt">
-									<p>
-										说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
-										2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
-										3、文件较大时会导致上传时间较长，请耐心等待！
-									</p>
-									<p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+						<!-- 玩法数据号码控制 -->
+						<div class="wfsj">
+							<!-- 五星组选120 -->
+							<div class="styles " data-view="wuxingzuxuan120" is=on>
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zuxuan120">组选</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
 								</div>
-							</div>
-							<div class="ds_btn">
-								<a href="javascript:;" class="error fl">清理错误与重复</a> <a
-									href="javascript:;" class="del fl">清空文本框</a>
-							</div>
-						</div>
-						<!-- 组三部分 -->
-						<div class="styles zs">
-							<!-- 个位开始 -->
-							<div class="style1 noBorder">
-								<span class="sty_t">组三</span>
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i>
-								<!-- 数字部分结束 -->
-								<span class="sty_s1 sty_s11">全</span> <span
-									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
-								<span class="sty_s1 sty_s14">奇</span> <span
-									class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
-								<div class="clear"></div>
-							</div>
-							<!-- 个位结束 -->
-						</div>
-						<!-- 直选和值部分 -->
-						<div class="styles zxhz">
-							<!-- 个位开始 -->
-							<div class="style2 noBorder">
-								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i"></i> <i class="sty_i1 sty_i"></i> <i
-									class="sty_i2 sty_i"></i> <i class="sty_i3 sty_i"></i> <i
-									class="sty_i4 sty_i"></i> <i class="sty_i5 sty_i"></i> <i
-									class="sty_i6 sty_i"></i> <i class="sty_i7 sty_i"></i> <i
-									class="sty_i8 sty_i"></i> <i class="sty_i9 sty_i"></i> <i
-									class="sty_i10 sty_i"></i> <i class="sty_i11 sty_i"></i> <i
-									class="sty_i12 sty_i"></i> <i class="sty_i13 sty_i"></i> <i
-									class="sty_i14 sty_i"></i> <i class="sty_i15 sty_i"></i> <i
-									class="sty_i16 sty_i"></i> <i class="sty_i17 sty_i"></i> <i
-									class="sty_i18 sty_i"></i> <i class="sty_i19 sty_i"></i> <i
-									class="sty_i20 sty_i"></i> <i class="sty_i21 sty_i"></i> <i
-									class="sty_i22 sty_i"></i> <i class="sty_i23 sty_i"></i> <i
-									class="sty_i24 sty_i"></i> <i class="sty_i25 sty_i"></i> <i
-									class="sty_i26 sty_i"></i> <i class="sty_i27 sty_i"></i>
-								<div class="clear"></div>
-								<!-- 数字部分结束 -->
-							</div>
-							<!-- 个位结束 -->
-						</div>
 
+								<!-- 号码结束 -->
+							</div>
 
+							<!-- 五星组选60 -->
+							<div class="styles " data-view="wuxingzuxuan60" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="erchonghao">二重</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="danhao">单号</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+
+								<!-- 号码结束 -->
+							</div>
+
+							<!-- 五星组选30 -->
+							<div class="styles " data-view="wuxingzuxuan30" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="erchonghao">二重</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="danhao">单号</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+
+								<!-- 号码结束 -->
+							</div>
+
+							<!-- 五星组选20 -->
+							<div class="styles " data-view="wuxingzuxuan20" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="sanchonghao">三重</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="danhao">单号</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+
+								<!-- 号码结束 -->
+							</div>
+						</div>
 						<div class="btn">
 							<input class="btnA" value="确认验证" type="submit" />
 						</div>
@@ -548,17 +482,66 @@
 				$(this).attr("is", "on").siblings().attr("is", "off");
 			})
 			//直选切换/组选切换
-			$(".zx").click(function() {
-				$(this).parents(".kind_f").find(".zx").removeClass("cur");
-				$(this).parents(".kind_f").find(".zx").attr("is", "off");
-				$(this).attr("is", "on");
-				$(this).addClass("cur");
-			})
+			$(".zx").click(
+					function() {
+						$(this).parents(".kind_f").find(".zx").removeClass(
+								"cur");
+						$(this).parents(".kind_f").find(".zx")
+								.attr("is", "off");
+						$(this).attr("is", "on");
+						$(this).addClass("cur");
+
+						var viewname = util.wanfatype + $(this).attr("value");
+						$(".kind .wfsj .styles[data-view=" + viewname + "]")
+								.attr("is", "on");
+						$(".kind .wfsj .styles[data-view!=" + viewname + "]")
+								.attr("is", "off");
+
+					})
 
 			$(".nav>div").click(function() {
+
 				var oForm = document.getElementById("gameForm");
 				new util.getGameData(oForm);
+				alert(util.wanfatype + "       " + util.wanfainfo);
 			})
+
+		})()
+
+		function a(){}
+		(function() {
+			var formid = "gameForm";
+			var method = "post";
+			var url = "/game/json/gameForm";
+			var oForm = document.getElementById(formid);
+			var data = new util.getGameData(oForm);
+
+			var success = function(result) {
+				switch (result) {
+				case 0:
+					alert("修改成功");
+					break;
+				case 1:
+					alert("用户名已经存在");
+					break;
+				default:
+					alert( result);
+					break;
+				}
+			}
+
+			oForm.onsubmit = function (e) {
+				e.preventDefault();
+				alert(util.wanfatype + "       " + util.wanfainfo);
+				$.ajax({
+					type : method,
+					url : url,
+					data : data,
+					dataType : 'json',
+					success : success,
+					error : null
+				});
+			}
 
 		})()
 	</script>
