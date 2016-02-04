@@ -51,6 +51,12 @@
 .time .data_pic5{
 	background-position:-195px 0;
 }
+.time .date{
+	text-align:center;
+	font-size: 53px;
+	line-height:1;
+	
+}
 .zhong{
 	padding:13px 23px 0 0px;
 }

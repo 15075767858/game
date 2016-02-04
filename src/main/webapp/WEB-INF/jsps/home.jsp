@@ -73,9 +73,9 @@
 					<p>
 						第<span>20160111-051</span>期<br />离投注截止还有
 					</p>
-					<i class="data_pic1"></i> <i class="data_pic2"></i> <i
-						class="data_pic3"></i> <i class="data_pic4"></i> <i
-						class="data_pic5 noMargin"></i>
+					<i class="data_pic1 date" id="min0"></i> <i class="data_pic2 date" id="min1"></i> <i
+						class="data_pic3 " ></i> <i class="data_pic4 date" id="sec0"></i> <i
+						class="data_pic5 date noMargin" id="sec1"></i>
 					<div class="clear"></div>
 				</div>
 				<div class="zhong fl">
@@ -2520,6 +2520,8 @@
 	<script src="<%=basePath%>resources/js/game/content.js"></script>
 	<script src="<%=basePath%>resources/js/game/main.js"></script>
 	<script src="<%=basePath%>resources/js/game/ajaxfileupload.js"></script>
+<script src="<%=basePath%>resources/js/game/kj-calc-time.js"></script>
+
 
 	<script type="text/javascript">
 	
@@ -2559,6 +2561,7 @@
 				new util.getGameData(oForm);
 				console.log(util.wanfatype + "       " + util.wanfainfo);
 				$(".kind div[data-view="+util.wanfatype+"] .kind1:nth-child(1) span:nth-child(2)").trigger('click');
+				$(".style1 i").removeClass("style_cur").removeAttr("is");
 			})
 			
 			$(".styles textarea").focus(function(){
@@ -2637,6 +2640,14 @@
 			}
 
 		})()
+		
+		
+		
+		
+	
+		
+		
+		
 	</script>
 </body>
 </html>
