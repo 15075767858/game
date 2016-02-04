@@ -12,7 +12,7 @@ var util = {};
 util.userForm=function (formid, type, url, attr, success, error) {
 	this.oFrom = document.getElementById(formid);
 	if (this.oFrom == null) {
-		console.log("error this id for "+formid+" form not find");
+		//console.log("error this id for "+formid+" form not find");
 		return;
 	}
 	this.type = type;
@@ -103,47 +103,9 @@ util.getGameData=function(oForm){
 	return datas;
 };
 
-//修改用户名
-(function (){
-	var formid = "changenameForm";
-	var attr = "name";
-	var method = "post";
-	var url = "/game/json/changeName";
-	var success = function(result) {
-		switch (result) {
-		case 0:
-			alert("修改成功");
-			break;
-		case 1:
-			alert("用户名已经存在");
-			break;
-		default:
-			alert("修改成功新的用户名是"+result);
-			break;
-		}
-	}
-	new util.userForm(formid, method, url, attr, success);
-})();
+$(document).ready(function(){
+    $(document).bind("contextmenu",function(e){
+        return false;
+    });
+});
 
-//修改密码
-(function (){
-	var formid = "changePassword";
-	var attr = "name";
-	var method = "post";
-	var url = "/game/json/changePassword";
-	var success = function(result) {
-		switch (result) {
-		case 0:
-			alert("修改成功");
-			break;
-		case 1:
-			alert("用户名已经存在");
-			break;
-		default:
-			alert("修改成功新的用户名是"+result);
-			break;
-		}
-	}
-	new util.userForm(formid, method, url, attr, success);
-})();
- 

@@ -190,6 +190,53 @@
 				}
 			})
 		})
+		
+		function a(){}
+//修改用户名
+(function (){
+	var formid = "changenameForm";
+	var attr = "name";
+	var method = "post";
+	var url = "/game/json/changeName";
+	var success = function(result) {
+		switch (result) {
+		case 0:
+			alert("修改成功");
+			break;
+		case 1:
+			alert("用户名已经存在");
+			break;
+		default:
+			alert("修改成功新的用户名是"+result);
+			break;
+		}
+	}
+	new util.userForm(formid, method, url, attr, success);
+})();
+
+//修改密码
+(function (){
+	var formid = "changePassword";
+	var attr = "name";
+	var method = "post";
+	var url = "/game/json/changePassword";
+	var success = function(result) {
+		switch (result) {
+		case 0:
+			alert("修改成功");
+			break;
+		case 1:
+			alert("用户名已经存在");
+			break;
+		default:
+			alert("修改成功新的用户名是"+result);
+			break;
+		}
+	}
+	new util.userForm(formid, method, url, attr, success);
+})();
+ 
+
 	</script>
 </body>
 </html>
