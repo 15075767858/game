@@ -183,7 +183,7 @@
 								</div>
 								<div class="kind_t1 kind1">
 									<span class="tit">组选</span>
-									 <span class="zx " index="5"	value="zuxuanfushi" is="off">组三复式</span> 
+									 <span class="zx " index="5"	value="zusanfushi" is="off">组三复式</span> 
 										<span class="zx" index="6" value="zuliufushi" is="off">组六复式</span>
 										<span class="zx " index="5"	value="zusandanshi" is="off">组三单式</span> 
 										<span class="zx" index="6" value="zuliudanshi" is="off">组六单式</span>
@@ -219,7 +219,7 @@
 								</div>
 								<div class="kind_t1 kind1">
 									<span class="tit">组选</span>
-									 <span class="zx " index="5"	value="zuxuanfushi" is="off">组三复式</span> 
+									 <span class="zx " index="5"	value="zusanfushi" is="off">组三复式</span> 
 										<span class="zx" index="6" value="zuliufushi" is="off">组六复式</span>
 										<span class="zx " index="5"	value="zusandanshi" is="off">组三单式</span> 
 										<span class="zx" index="6" value="zuliudanshi" is="off">组六单式</span>
@@ -254,7 +254,7 @@
 								</div>
 								<div class="kind_t1 kind1">
 									<span class="tit">组选</span>
-									 <span class="zx " index="5"	value="zuxuanfushi" is="off">组三复式</span> 
+									 <span class="zx " index="5"	value="zusanfushi" is="off">组三复式</span> 
 										<span class="zx" index="6" value="zuliufushi" is="off">组六复式</span>
 										<span class="zx " index="5"	value="zusandanshi" is="off">组三单式</span> 
 										<span class="zx" index="6" value="zuliudanshi" is="off">组六单式</span>
@@ -765,6 +765,1583 @@
                             </div>
                         </div>
 
+	<!-- 前三组合 -->
+							<div class="styles " data-view="qiansanzuhe" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="qianwei">千位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="baiwei">百位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="shiwei">十位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+	<!-- 前三组三复式 -->
+							<div class="styles " data-view="qiansanzusanfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zusanfushi">组三复式</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+	<!-- 前三组六复式 -->
+							<div class="styles " data-view="qiansanzuliufushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zuliufushi">组六复式</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 前三组三单式 -->
+
+ <div class="styles " data-view="qiansanzusandanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+<!-- 前三组六单式 -->
+ <div class="styles " data-view="qiansanzuliudanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+<!-- 前三混合组选 -->
+ <div class="styles " data-view="qiansanhunhezuxuan" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+
+<!-- 前三组选包胆 -->
+							<div class="styles " data-view="qiansanzuxuanbaodan" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="gewei">个位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+<!-- 前三组选和值 -->
+							<div class="styles " data-view="qiansanzuxuanhezhi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="gewei">个位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i1 sty_i"	value="1"></i>
+										 <i class="sty_i2 sty_i" value="2"></i> 
+										 <i	class="sty_i3 sty_i" value="3"></i>
+										 <i class="sty_i4 sty_i" value="4"></i> 
+										 <i class="sty_i5 sty_i" value="5"></i> 
+										 <i	class="sty_i6 sty_i" value="6"></i> 
+										 <i class="sty_i7 sty_i"	value="7"></i> 
+										 <i class="sty_i8 sty_i" value="8"></i>
+										 <i	class="sty_i9 sty_i" value="9"></i>
+										<i class="sty_i10 sty_i" value="10"></i>
+										<i class="sty_i11 sty_i" value="11"></i>
+										<i class="sty_i12 sty_i" value="12"></i>
+										<i class="sty_i13 sty_i" value="13"></i>
+										<i class="sty_i14 sty_i" value="14"></i>
+										<i class="sty_i15 sty_i" value="15"></i>
+										<i class="sty_i16 sty_i" value="16"></i>
+										<i class="sty_i17 sty_i" value="17"></i>
+										<i class="sty_i18 sty_i" value="18"></i>
+										<i class="sty_i19 sty_i" value="19"></i>
+										<i class="sty_i20 sty_i" value="20"></i>
+										<i class="sty_i21 sty_i" value="21"></i>
+										<i class="sty_i22 sty_i" value="22"></i>
+										<i class="sty_i23 sty_i" value="23"></i>
+										<i class="sty_i24 sty_i" value="24"></i>
+										<i class="sty_i25 sty_i" value="25"></i>
+										<i class="sty_i26 sty_i" value="26"></i>
+									<!-- 数字部分结束 -->
+									
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 前三一码不定位 -->
+							<div class="styles " data-view="qiansanyimabudingwei" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="budingwei">不定位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+<!-- 前三二码不定位 -->
+							<div class="styles " data-view="qiansanermabudingwei" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="budingwei">不定位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+
+				<!-- 中三复式 -->
+							<div class="styles " data-view="zhongsanfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="wanwei">万位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="qianwei">千位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="baiwei">百位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+
+
+
+<!-- 中三单式 -->
+
+ <div class="styles " data-view="zhongsandanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input id="fileid" type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+	<!-- 中三组合 -->
+							<div class="styles " data-view="zhongsanzuhe" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="qianwei">千位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="baiwei">百位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="shiwei">十位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+	<!-- 中三组三复式 -->
+							<div class="styles " data-view="zhongsanzusanfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zusanfushi">组三复式</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+	<!-- 中三组六复式 -->
+							<div class="styles " data-view="zhongsanzuliufushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zuliufushi">组六复式</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 中三组三单式 -->
+
+ <div class="styles " data-view="zhongsanzusandanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+<!-- 中三组六单式 -->
+ <div class="styles " data-view="zhongsanzuliudanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+<!-- 中三混合组选 -->
+ <div class="styles " data-view="zhongsanhunhezuxuan" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+
+<!-- 中三组选包胆 -->
+							<div class="styles " data-view="zhongsanzuxuanbaodan" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="gewei">个位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+<!-- 中三组选和值 -->
+							<div class="styles " data-view="zhongsanzuxuanhezhi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="gewei">个位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i1 sty_i"	value="1"></i>
+										 <i class="sty_i2 sty_i" value="2"></i> 
+										 <i	class="sty_i3 sty_i" value="3"></i>
+										 <i class="sty_i4 sty_i" value="4"></i> 
+										 <i class="sty_i5 sty_i" value="5"></i> 
+										 <i	class="sty_i6 sty_i" value="6"></i> 
+										 <i class="sty_i7 sty_i"	value="7"></i> 
+										 <i class="sty_i8 sty_i" value="8"></i>
+										 <i	class="sty_i9 sty_i" value="9"></i>
+										<i class="sty_i10 sty_i" value="10"></i>
+										<i class="sty_i11 sty_i" value="11"></i>
+										<i class="sty_i12 sty_i" value="12"></i>
+										<i class="sty_i13 sty_i" value="13"></i>
+										<i class="sty_i14 sty_i" value="14"></i>
+										<i class="sty_i15 sty_i" value="15"></i>
+										<i class="sty_i16 sty_i" value="16"></i>
+										<i class="sty_i17 sty_i" value="17"></i>
+										<i class="sty_i18 sty_i" value="18"></i>
+										<i class="sty_i19 sty_i" value="19"></i>
+										<i class="sty_i20 sty_i" value="20"></i>
+										<i class="sty_i21 sty_i" value="21"></i>
+										<i class="sty_i22 sty_i" value="22"></i>
+										<i class="sty_i23 sty_i" value="23"></i>
+										<i class="sty_i24 sty_i" value="24"></i>
+										<i class="sty_i25 sty_i" value="25"></i>
+										<i class="sty_i26 sty_i" value="26"></i>
+									<!-- 数字部分结束 -->
+									
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 中三一码不定位 -->
+							<div class="styles " data-view="zhongsanyimabudingwei" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="budingwei">不定位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+<!-- 中三二码不定位 -->
+							<div class="styles " data-view="zhongsanermabudingwei" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="budingwei">不定位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+
+
+
+
+				<!-- 后三复式 -->
+							<div class="styles " data-view="housanfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="wanwei">万位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="qianwei">千位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="baiwei">百位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+
+
+
+<!-- 后三单式 -->
+
+ <div class="styles " data-view="housandanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input id="fileid" type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+	<!-- 后三组合 -->
+							<div class="styles " data-view="housanzuhe" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="qianwei">千位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="baiwei">百位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="shiwei">十位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+	<!-- 后三组三复式 -->
+							<div class="styles " data-view="housanzusanfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zusanfushi">组三复式</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+	<!-- 后三组六复式 -->
+							<div class="styles " data-view="housanzuliufushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zuliufushi">组六复式</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 后三组三单式 -->
+
+ <div class="styles " data-view="housanzusandanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+<!-- 后三组六单式 -->
+ <div class="styles " data-view="housanzuliudanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+<!-- 后三混合组选 -->
+ <div class="styles " data-view="housanhunhezuxuan" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+
+<!-- 后三组选包胆 -->
+							<div class="styles " data-view="housanzuxuanbaodan" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="gewei">个位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+<!-- 后三组选和值 -->
+							<div class="styles " data-view="housanzuxuanhezhi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="gewei">个位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i1 sty_i"	value="1"></i>
+										 <i class="sty_i2 sty_i" value="2"></i> 
+										 <i	class="sty_i3 sty_i" value="3"></i>
+										 <i class="sty_i4 sty_i" value="4"></i> 
+										 <i class="sty_i5 sty_i" value="5"></i> 
+										 <i	class="sty_i6 sty_i" value="6"></i> 
+										 <i class="sty_i7 sty_i"	value="7"></i> 
+										 <i class="sty_i8 sty_i" value="8"></i>
+										 <i	class="sty_i9 sty_i" value="9"></i>
+										<i class="sty_i10 sty_i" value="10"></i>
+										<i class="sty_i11 sty_i" value="11"></i>
+										<i class="sty_i12 sty_i" value="12"></i>
+										<i class="sty_i13 sty_i" value="13"></i>
+										<i class="sty_i14 sty_i" value="14"></i>
+										<i class="sty_i15 sty_i" value="15"></i>
+										<i class="sty_i16 sty_i" value="16"></i>
+										<i class="sty_i17 sty_i" value="17"></i>
+										<i class="sty_i18 sty_i" value="18"></i>
+										<i class="sty_i19 sty_i" value="19"></i>
+										<i class="sty_i20 sty_i" value="20"></i>
+										<i class="sty_i21 sty_i" value="21"></i>
+										<i class="sty_i22 sty_i" value="22"></i>
+										<i class="sty_i23 sty_i" value="23"></i>
+										<i class="sty_i24 sty_i" value="24"></i>
+										<i class="sty_i25 sty_i" value="25"></i>
+										<i class="sty_i26 sty_i" value="26"></i>
+									<!-- 数字部分结束 -->
+									
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 后三一码不定位 -->
+							<div class="styles " data-view="housanyimabudingwei" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="budingwei">不定位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+<!-- 后三二码不定位 -->
+							<div class="styles " data-view="housanermabudingwei" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="budingwei">不定位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 前二复式 -->
+							<div class="styles " data-view="qianerfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="wanwei">万位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="qianwei">千位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 前二单式 -->
+ <div class="styles " data-view="qianerdanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+<!-- 前二和值 -->
+							<div class="styles " data-view="qianerhezhi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="hezhi">和值</span>
+									<!-- 数字部分开始 -->
+									
+									<i class="sty_i sty_i0" value="0"></i>
+									<i class="sty_i sty_i1" value="1"></i>
+									<i class="sty_i sty_i2" value="2"></i>
+									<i class="sty_i sty_i3" value="3"></i>
+									<i class="sty_i sty_i4" value="4"></i>
+									<i class="sty_i sty_i5" value="5"></i>
+									<i class="sty_i sty_i6" value="6"></i>
+									<i class="sty_i sty_i7" value="7"></i>
+									<i class="sty_i sty_i8" value="8"></i>
+									<i class="sty_i sty_i9" value="9"></i>
+									<i class="sty_i sty_i10" value="10"></i>
+									<i class="sty_i sty_i11" value="11"></i>
+									<i class="sty_i sty_i12" value="12"></i>
+									<i class="sty_i sty_i13" value="13"></i>
+									<i class="sty_i sty_i14" value="14"></i>
+									<i class="sty_i sty_i15" value="15"></i>
+									<i class="sty_i sty_i16" value="16"></i>
+									<i class="sty_i sty_i17" value="17"></i>
+									<i class="sty_i sty_i18" value="18"></i>
+
+									<!-- 数字部分结束 -->
+										
+								</div>
+								<!-- 号码结束 -->
+								<div class="clear"></div>
+							</div>
+
+						<!-- 前二跨度 -->
+							<div class="styles " data-view="qianerkuadu" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="kuadu">跨度</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 前二组选复式 -->
+							<div class="styles " data-view="qianerzuxuanfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zuxuan">组选</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 前二组选单式 -->
+ <div class="styles " data-view="qianerzuxuandanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+
+							<!-- 前二组选和值 -->
+							<div class="styles " data-view="qianerzuxuanhezhi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zuxuanhezhi">组选和值</span>
+									<!-- 数字部分开始 -->
+
+										<i class="sty_i sty_i1" value="1"></i>
+										<i class="sty_i sty_i2" value="2"></i>
+										<i class="sty_i sty_i3" value="3"></i>
+										<i class="sty_i sty_i4" value="4"></i>
+										<i class="sty_i sty_i5" value="5"></i>
+										<i class="sty_i sty_i6" value="6"></i>
+										<i class="sty_i sty_i7" value="7"></i>
+										<i class="sty_i sty_i8" value="8"></i>
+										<i class="sty_i sty_i9" value="9"></i>
+										<i class="sty_i sty_i10" value="10"></i>
+										<i class="sty_i sty_i11" value="11"></i>
+										<i class="sty_i sty_i12" value="12"></i>
+										<i class="sty_i sty_i13" value="13"></i>
+										<i class="sty_i sty_i14" value="14"></i>
+										<i class="sty_i sty_i15" value="15"></i>
+										<i class="sty_i sty_i16" value="16"></i>
+										<i class="sty_i sty_i17" value="17"></i>
+									<!-- 数字部分结束 -->
+									
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+							<!-- 前二组选包胆 -->
+							<div class="styles " data-view="qianerzuxuanbaodan" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="gewei">个位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 后二复式 -->
+							<div class="styles " data-view="houerfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="wanwei">万位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="qianwei">千位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 后二单式 -->
+ <div class="styles " data-view="houerdanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+<!-- 后二和值 -->
+							<div class="styles " data-view="houerhezhi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="hezhi">和值</span>
+									<!-- 数字部分开始 -->
+									
+									<i class="sty_i sty_i0" value="0"></i>
+									<i class="sty_i sty_i1" value="1"></i>
+									<i class="sty_i sty_i2" value="2"></i>
+									<i class="sty_i sty_i3" value="3"></i>
+									<i class="sty_i sty_i4" value="4"></i>
+									<i class="sty_i sty_i5" value="5"></i>
+									<i class="sty_i sty_i6" value="6"></i>
+									<i class="sty_i sty_i7" value="7"></i>
+									<i class="sty_i sty_i8" value="8"></i>
+									<i class="sty_i sty_i9" value="9"></i>
+									<i class="sty_i sty_i10" value="10"></i>
+									<i class="sty_i sty_i11" value="11"></i>
+									<i class="sty_i sty_i12" value="12"></i>
+									<i class="sty_i sty_i13" value="13"></i>
+									<i class="sty_i sty_i14" value="14"></i>
+									<i class="sty_i sty_i15" value="15"></i>
+									<i class="sty_i sty_i16" value="16"></i>
+									<i class="sty_i sty_i17" value="17"></i>
+									<i class="sty_i sty_i18" value="18"></i>
+
+									<!-- 数字部分结束 -->
+										
+								</div>
+								<!-- 号码结束 -->
+								<div class="clear"></div>
+							</div>
+
+						<!-- 后二跨度 -->
+							<div class="styles " data-view="houerkuadu" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="kuadu">跨度</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 后二组选复式 -->
+							<div class="styles " data-view="houerzuxuanfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zuxuan">组选</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 后二组选单式 -->
+ <div class="styles " data-view="houerzuxuandanshi" is="off">
+                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <div class="text style1" >
+                            <span name="zhudan"></span>
+                                <div class="bg"></div>
+                                <textarea is="on" class="textarea" value="">
+                            </textarea>
+                                <div class="txt">
+                                    <p>
+                                        说明：<br /> 1、支持常见的各种单式格式，间隔符如： 换行符 回车 逗号 分号等<br />
+                                        2、上传文件后缀必须是.txt格式,最大支持10万注，并支持拖拽文件到文本框进行上传<br />
+                                        3、文件较大时会导致上传时间较长，请耐心等待！
+                                    </p>
+                                    <p class="p1">格式范例：12345 23456 88767 33021 98897</p>
+                                </div>
+                            </div>
+                            <div class="ds_btn">
+                                <a href="javascript:;" class="error fl">清理错误与重复</a> <a
+                                    href="javascript:;" class="del fl">清空文本框</a>
+                            </div>
+                        </div>
+
+
+							<!-- 后二组选和值 -->
+							<div class="styles " data-view="houerzuxuanhezhi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="zuxuanhezhi">组选和值</span>
+									<!-- 数字部分开始 -->
+
+										<i class="sty_i sty_i1" value="1"></i>
+										<i class="sty_i sty_i2" value="2"></i>
+										<i class="sty_i sty_i3" value="3"></i>
+										<i class="sty_i sty_i4" value="4"></i>
+										<i class="sty_i sty_i5" value="5"></i>
+										<i class="sty_i sty_i6" value="6"></i>
+										<i class="sty_i sty_i7" value="7"></i>
+										<i class="sty_i sty_i8" value="8"></i>
+										<i class="sty_i sty_i9" value="9"></i>
+										<i class="sty_i sty_i10" value="10"></i>
+										<i class="sty_i sty_i11" value="11"></i>
+										<i class="sty_i sty_i12" value="12"></i>
+										<i class="sty_i sty_i13" value="13"></i>
+										<i class="sty_i sty_i14" value="14"></i>
+										<i class="sty_i sty_i15" value="15"></i>
+										<i class="sty_i sty_i16" value="16"></i>
+										<i class="sty_i sty_i17" value="17"></i>
+									<!-- 数字部分结束 -->
+									
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+							<!-- 后二组选包胆 -->
+							<div class="styles " data-view="houerzuxuanbaodan" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="gewei">个位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
+
+<!-- 一星组选包胆 -->
+							<div class="styles " data-view="yixingfushi" is="off">
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="wanwei">万位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="qianwei">千位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="baiwei">百位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="shiwei">十位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+								<!-- 号码开始 -->
+								<div class="style1">
+									<span class="sty_t" name="gewei">个位</span>
+									<!-- 数字部分开始 -->
+									<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+										value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+										class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+										value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+										class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+										value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+										class="sty_i9 sty_i" value="9"></i>
+									<!-- 数字部分结束 -->
+									<span class="sty_s1 sty_s11">全</span> <span
+										class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
+									<span class="sty_s1 sty_s14">奇</span> <span
+										class="sty_s1 sty_s15">偶</span> <span class="sty_s1 sty_s16">清</span>
+									<div class="clear"></div>
+								</div>
+								<!-- 号码结束 -->
+							</div>
 
 
 
@@ -834,13 +2411,16 @@
 						<span>重庆时时彩</span> <span>后二复式 </span>选号<b>01234567</b>
 					</p>
 					<table class="table">
-						<tbody>
-							<tr class="tr1">
+						<thead>
+						<tr class="tr1">
 								<td class="td1">期号</td>
 								<td class="td2">分布图</td>
 								<td class="td3">开奖号码</td>
 								<td class="td4">状态</td>
 							</tr>
+							</thead>
+							<tbody>
+							
 							<tr class="tr1 tr2">
 								<td class="td1">0123456789</td>
 								<td class="td2 colors dash">###45</td>
@@ -942,6 +2522,7 @@
 	<script src="<%=basePath%>resources/js/game/ajaxfileupload.js"></script>
 
 	<script type="text/javascript">
+	
 		(function() {
 			//首页种类分类导航
 			$(".nva_w").click(function() {
@@ -950,8 +2531,13 @@
 				var sNavValue=$(this).attr("value");
 				console.log($(".kind_f>div[data-view="+sNavValue+"]"));
 				$(".kind_f>div[data-view="+sNavValue+"]").css("display","block");
-				$(".kind_f>div[data-view="+sNavValue+"]").siblings("div[data-view]").css("display","none");				
+				$(".kind_f>div[data-view="+sNavValue+"]").siblings("div[data-view]").css("display","none");		
+				var sNavValue=$(this).attr("value");
+				
+				
 			})
+			
+			
 			//直选切换/组选切换
 			$(".zx").click(
 					function() {
@@ -967,7 +2553,6 @@
 								.attr("is", "on");
 						$(".kind .wfsj .styles[data-view!=" + viewname + "]")
 								.attr("is", "off");
-
 					})
 
 			$(".nav>div").click(function() {
@@ -1000,10 +2585,9 @@
 				var oFormData = new FormData();	
 				oFormData.append('file', file);
 				xhr.send(oFormData);
-
 			}
 			);
-
+			
 		})()
 
 		function a() {
@@ -1016,15 +2600,26 @@
 
 			var success = function(result) {
 				switch (result) {
-				case 0:
-					alert("修改成功");
-					break;
 				case 1:
-					alert("用户名已经存在");
+					alert("查询条件有误");
 					break;
 				default:
-					alert(result);
-					break;
+				$(".list table tbody tr").remove();
+				for(var i=0;i<result.length;i++){
+					$(".list table tbody").append('<tr class="tr1 tr2">\
+					<td class="td1">'+result[i][0]+'</td>\
+					<td class="td2 colors dash">'+result[i][1]+'</td>\
+					<td class="td3">'+result[i][2]+'</td>\
+					<td class="td4">'+result[i][3]+'</td>\
+				</tr>')
+				}
+				var aTd=$(".list td");
+				for(var i=0;i<aTd.length;i++){
+					if(aTd[i].innerHTML=="已中奖"){
+						$(aTd[i]).addClass("colors");
+					}
+				}
+				
 				}
 			}
 
