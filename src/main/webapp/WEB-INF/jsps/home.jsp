@@ -2525,15 +2525,13 @@
 	
 		(function() {
 			//首页种类分类导航
-			$(".nva_w").click(function() {
+			$(".nva_w,.nav_w>a").click(function() {
 				$(this).addClass("current").siblings().removeClass("current");
 				$(this).attr("is", "on").siblings().attr("is", "off");
 				var sNavValue=$(this).attr("value");
 				console.log($(".kind_f>div[data-view="+sNavValue+"]"));
 				$(".kind_f>div[data-view="+sNavValue+"]").css("display","block");
 				$(".kind_f>div[data-view="+sNavValue+"]").siblings("div[data-view]").css("display","none");		
-				var sNavValue=$(this).attr("value");
-				
 				
 			})
 			
@@ -2560,6 +2558,7 @@
 				var oForm = document.getElementById("gameForm");
 				new util.getGameData(oForm);
 				console.log(util.wanfatype + "       " + util.wanfainfo);
+				$(".kind div[data-view="+util.wanfatype+"] .kind1:nth-child(1) span:nth-child(2)").trigger('click');
 			})
 			
 			$(".styles textarea").focus(function(){

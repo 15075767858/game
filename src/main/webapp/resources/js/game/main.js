@@ -84,7 +84,6 @@ util.getGameData=function(oForm){
 	util.wanfainfo=oWanFaInfoVal;
 	//得到选择的值
 	var aWfsjModel=$($(oForm).find(".kind .wfsj>div[data-view="+util.wanfatype+util.wanfainfo+"]")[0]).find(".style1");
-	console.log(aWfsjModel.length)
 	for(var i=0;i<aWfsjModel.length;i++){
 		var aI=$(aWfsjModel[i]).find("i,textarea");
 
@@ -92,7 +91,6 @@ util.getGameData=function(oForm){
 		for(var j=0;j<aI.length;j++){
 			if($(aI[j]).attr("is")=="on"){
 			str+=$(aI[j]).attr("value")+" ";
-			console.log($(aI[j]).attr("value"));
 		}
 		}
 		datas[$(aWfsjModel[i]).find("span[name]").attr("name")]=str.substring(0, str.length-1);
