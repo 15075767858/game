@@ -80,9 +80,9 @@
 					<p>
 						第<span>20160111-051</span>期<br />离投注截止还有
 					</p>
-					<i class="data_pic1"></i> <i class="data_pic2"></i> <i
-						class="data_pic3"></i> <i class="data_pic4"></i> <i
-						class="data_pic5 noMargin"></i>
+					<i class="data_pic1 date" id="min0"></i> <i class="data_pic2 date" id="min1"></i> <i
+						class="data_pic3"></i> <i class="data_pic4 date" id="sec0"></i> <i
+						class="data_pic5 noMargin date" id="sec1"></i>
 					<div class="clear"></div>
 				</div>
 				<div class="zhong fl">
@@ -340,6 +340,8 @@
 	<script src="<%=basePath%>resources/js/game/selectivizr.js"></script>
 	<script src="<%=basePath%>resources/js/game/main.js"></script>
 	<script src="<%=basePath%>resources/js/game/content.js"></script>
+	<script src="<%=basePath%>resources/js/game/kj-calc-time.js"></script>
+	
 	<script>
 		$(".kind_u>li>span.li_s2:nth-last-child(n)").addClass("li_ss");
 		$(".kind_u>li:nth-child(1)>.li_s2:nth-child(n)").removeClass("li_ss");
@@ -397,6 +399,7 @@
 		}		
 		)()
 
+		$(".index").css("display","block");
 	</script>
 </body>
 </html>

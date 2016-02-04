@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -18,8 +17,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import cn.lzc.model.User;
-
 @Controller
 @RequestMapping("/json")
 public class JsonController {
@@ -28,7 +25,6 @@ public class JsonController {
 	@Autowired
 	private HttpServletRequest request;
 
-	private User user;
 
 	
 	@RequestMapping(value = "userLogin", produces = "application/json; charset=utf-8")
