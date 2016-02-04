@@ -1,16 +1,21 @@
 package cn.lzc.controller;
 
-import java.io.UnsupportedEncodingException;
+import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import cn.lzc.model.User;
 
@@ -148,6 +153,32 @@ public class JsonController {
 		return l;
 	}
 	
+	
+	@RequestMapping(value = "/upload.do")  
+    public @ResponseBody Object upload(@RequestParam(value = "file", required = false) MultipartFile file, HttpServletRequest request, ModelMap model) {  
+  
+        System.out.println("开始");  
+        String path = request.getSession().getServletContext().getRealPath("upload");  
+        String fileName = file.getOriginalFilename();  
+        System.out.println(path);  
+        File targetFile = new File(path, fileName);  
+        if(!targetFile.exists()){  
+            targetFile.mkdirs();  
+        }  
+        //保存  
+        try {  
+            file.transferTo(targetFile);  
+        } catch (Exception e) {  
+            e.printStackTrace();  
+        }  
+        model.addAttribute("fileUrl", request.getContextPath()+"/upload/"+fileName);  
+        
+        
+        Map m=new HashMap();
+        		m.put("data", "这里返回path路径中的文件内容"); //data 是文件内容  从文件中读取文件内容 处理后返回即可
+        		
+        return m;  
+    }  
 	
 	
 	/*

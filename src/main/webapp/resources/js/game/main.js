@@ -150,5 +150,3 @@ util.getGameData=function(oForm){
 	new util.userForm(formid, method, url, attr, success);
 })();
  
-
-

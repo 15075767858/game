@@ -744,11 +744,11 @@
 <!-- 前三单式 -->
 
  <div class="styles " data-view="qiansandanshi" is="off">
-                            <a type="file" href="javascript:;" class="enter">导入注单<input type="file"/></a>
+                            <a type="file" href="javascript:;" class="enter">导入注单<input id="fileid" type="file"/></a>
                             <div class="text style1" >
                             <span name="zhudan"></span>
                                 <div class="bg"></div>
-                                <textarea is="on" class="textarea">
+                                <textarea is="on" class="textarea" value="">
                             </textarea>
                                 <div class="txt">
                                     <p>
@@ -939,6 +939,7 @@
 	<script src="<%=basePath%>resources/js/game/selectivizr.js"></script>
 	<script src="<%=basePath%>resources/js/game/content.js"></script>
 	<script src="<%=basePath%>resources/js/game/main.js"></script>
+	<script src="<%=basePath%>resources/js/game/ajaxfileupload.js"></script>
 
 	<script type="text/javascript">
 		(function() {
@@ -975,20 +976,43 @@
 				new util.getGameData(oForm);
 				console.log(util.wanfatype + "       " + util.wanfainfo);
 			})
+			
+			$(".styles textarea").focus(function(){
+				$(".txt").css("display","none");
+			});
+			$(".styles textarea").blur(function(){
+				if($(this).attr("value").trim()=="")
+				$(".txt").css("display","block");
+			});	
+			
+			$(".styles input[type=file]").change(function(){
+				var input=this;
+				var file=this.files[0];
+				console.log(this.files);
+				var xhr = new XMLHttpRequest();
+				  xhr.onload = function() {
+					var d = JSON.parse(this.responseText);
+					$(input).parents(".styles").find("textarea").attr("value",d.data);
+					$(".txt").css("display","none");
+				} 
+				 xhr.open('post', "/game/json/upload.do", true);
+				xhr.setRequestHeader('X-Request-With', 'XMLHttpRequest');
+				var oFormData = new FormData();	
+				oFormData.append('file', file);
+				xhr.send(oFormData);
 
-			$(".styles input[type=file]").click(function(
-				$(this).parents(".styles")
-				));
+			}
+			);
 
 		})()
 
-		function a(){}
+		function a() {
+		}
 		(function() {
 			var formid = "gameForm";
 			var method = "post";
 			var url = "/game/json/gameForm";
 			var oForm = document.getElementById(formid);
-			
 
 			var success = function(result) {
 				switch (result) {
@@ -999,13 +1023,13 @@
 					alert("用户名已经存在");
 					break;
 				default:
-					alert( result);
+					alert(result);
 					break;
 				}
 			}
 
-			oForm.onsubmit = function (e) {
-				
+			oForm.onsubmit = function(e) {
+
 				e.preventDefault();
 				var data = new util.getGameData(oForm);
 				$.ajax({
