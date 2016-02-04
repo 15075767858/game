@@ -1,5 +1,5 @@
-/**************************** 用户管理页面 ********************************/
-/* 主体内容开始 */
+/**************************** 鐢ㄦ埛绠＄悊椤甸潰 ********************************/
+/* 涓讳綋鍐呭寮� */
 .mains{
 	padding:40px 0 100px;
 }
@@ -8,7 +8,7 @@
 	font-size:14px;	
 	background-color:#fff;
 }
-/* 列表上半部分 */
+/* 鍒楄〃涓婂崐閮ㄥ垎 */
 .mains_t{
 	padding:20px 30px;
 }
@@ -55,14 +55,14 @@
 	background-color:#e5e5e5;
 }
 
-/* 列表下半部分 */
+/* 鍒楄〃涓嬪崐閮ㄥ垎 */
 .mains_b{
 	padding-bottom:100px;
 }
 .table{
 	width:100%;
 }
-/* 第一行 */
+/* 绗竴琛�*/
 .table .tr1{
 	/*height:32px;*/
 	line-height:32px;
@@ -138,7 +138,7 @@
 	width:92px;
 }
 
-/* 第二行 */
+/* 绗簩琛�*/
 .table .tr2{
 	height:34px;
 	line-height:34px;
@@ -173,7 +173,7 @@
 	width:84px;
 	height:24px;
 	border:1px solid #c7d0d7;
-	margin-left:1px;
+	margin-left:3px;
 	color:#505050;
 }
 .table .tr2>.td7>input,
@@ -181,11 +181,11 @@
 	width:118px;
 	height:24px;
 	border:1px solid #c7d0d7;
-	margin-left:1px;
+	margin-left:8px;
 	text-align:center;
 	color:#505050;	
 }
-.table .tr2>.td9>input{
+.table .tr2>.td9>input,select{
 	width:78px;
 	height:24px;
 	border:1px solid #c7d0d7;
@@ -197,19 +197,28 @@
 	right:10px;
 	top:15px;
 }
-.table .tr2>.td10>a{
+.table .tr2>.td10>a,input{
+	cursor:pointer;
+	text-align:center;
+	color:#505050;
 	float:left;
 	width:38px;
 	line-height:20px;
 	border:1px solid #c7d0d7;
 	margin-left:8px;
-	background-color:#f5f5f5;
 }
-.table .tr2>.td10>a:hover{
+.table .tr2>.td10>a:hover,input:hover{
 	color:#505050;
 	background-color:#e5e5e5;
 }
-/* 付费下拉部分 */
+.table .baocun{
+	background: white;
+}
+.table .baocun:hover{
+	color:#505050;
+	background-color:#e5e5e5;
+}
+/* 浠樿垂涓嬫媺閮ㄥ垎 */
 .table .tr2>.td9>.xia_u{
 	position:absolute;
 	left:4px;

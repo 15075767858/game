@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -180,6 +181,55 @@ public class JsonController {
         return m;  
     }  
 	
+	@RequestMapping(value = "managefinduser", produces = "application/json; charset=utf-8")
+	public @ResponseBody
+	Object usermanager(@RequestBody String ps) {
+		System.out.println(ps);//管理员发送的查询参数用户名,注册时间-注册时间
+		/**业务逻辑部分
+		 * 成功返回一个list集合 集合当中使用map集合如下面例子
+		 * 查询失败返回1
+		 * 
+		 */
+		
+		String [] str={"1","xiaoA","1999-9-9","2008-08-08","2015-1-1"};
+		String [] str1={"2","xiaoB","1999-9-9","2008-08-08","2015-1-1"};
+		String [] str2={"3","xiaoC","1999-9-9","2008-08-08","2015-1-1"};
+		String [] str3={"4","xiaoD","1999-9-9","2008-08-08","2015-1-1"};
+		String [] str4={"5","xiaoE","1999-9-9","2008-08-08","2015-1-1"};
+		String [] str5={"6","xiaoF","1999-9-9","2008-08-08","2015-1-1"};
+		String [] str6={"7","xiaoG","1999-9-9","2008-08-08","2015-1-1"};
+		String [] str7={"8","xiaoH","1999-9-9","2008-08-08","2015-1-1"};
+		String [] str8={"9","xiaoI","1999-9-9","2008-08-08","2015-1-1"};
+		String [] str9={"10","xiaoJ","1999-9-9","2008-08-08","2015-1-1"};
+		
+		List l =new ArrayList();
+		l.add(str);
+		l.add(str1);
+		l.add(str2);
+		l.add(str3);
+		l.add(str4);
+		l.add(str5);
+		l.add(str6);
+		l.add(str7);
+		l.add(str8);
+		l.add(str9);
+		//String [] s ={"aa","bb","好了"};
+		return l;
+	}
+	
+	@RequestMapping(value = "manageupdateuser", produces = "application/json; charset=utf-8")
+	public @ResponseBody
+	Object manageupdateuser(@RequestBody String ps) {
+		System.out.println(ps);//用户发送的登陆请求参数 用户名,密码,验证码
+		/**业务逻辑部分 接受管理员传过来的参数  密码  fufeiriqi=付费日期 daoqiriqi=到期日期 fufei=付费 
+		 * 进行业务逻辑处理
+		 * 成功返回0
+		 * 用户修改失败返回1
+		 * 如有其他情况可以返回任意参数 但不可以是字符串 可以是字符串数组
+		 */
+		//String [] s ={"aa","bb","好了"};
+		return 0;
+	}
 	
 	/*
 	@RequestMapping(value = "userOutLogin", produces = "application/json; charset=utf-8")

@@ -20,7 +20,7 @@
 				"17:30", "17:40", "17:50", "18:00", "18:10", "18:20", "18:30",
 				"18:40", "18:50", "19:00", "19:10", "19:20", "19:30", "19:40",
 				"19:50", "20:00", "20:10", "20:20", "20:30", "20:40", "20:50",
-				"21:00", "21:10", "21:20", "21:30", "21:40", "21:50", "22:00",
+				"21:00", "21:10", "21:21", "21:30", "21:40", "21:50", "22:00",
 				"22:05", "22:10", "22:15", "22:20", "22:25", "22:30", "22:35",
 				"22:40", "22:45", "22:50", "22:55", "23:00", "23:05", "23:10",
 				"23:15", "23:20", "23:25", "23:30", "23:35", "23:40", "23:45",
@@ -56,6 +56,8 @@
 	}
 	var count=0;
 	function updateTime() {
+		var a=0;
+		console.log("重新开始执行"+a++);
 		var oDateEnd = new Date();
 		var oDateNow = new Date();
 
@@ -72,27 +74,19 @@
 		iRemain = (  oDateEnd.getTime()-oDateNow.getTime()   ) / 1000;
 		console.log(iRemain+"秒倒计时");
 		
-		if (iRemain <= 0) {
-			clearInterval(timer);
-			iRemain = 0;
-			if(count==0)
-			{
-				alert('时间到开奖了'+count++);
-			}
-			
-			timer = setInterval(updateTime, 1000);
-		}
 
 		iMin = parseInt(iRemain / 60);
 		iRemain %= 60;
 
 		iSec = iRemain;
 
-
+		
+		
 		oTxtMin0.innerHTML = fillZero(iMin, 2).split("")[0];
 		oTxtMin1.innerHTML = fillZero(iMin, 2).split("")[1];
 		oTxtSec0.innerHTML = fillZero(iSec, 2).split("")[0];
 		oTxtSec1.innerHTML = fillZero(iSec, 2).split("")[1];
+		
 		console.log(fillZero(iMin, 2));
 		console.log(fillZero(iSec, 2));
 	}

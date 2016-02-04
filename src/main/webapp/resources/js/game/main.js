@@ -21,7 +21,7 @@ util.userForm=function (formid, type, url, attr, success, error) {
 	var _this = this;
 	this.data = function() {
 		var datas = {};
-		var aInput=$(_this.oFrom).find("input["+attr+"]");
+		var aInput=$(_this.oFrom).find("input["+attr+"],select["+attr+"]");
 		for(var i=0;i<aInput.length;i++){
 		datas[$(aInput[i]).attr(attr)]=$(aInput[i]).val();
 		}
@@ -32,7 +32,6 @@ util.userForm=function (formid, type, url, attr, success, error) {
 		document.write(result.responseText);
 	};
 	this.oFrom.onsubmit = function submitevent(e) {
-		
 		e.preventDefault();
 		$.ajax({
 			type : _this.type,
