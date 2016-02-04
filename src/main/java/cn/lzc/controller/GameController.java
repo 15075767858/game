@@ -18,7 +18,7 @@ import cn.lzc.model.User;
 
 
 @Controller
-public class GoodsController {
+public class GameController {
 	@Autowired
 	private  HttpServletRequest request;
 	

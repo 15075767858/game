@@ -26,22 +26,25 @@
 				"23:15", "23:20", "23:25", "23:30", "23:35", "23:40", "23:45",
 				"23:50", "23:55" ];
 		var oCurDate = new Date();
-		var vTimeHour = oCurDate.getHours();
-		var vCurMin = oCurDate.getMinutes();
-
+		var oStrDate=new Date();
 		var vGloblDate;
 		for (var i = 0; i < conf.length; i++) {
 			var aConf = conf[i].split(":");
-			if (parseInt(aConf[0]) < parseInt(vTimeHour)) {
-				continue;
-			}
-			if (parseInt(aConf[1]) < parseInt(vCurMin)) {
-				continue;
+			
+			oStrDate.setHours(parseInt(aConf[0]));
+			oStrDate.setMinutes(parseInt(aConf[1]));
+			oStrDate.setSeconds(0);
+			console.log("i="+i+"当前时间"+oCurDate.getTime() + "字符串时间"+oStrDate.getTime()+"conf[i]"+conf[i]+"parseInt(aConf[0])"+parseInt(aConf[0])+"parseInt(aConf[1])"+parseInt(aConf[1]));
+			
+			if (oCurDate.getTime() - oStrDate.getTime()<0)//如果当前时间大于字符串时间
+			{
+				console.log((oStrDate.getTime()-oCurDate.getTime())/1000+"i="+i+"conf[i]"+conf[i])
+					vGloblDate = aConf;
+					console.log(vGloblDate);
+					break;
 			}
 			
-			vGloblDate = aConf;
-			console.log(vGloblDate)
-			break;
+			
 		}
 		return vGloblDate;
 	}
