@@ -76,6 +76,28 @@
 		console.log(iRemain+"秒倒计时");
 		if(iRemain==1){
 			//在这里进行获取开奖信息请求更新网页
+			var data=$(".time>p>span")[0].innerHTML;
+			$.ajax({
+					type : "post",
+					url : "/game/json/kaijiangjieguo",
+					data : data,
+					dataType : 'json',
+					success : function(result){
+						if(result==1){
+							alert("获取开奖结果失败 可能是未到开奖时间");
+							return;
+						}
+						$(".zhong span")[0].innerHTML=result[0];
+						$(".number i")[0]=result[1];
+						$(".number i")[1]=result[2];
+						$(".number i")[2]=result[3];
+						$(".number i")[3]=result[4];
+						$(".number i")[4]=result[5];
+
+					},
+					error : null
+			
+			});
 		}
 
 		iMin = parseInt(iRemain / 60);
