@@ -34,11 +34,9 @@
 			oStrDate.setHours(parseInt(aConf[0]));
 			oStrDate.setMinutes(parseInt(aConf[1]));
 			oStrDate.setSeconds(0);
-			console.log("i="+i+"当前时间"+oCurDate.getTime() + "字符串时间"+oStrDate.getTime()+"conf[i]"+conf[i]+"parseInt(aConf[0])"+parseInt(aConf[0])+"parseInt(aConf[1])"+parseInt(aConf[1]));
 			
 			if (oCurDate.getTime() - oStrDate.getTime()<0)//如果当前时间大于字符串时间
 			{
-				console.log((oStrDate.getTime()-oCurDate.getTime())/1000+"i="+i+"conf[i]"+conf[i])
 					vGloblDate = aConf;
 					console.log(vGloblDate);
 					break;
@@ -60,7 +58,7 @@
 	var count=0;
 	function updateTime() {
 		var a=0;
-		console.log("重新开始执行"+a++);
+		
 		var oDateEnd = new Date();
 		var oDateNow = new Date();
 
@@ -76,7 +74,9 @@
 		console.log( oDateEnd.getTime() +"     "+oDateNow.getTime())
 		iRemain = (  oDateEnd.getTime()-oDateNow.getTime()   ) / 1000;
 		console.log(iRemain+"秒倒计时");
-		
+		if(iRemain==1){
+			//在这里进行获取开奖信息请求更新网页
+		}
 
 		iMin = parseInt(iRemain / 60);
 		iRemain %= 60;
@@ -90,8 +90,8 @@
 		oTxtSec0.innerHTML = fillZero(iSec, 2).split("")[0];
 		oTxtSec1.innerHTML = fillZero(iSec, 2).split("")[1];
 		
-		console.log(fillZero(iMin, 2));
-		console.log(fillZero(iSec, 2));
+		//console.log(fillZero(iMin, 2));
+		//console.log(fillZero(iSec, 2));
 	}
 })();
 

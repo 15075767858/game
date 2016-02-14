@@ -46,8 +46,12 @@ public class GameController {
 	}
 	@RequestMapping(value="/home.html",method=RequestMethod.GET)
 	public String home(Model model){
-		//User user = new User();
-		//model.addAttribute("user", user);
+		/**
+		 * 业务逻辑部分 
+		 * l集合 用来展示页面上的10期 开奖结果  必须是一个字符串数组 数组的[0]是开奖期数[1]是开奖号码
+		 * s字符串数组  数组的索引0指定下一期开奖日期及期数  数组的索引1是本期开奖时间及期数，后面是本期开奖结果
+		 */
+		
 		List l=new ArrayList(); 
 		l.add(new String[]{"0111090","02345"});
 		l.add(new String[]{"0111091","12345"});
@@ -61,6 +65,8 @@ public class GameController {
 		l.add(new String[]{"0111099","92345"});
 		
 		model.addAttribute("kaijianglist",l);
+		String [] s ={"20160606-53","20160606-052","3","5","8","9","2"};
+		model.addAttribute("kaijiangjieguo",s);
 		return "home";
 	}
 
@@ -69,7 +75,8 @@ public class GameController {
 		
 		/**
 		 * 业务逻辑部分 
-		 * l集合 必须是一个字符串数组 数组的[0]是开奖期数[1]是开奖号码
+		 * l集合 用来展示页面上的10期 开奖结果  必须是一个字符串数组 数组的[0]是开奖期数[1]是开奖号码
+		 * s字符串数组  数组的索引0指定下一期开奖日期及期数  数组的索引1是本期开奖时间及期数，后面是本期开奖结果
 		 */
 		
 	List l=new ArrayList(); 
@@ -85,7 +92,8 @@ public class GameController {
 		l.add(new String[]{"0111099","92345"});
 		
 		model.addAttribute("kaijianglist",l);
-		
+		String [] s ={"20160606-53","20160606-052","3","5","8","9","2"};
+		model.addAttribute("kaijiangjieguo",s);
 		return "fenbu";
 	}
 	

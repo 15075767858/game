@@ -81,7 +81,19 @@ public class JsonController {
 		//String [] s ={"aa","bb","好了"};
 		return 0;
 	}
-
+	@RequestMapping(value = "kaijiangjieguo", produces = "application/json; charset=utf-8")
+	public @ResponseBody
+	Object kaijiangjieguo(@RequestBody String ps) {
+		System.out.println(ps);//客户端发来的开奖期数 请求参数 请根据请求参数返回开奖信息
+		/**业务逻辑部分
+		 * 失败返回1
+		 * 
+		 * 成功返回开奖结果的字符串数组
+		 * s字符串数组  数组的索引0指定下一期开奖日期及期数  数组的索引1是本期开奖时间及期数，后面是本期开奖结果
+		 */
+		String [] s ={"20160111-052","20160111-051","3","5","8","9","2"};
+		return s;
+	}
 	@RequestMapping(value = "lengre", produces = "application/json; charset=utf-8")
 	public @ResponseBody
 	Object lengre(@RequestBody String ps) {

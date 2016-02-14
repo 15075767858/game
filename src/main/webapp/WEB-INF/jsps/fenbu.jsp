@@ -78,7 +78,7 @@
 				<!-- 离投注截止时间 -->
 				<div class="time fl">
 					<p>
-						第<span>20160111-051</span>期<br />离投注截止还有
+						第<span>${kaijiangjieguo[0] }</span>期<br />离投注截止还有
 					</p>
 					<i class="data_pic1 date" id="min0"></i> <i class="data_pic2 date" id="min1"></i> <i
 						class="data_pic3"></i> <i class="data_pic4 date" id="sec0"></i> <i
@@ -87,12 +87,12 @@
 				</div>
 				<div class="zhong fl">
 					<p>
-						第<span>20160111-051</span>期
+						第<span>${kaijiangjieguo[1] }</span>期
 					</p>
 					<div class="number">
-						<i class="num_pic1">0</i> <i class="num_pic2">5</i> <i
-							class="num_pic3">3</i> <i class="num_pic4">2</i> <i
-							class="num_pic5 noMargin">8</i>
+						<i class="num_pic1">${kaijiangjieguo[2] }</i> <i class="num_pic2">${kaijiangjieguo[3] }</i> <i
+							class="num_pic3">${kaijiangjieguo[4] }</i> <i class="num_pic4">${kaijiangjieguo[5] }</i> <i
+							class="num_pic5 noMargin">${kaijiangjieguo[6] }</i>
 					</div>
 				</div>
 				<div class="detail fl">
