@@ -1,4 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -2358,45 +2360,13 @@
 							<span class="span1">奖期</span><span class="span2">开奖</span>
 						</p>
 						<ul class="kind_u">
-							<li><span class="li_s1">0111090</span> <span class="li_s2">1</span>
-								<span class="li_s2 li_s3">2</span> <span class="li_s2">3</span>
-								<span class="li_s2">4</span> <span class="li_s2">5</span></li>
-							<li><span class="li_s1">0111090</span> <span
-								class="li_s2 li_ss">1</span> <span class="li_s2 li_ss">2</span>
-								<span class="li_s2 li_ss">3</span> <span class="li_s2 li_ss">4</span>
-								<span class="li_s2 li_ss">5</span></li>
-							<li><span class="li_s1">0111090</span> <span
-								class="li_s2 li_ss">1</span> <span class="li_s2 li_ss">2</span>
-								<span class="li_s2 li_ss">3</span> <span class="li_s2 li_ss">4</span>
-								<span class="li_s2 li_ss">5</span></li>
-							<li><span class="li_s1">0111090</span> <span
-								class="li_s2 li_ss">1</span> <span class="li_s2 li_ss">2</span>
-								<span class="li_s2 li_ss">3</span> <span class="li_s2 li_ss">4</span>
-								<span class="li_s2 li_ss">5</span></li>
-							<li><span class="li_s1">0111090</span> <span
-								class="li_s2 li_ss">1</span> <span class="li_s2 li_ss">2</span>
-								<span class="li_s2 li_ss">3</span> <span class="li_s2 li_ss">4</span>
-								<span class="li_s2 li_ss">5</span></li>
-							<li><span class="li_s1">0111090</span> <span
-								class="li_s2 li_ss">1</span> <span class="li_s2 li_ss">2</span>
-								<span class="li_s2 li_ss">3</span> <span class="li_s2 li_ss">4</span>
-								<span class="li_s2 li_ss">5</span></li>
-							<li><span class="li_s1">0111090</span> <span
-								class="li_s2 li_ss">1</span> <span class="li_s2 li_ss">2</span>
-								<span class="li_s2 li_ss">3</span> <span class="li_s2 li_ss">4</span>
-								<span class="li_s2 li_ss">5</span></li>
-							<li><span class="li_s1">0111090</span> <span
-								class="li_s2 li_ss">1</span> <span class="li_s2 li_ss">2</span>
-								<span class="li_s2 li_ss">3</span> <span class="li_s2 li_ss">4</span>
-								<span class="li_s2 li_ss">5</span></li>
-							<li><span class="li_s1">0111090</span> <span
-								class="li_s2 li_ss">1</span> <span class="li_s2 li_ss">2</span>
-								<span class="li_s2 li_ss">3</span> <span class="li_s2 li_ss">4</span>
-								<span class="li_s2 li_ss">5</span></li>
-							<li><span class="li_s1">0111090</span> <span
-								class="li_s2 li_ss">1</span> <span class="li_s2 li_ss">2</span>
-								<span class="li_s2 li_ss">3</span> <span class="li_s2 li_ss">4</span>
-								<span class="li_s2 li_ss">5</span></li>
+												<c:forEach items="${kaijianglist}" varStatus="i" var="k">
+							<li><span class="li_s1">${k[0]}</span> <span class="li_s2">${fn:substring(k[1], 0, 1)}</span>
+								<span class="li_s2">${fn:substring(k[1], 1, 2)}</span> <span
+								class="li_s2">${fn:substring(k[1], 2, 3)}</span> <span
+								class="li_s2">${fn:substring(k[1], 3, 4)}</span> <span
+								class="li_s2">${fn:substring(k[1], 4, 5)}</span></li>
+						</c:forEach>
 						</ul>
 						<a href="javascript:;" class="look">查看完整走势</a>
 					</div>
@@ -2533,11 +2503,13 @@
 				var sNavValue=$(this).attr("value");
 				console.log($(".kind_f>div[data-view="+sNavValue+"]"));
 				$(".kind_f>div[data-view="+sNavValue+"]").css("display","block");
-				$(".kind_f>div[data-view="+sNavValue+"]").siblings("div[data-view]").css("display","none");		
+				$(".kind_f>div[data-view="+sNavValue+"]").siblings("div[data-view]").css("display","none");
 				
 			})
 			
-			
+		$(".kind_u>li>span.li_s2:nth-last-child(n)").addClass("li_ss");
+		$(".kind_u>li:nth-child(1)>.li_s2:nth-child(n)").removeClass("li_ss");
+
 			//直选切换/组选切换
 			$(".zx").click(
 					function() {
@@ -2561,11 +2533,14 @@
 				new util.getGameData(oForm);
 				console.log(util.wanfatype + "       " + util.wanfainfo);
 				$(".kind div[data-view="+util.wanfatype+"] .kind1:nth-child(1) span:nth-child(2)").trigger('click');
-				$(".style1 i").removeClass("style_cur").removeAttr("is");
+				$(".style1 i").removeClass("style_cur").attr("is","off");//removeAttr("is");
 			})
 			
 			$(".styles textarea").focus(function(){
 				$(".txt").css("display","none");
+				if($.trim($(this).val())==""){
+				$(this).val("");
+				}
 			});
 			$(".styles textarea").blur(function(){
 				if($(this).attr("value").trim()=="")

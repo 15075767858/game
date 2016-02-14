@@ -48,7 +48,19 @@ public class GameController {
 	public String home(Model model){
 		//User user = new User();
 		//model.addAttribute("user", user);
+		List l=new ArrayList(); 
+		l.add(new String[]{"0111090","02345"});
+		l.add(new String[]{"0111091","12345"});
+		l.add(new String[]{"0111092","22345"});
+		l.add(new String[]{"0111093","32345"});
+		l.add(new String[]{"0111094","42345"});
+		l.add(new String[]{"0111095","52345"});
+		l.add(new String[]{"0111096","62345"});
+		l.add(new String[]{"0111097","72345"});
+		l.add(new String[]{"0111098","82345"});
+		l.add(new String[]{"0111099","92345"});
 		
+		model.addAttribute("kaijianglist",l);
 		return "home";
 	}
 
