@@ -34,9 +34,9 @@
 						class="arr"></i></a>
 					<div class="cai">
 						<div class="cai1">
-							<i class="cai_s"></i> <a href="javascript:;" class="aa">重庆时时彩</a>
-							<a href="javascript:;" class="aa">江西时时彩</a> <a
-								href="javascript:;" class="aa noMargin">新疆时时彩</a>
+							<i class="cai_s"></i> <a href="#cqssc" class="aa">重庆时时彩</a>
+							<a href="#jxssc" class="aa">江西时时彩</a> <a
+								href="#xjssc" class="aa noMargin">新疆时时彩</a>
 							<div class="clear"></div>
 						</div>
 						<div class="cai1">
@@ -385,7 +385,7 @@
 				data["starttime"]=starttime;
 				data["endtime"]=endtime;
 				data["wanfa"]="lengre";
-				
+				data['caizhong']=caizhong;
 				console.log(data);
 				$.ajax({
 					type :method,

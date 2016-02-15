@@ -32,6 +32,7 @@ util.userForm=function (formid, type, url, attr, success, error) {
 		document.write(result.responseText);
 	};
 	this.oFrom.onsubmit = function submitevent(e) {
+		
 		e.preventDefault();
 		$.ajax({
 			type : _this.type,

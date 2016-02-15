@@ -46,7 +46,10 @@ public class GameController {
 	}
 	@RequestMapping(value="/home.html",method=RequestMethod.GET)
 	public String home(Model model){
+		String caizhong=request.getParameter("caizhong");
+		System.out.println(caizhong);
 		/**
+		 * 请根据彩种返回彩种的开奖信息
 		 * 业务逻辑部分 
 		 * l集合 用来展示页面上的10期 开奖结果  必须是一个字符串数组 数组的[0]是开奖期数[1]是开奖号码
 		 * s字符串数组  数组的索引0指定下一期开奖日期及期数  数组的索引1是本期开奖时间及期数，后面是本期开奖结果
@@ -72,8 +75,10 @@ public class GameController {
 
 	@RequestMapping(value="/fenbu.html",method=RequestMethod.GET)
 	public String fenbu(Model model){
-		
+		String caizhong=request.getParameter("caizhong");
+		System.out.println(caizhong);
 		/**
+		 * 请根据彩种返回彩种的开奖信息
 		 * 业务逻辑部分 
 		 * l集合 用来展示页面上的10期 开奖结果  必须是一个字符串数组 数组的[0]是开奖期数[1]是开奖号码
 		 * s字符串数组  数组的索引0指定下一期开奖日期及期数  数组的索引1是本期开奖时间及期数，后面是本期开奖结果

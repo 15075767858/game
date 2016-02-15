@@ -98,7 +98,7 @@ public class JsonController {
 	public @ResponseBody
 	Object lengre(@RequestBody String ps) {
 		System.out.println(ps);//用户发送的查询参数 转换成 Map或JSON
-		//查询条件的意义 wanfa代表玩法 weizhi代表位置 haoma代表号码 qihao代表期号   starttime代表开始时间 endtime代表结束时间 
+		//查询条件的意义 wanfa代表玩法 weizhi代表位置 haoma代表号码 qihao代表期号   starttime代表开始时间 endtime代表结束时间  caizhong代表彩票的种类如江西时时彩黑龙江时时彩 
 		
 		/**业务逻辑部分
 		 * 用户参数错误返回1
