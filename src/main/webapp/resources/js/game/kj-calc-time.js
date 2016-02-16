@@ -26,25 +26,32 @@ else
 return destiny+'?'+replaceText+shash; 
 } 
 } 
-
 return destiny+'\n'+par+'\n'+par_value+shash; 
-} 
+}
 
 (function() {
 	caizhong= window.location.hash.replace(/#/g, "")||"cqssc";
-	
 	window.location.hash=caizhong;
 	var href=changeURLPar(document.URL, "caizhong", caizhong);
-	
 	location.href=href;
-	console.log(caizhong);
+
+	if(caizhong=="cqssc")
+		$(".ma_t .icon_c").css("background","url(/game/resources/images/cqssc.png)")
+	if(caizhong=="jxssc")
+		$(".ma_t .icon_c").css("background","url(/game/resources/images/jxssc.png)")
+	if(caizhong=="xjssc")
+		$(".ma_t .icon_c").css("background","url(/game/resources/images/xjssc.png)")
 	
 	window.onhashchange = function() {
 		caizhong = window.location.hash.replace(/#/g, "");
+		if(location.href.indexOf("home")){
+		var sUrl ="home.html?caizhong="+caizhong+"#"+caizhong;
+		}
+		if(location.href.indexOf("fenbu")){
+			var sUrl ="fenbu.html?caizhong="+caizhong+"#"+caizhong;
+			}
 		
-		var href=changeURLPar(document.URL, "caizhong", caizhong);
-		//location.href=href;
-		location.reload();
+		 location.href=sUrl ;
 	}
 
 })()
