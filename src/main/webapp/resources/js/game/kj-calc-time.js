@@ -47,8 +47,8 @@ return destiny+'\n'+par+'\n'+par_value+shash;
 		if(location.href.indexOf("home")){
 		var sUrl ="home.html?caizhong="+caizhong+"#"+caizhong;
 		}
-		if(location.href.indexOf("fenbu")){
-			var sUrl ="fenbu.html?caizhong="+caizhong+"#"+caizhong;
+		if(location.href.indexOf("home")){
+			var sUrl ="home.html?caizhong="+caizhong+"#"+caizhong;
 			}
 		
 		 location.href=sUrl ;
