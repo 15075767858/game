@@ -11,6 +11,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import cn.lzc.DaoImpl.UserDaoImpl;
+import cn.lzc.model.User;
+
 
 @Controller
 public class GameController {
@@ -22,8 +25,10 @@ public class GameController {
 	public String login(Model model){
 		//User user = new User();
 		//model.addAttribute("user", user);
+		
 		return "login";
 	}
+	
 	@RequestMapping(value="/register.html",method=RequestMethod.GET)
 	public String register(Model model){
 		//User user = new User();
@@ -32,9 +37,14 @@ public class GameController {
 	}
 	@RequestMapping(value="/change.html",method=RequestMethod.GET)
 	public String change(Model model){
+		try {
+			int id =(Integer) request.getSession().getAttribute("userid");
+			User user =new UserDaoImpl().findUserByUserId(id);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		//User user = new User();
 		//model.addAttribute("user", user);
-		
 		return "change";
 	}
 	@RequestMapping(value="/manage.html",method=RequestMethod.GET)

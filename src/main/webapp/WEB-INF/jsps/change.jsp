@@ -226,10 +226,10 @@
 			alert("修改成功");
 			break;
 		case 1:
-			alert("用户名已经存在");
+			alert("两次密码不一致");
 			break;
 		default:
-			alert("修改成功新的用户名是"+result);
+			alert(result);
 			break;
 		}
 	}

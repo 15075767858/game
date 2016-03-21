@@ -15,6 +15,40 @@
 </head>
 
 <body>
+<!-- 主体开始 -->
+<div class="main wrap">
+    <ul>
+        <li>
+            <a href="javascript:;">
+                <img src="<%=basePath%>resources/images/pic1.png"/>
+                <div class="li_bg"></div>
+                <p>APP开发</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="<%=basePath%>resources/images/pic2.png"/>
+                <div class="li_bg"></div>
+                <p>微赢佳</p>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="<%=basePath%>resources/images/pic3.png"/>
+                <div class="li_bg"></div>
+                <p>小蚂蚁二维码</p>
+            </a>
+        </li>
+        <li class="noMargin">
+            <a href="javascript:;">
+                <img src="<%=basePath%>resources/images/pic4.png"/>
+                <div class="li_bg"></div>
+                <p>高端定制</p>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- 主体结束 -->
 <!-- 头部开始 -->
 <div class="head">
     <div class="header wrap">
@@ -61,40 +95,7 @@
     </div>
 </div>
 <!-- 头部结束 -->
-<!-- 主体开始 -->
-<div class="main wrap">
-    <ul>
-        <li>
-            <a href="javascript:;">
-                <img src="<%=basePath%>resources/images/pic1.png"/>
-                <div class="li_bg"></div>
-                <p>APP开发</p>
-            </a>
-        </li>
-        <li>
-            <a href="javascript:;">
-                <img src="<%=basePath%>resources/images/pic2.png"/>
-                <div class="li_bg"></div>
-                <p>微赢佳</p>
-            </a>
-        </li>
-        <li>
-            <a href="javascript:;">
-                <img src="<%=basePath%>resources/images/pic3.png"/>
-                <div class="li_bg"></div>
-                <p>小蚂蚁二维码</p>
-            </a>
-        </li>
-        <li class="noMargin">
-            <a href="javascript:;">
-                <img src="<%=basePath%>resources/images/pic4.png"/>
-                <div class="li_bg"></div>
-                <p>高端定制</p>
-            </a>
-        </li>
-    </ul>
-</div>
-<!-- 主体结束 -->
+
 <!-- 底部开始 -->
 <div class="foot">
     <div class="footer wrap">

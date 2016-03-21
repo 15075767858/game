@@ -34,9 +34,9 @@
 						class="arr"></i></a>
 					<div class="cai">
 						<div class="cai1">
-							<i class="cai_s"></i> <a href="#cqssc" class="aa">重庆时时彩</a>
-							<a href="#jxssc" class="aa">江西时时彩</a> <a
-								href="#xjssc" class="aa noMargin">新疆时时彩</a>
+							<i class="cai_s"></i> <a href="#cqssc" class="aa">重庆时时彩</a> <a
+								href="#jxssc" class="aa">江西时时彩</a> <a href="#xjssc"
+								class="aa noMargin">新疆时时彩</a>
 							<div class="clear"></div>
 						</div>
 						<div class="cai1">
@@ -80,9 +80,9 @@
 					<p>
 						第<span>${kaijiangjieguo[0] }</span>期<br />离投注截止还有
 					</p>
-					<i class="data_pic1 date" id="min0"></i> <i class="data_pic2 date" id="min1"></i> <i
-						class="data_pic3"></i> <i class="data_pic4 date" id="sec0"></i> <i
-						class="data_pic5 noMargin date" id="sec1"></i>
+					<i class="data_pic1 date" id="min0"></i> <i class="data_pic2 date"
+						id="min1"></i> <i class="data_pic3"></i> <i class="data_pic4 date"
+						id="sec0"></i> <i class="data_pic5 noMargin date" id="sec1"></i>
 					<div class="clear"></div>
 				</div>
 				<div class="zhong fl">
@@ -90,9 +90,9 @@
 						第<span>${kaijiangjieguo[1] }</span>期
 					</p>
 					<div class="number">
-						<i class="num_pic1">${kaijiangjieguo[2] }</i> <i class="num_pic2">${kaijiangjieguo[3] }</i> <i
-							class="num_pic3">${kaijiangjieguo[4] }</i> <i class="num_pic4">${kaijiangjieguo[5] }</i> <i
-							class="num_pic5 noMargin">${kaijiangjieguo[6] }</i>
+						<i class="num_pic1">${kaijiangjieguo[2] }</i> <i class="num_pic2">${kaijiangjieguo[3] }</i>
+						<i class="num_pic3">${kaijiangjieguo[4] }</i> <i class="num_pic4">${kaijiangjieguo[5] }</i>
+						<i class="num_pic5 noMargin">${kaijiangjieguo[6] }</i>
 					</div>
 				</div>
 				<div class="detail fl">
@@ -107,14 +107,15 @@
 				<form id="lengreForm" method="post">
 					<div class="kind_f fl">
 						<!-- 首页部分 -->
-						<div class="styles index" >
+						<div class="styles index">
 							<!-- 位置开始 -->
 							<div class="style1 dec" name="weizhi">
 								<span class="sty_t">位置</span>
 								<!-- 数字部分开始 -->
-								<i class="txt_i0 txt_i" value="wan"></i> <i class="txt_i1 txt_i" value="qian"></i> <i
-									class="txt_i2 txt_i" value="bai"></i> <i class="txt_i3 txt_i" value="shi"></i> <i
-									class="txt_i4 txt_i" value="ge"></i>
+								<i class="txt_i0 txt_i" value="wan"></i> <i class="txt_i1 txt_i"
+									value="qian"></i> <i class="txt_i2 txt_i" value="bai"></i> <i
+									class="txt_i3 txt_i" value="shi"></i> <i class="txt_i4 txt_i"
+									value="ge"></i>
 								<!-- 数字部分结束 -->
 								<span class="sty_s2 sty_s21">五星</span> <span
 									class="sty_s2 sty_s22">四星</span> <span class="sty_s2 sty_s23">前三</span>
@@ -129,11 +130,13 @@
 							<div class="style1" name="haoma">
 								<span class="sty_t">号码</span>
 								<!-- 数字部分开始 -->
-								<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i" value="1"></i> <i
-									class="sty_i2 sty_i" value="2"></i> <i class="sty_i3 sty_i" value="3"></i> <i
-									class="sty_i4 sty_i" value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
-									class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i" value="7"></i> <i
-									class="sty_i8 sty_i" value="8"></i> <i class="sty_i9 sty_i" value="9"></i>
+								<i class="sty_i0 sty_i" value="0"></i> <i class="sty_i1 sty_i"
+									value="1"></i> <i class="sty_i2 sty_i" value="2"></i> <i
+									class="sty_i3 sty_i" value="3"></i> <i class="sty_i4 sty_i"
+									value="4"></i> <i class="sty_i5 sty_i" value="5"></i> <i
+									class="sty_i6 sty_i" value="6"></i> <i class="sty_i7 sty_i"
+									value="7"></i> <i class="sty_i8 sty_i" value="8"></i> <i
+									class="sty_i9 sty_i" value="9"></i>
 								<!-- 数字部分结束 -->
 								<span class="sty_s1 sty_s11">全</span> <span
 									class="sty_s1 sty_s12">大</span> <span class="sty_s1 sty_s13">小</span>
@@ -143,26 +146,45 @@
 							</div>
 							<!-- 号码结束 -->
 							<!-- 期号开始 -->
-							<div class="style1 noBorder" name="qihao">
+							<div class="style1" name="qihao">
 								<span class="sty_t">期号</span>
 								<!-- 数字部分开始 -->
-								<i class="num_i0 num_i num_cur" value="jin30qi" is="on"></i> <i class="num_i1 num_i" value="jin50qi" is="off"></i>
-								<i class="num_i2 num_i" value="jintian" is="off"></i> <i class="num_i3 num_i" value="jin2tian" is="off"></i> <i
+								<i class="num_i0 num_i num_cur" value="jin30qi" is="on"></i> <i
+									class="num_i1 num_i" value="jin50qi" is="off"></i> <i
+									class="num_i2 num_i" value="jintian" is="off"></i> <i
+									class="num_i3 num_i" value="jin2tian" is="off"></i> <i
 									class="num_i4 num_i" value="jin5tian" is="off"></i>
 								<!-- 数字部分结束 -->
-								<div class="rq" >
-									<input id="time1" type="text"
-										onfocus="var time2=$dp.$('time2');WdatePicker({onpicked:function(){time2.focus();},maxDate:'#F{$dp.$D(\'time2\')}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
-									<span>至</span> <input id="time2" type="text" 
-										onfocus="WdatePicker({minDate:'#F{$dp.$D(\'time1\')}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" />
+
+								<div class="clear"></div>
+							</div>
+							<div class="style1 noBorder" name="qishu">
+								<span class="sty_t">冷热</span>
+								<!-- 数字部分开始 -->
+
+								<!-- 数字部分结束 -->
+								<div class="qh">
+									<input type="text" value='统计期数：' disabled="disabled" /> <span>&nbsp;&nbsp;&nbsp;</span>
+									<select id="qishu">
+										<option value="3">3期</option>
+										<option value="5">5期</option>
+										<option value="7">7期</option>
+										<option value="10">10期</option>
+										<option value="15">15期</option>
+										<option value="20">20期</option>
+									</select> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									<input type="radio" name="lr" data-value="redaoleng" checked />
+									<span>从热号到冷号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <input
+										type="radio" name="lr" data-value="lengdaore" /> <span>从冷号到热号</span>
 								</div>
+
 								<div class="clear"></div>
 							</div>
 							<!-- 期号结束 -->
 						</div>
 						<div class="btn">
-						
-							 <input type="submit" value="确认验证" class="btnA" />
+
+							<input type="submit" value="确认验证" class="btnA" />
 						</div>
 					</div>
 				</form>
@@ -196,16 +218,18 @@
 						<span>分布图</span> <span>后四 </span><b>01</b>
 					</p>
 					<table class="table" id="lengreTable">
-						<tbody>
+						<thead>
 							<tr class="tr1">
 								<td class="td1">期号</td>
-								<td class="td2">分布图</td>
 								<td class="td3">开奖号码</td>
+								<td class="td2">分布图</td>
 								<td class="td4">十位</td>
 								<td class="td3">个位</td>
 								<td class="td4">龙虎</td>
-								<td class="td4">后三</td>
+								<td class="td4">位置</td>
 							</tr>
+						</thead>
+						<tbody>
 							<tr class="tr1 tr2">
 								<td class="td1">0123456789</td>
 								<td class="td2 colors dash">#*#45</td>
@@ -222,7 +246,7 @@
 								<td class="td4">小单</td>
 								<td class="td3">小双</td>
 								<td class="td3">龙</td>
-								<td class="td3">组六</td> 
+								<td class="td3">组六</td>
 							</tr>
 							<tr class="tr1 tr2">
 								<td class="td1">0123456789</td>
@@ -341,16 +365,25 @@
 	<script src="<%=basePath%>resources/js/game/main.js"></script>
 	<script src="<%=basePath%>resources/js/game/content.js"></script>
 	<script src="<%=basePath%>resources/js/game/kj-calc-time.js"></script>
-	
+
 	<script>
 		$(".kind_u>li>span.li_s2:nth-last-child(n)").addClass("li_ss");
 		$(".kind_u>li:nth-child(1)>.li_s2:nth-child(n)").removeClass("li_ss");
 
+		/*  setInterval(aaa, 1)
+		 function aaa (){$.ajax({
+		 type : "post",
+		 url : "/game/json/lengre",
+		 data : ["aaa","bbb"],
+		 dataType : 'json',
+		 success : function(res){console.log(res)}
+		 });
+		 }  */
 		//冷热分布
-		(function(){
+		(function() {
 			var formid = "lengreForm";
-			
-			var attr="name";
+
+			var attr = "name";
 			var method = "post";
 			var url = "/game/json/lengre";
 			var success = function(result) {
@@ -359,47 +392,71 @@
 					alert("输入有误请重新输入");
 					break;
 				default:
-				$("#lengreTable .tr2").remove();
-				for(var i=0;i<result.length;i++){
-				$("#lengreTable tbody").append('<tr class="tr1 tr2">\
-				<td class="td1">'+result[i][0]+'</td>\
-				<td class="td2 colors dash">'+result[i][1]+'</td>\
-				<td class="td3">'+result[i][2]+'</td>\
-				<td class="td4">'+result[i][3]+'</td>\
-				<td class="td3">'+result[i][4]+'</td>\
-				<td class="td3">'+result[i][5]+'</td>\
-				<td class="td3">'+result[i][6]+'</td>\
+					$("#lengreTable .tr2").remove();
+					for (var i = 0; i < result.length; i++) {
+						$("#lengreTable tbody")
+								.append(
+										'<tr class="tr1 tr2">\
+				<td class="td1">'
+												+ result[i][0]
+												+ '</td>\
+				<td class="td2 colors dash">'
+												+ result[i][1]
+												+ '</td>\
+				<td class="td3">'
+												+ result[i][2]
+												+ '</td>\
+				<td class="td4">'
+												+ result[i][3]
+												+ '</td>\
+				<td class="td3">'
+												+ result[i][4]
+												+ '</td>\
+				<td class="td3">'
+												+ result[i][5]
+												+ '</td>\
+				<td class="td3">'
+												+ result[i][6]
+												+ '</td>\
 			</tr>')
-			};
+					}
+					;
 
 					console.log(result[0][0]);
 					break;
 				}
 			}
-			var oForm=document.getElementById(formid);
-			oForm.onsubmit=function (e) {
+			var lr = "redaoleng"
+			$(".qh input[type=radio]").on("click", function() {
+				lr = $(this).attr("data-value");
+			})
+
+			var oForm = document.getElementById(formid);
+			oForm.onsubmit = function(e) {
 				e.preventDefault();
-				var data=new util.getfenbuData(this,attr);
-				var starttime=$("#time1").val();	
-				var endtime=$("#time2").val();
-				data["starttime"]=starttime;
-				data["endtime"]=endtime;
-				data["wanfa"]="lengre";
-				data['caizhong']=caizhong;
+				var data = new util.getfenbuData(this, attr);
+				var starttime = $("#time1").val();
+				var endtime = $("#time2").val();
+				data["starttime"] = starttime;
+				data["endtime"] = endtime;
+				data["wanfa"] = "lengre";
+				data["qishu"] = $("#qishu").val();
+				data["lr"] = lr;
+
+				data['caizhong'] = caizhong;
 				console.log(data);
 				$.ajax({
-					type :method,
-					url :url,
-					data :data,
+					type : method,
+					url : url,
+					data : data,
 					dataType : 'json',
-					success :success
+					success : success
 				});
 			};
-			
-		}		
-		)()
 
-		$(".index").css("display","block");
+		})()
+
+		$(".index").css("display", "block");
 	</script>
 </body>
 </html>

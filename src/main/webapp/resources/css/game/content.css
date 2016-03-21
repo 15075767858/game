@@ -888,23 +888,27 @@
 .num_i4.num_cur{
 	background-position:-348px -74px;
 }
-.rq{
+.qh{
 	float:left;
 	height:26px;
 	padding:20px 0 30px 0;
 }
-.rq>input{
+.qh>input,select{
 	float:left;
-	width:172px;
 	height:24px;
 	line-height:24px;
-	border:1px solid #549aaf;
+	
 	/*padding:3px 0 2px 10px;*/
 	color:#666;
 	text-align:center;
 }
-.rq>span{
+/* width:172px; */
+.qh>select,input[type=text]{
+	border:1px solid #549aaf;
+	width:100px;
+}
+	
+
+.qh>span{
 	float:left;
-	padding:0 5px;
-	line-height:26px;
 }
