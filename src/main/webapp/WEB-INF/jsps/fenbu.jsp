@@ -112,10 +112,10 @@
 							<div class="style1 dec" name="weizhi">
 								<span class="sty_t">位置</span>
 								<!-- 数字部分开始 -->
-								<i class="txt_i0 txt_i" value="wan"></i> <i class="txt_i1 txt_i"
-									value="qian"></i> <i class="txt_i2 txt_i" value="bai"></i> <i
-									class="txt_i3 txt_i" value="shi"></i> <i class="txt_i4 txt_i"
-									value="ge"></i>
+								<i class="txt_i0 txt_i" value="w"></i> <i class="txt_i1 txt_i"
+									value="q"></i> <i class="txt_i2 txt_i" value="b"></i> <i
+									class="txt_i3 txt_i" value="s"></i> <i class="txt_i4 txt_i"
+									value="g"></i>
 								<!-- 数字部分结束 -->
 								<span class="sty_s2 sty_s21">五星</span> <span
 									class="sty_s2 sty_s22">四星</span> <span class="sty_s2 sty_s23">前三</span>
@@ -149,11 +149,11 @@
 							<div class="style1" name="qihao">
 								<span class="sty_t">期号</span>
 								<!-- 数字部分开始 -->
-								<i class="num_i0 num_i num_cur" value="jin30qi" is="on"></i> <i
-									class="num_i1 num_i" value="jin50qi" is="off"></i> <i
-									class="num_i2 num_i" value="jintian" is="off"></i> <i
-									class="num_i3 num_i" value="jin2tian" is="off"></i> <i
-									class="num_i4 num_i" value="jin5tian" is="off"></i>
+								<i class="num_i0 num_i num_cur" value="30" is="on">								</i>
+								 <i class="num_i1 num_i" value="50" is="off"></i> 
+								 <i	class="num_i2 num_i" value="120" is="off"></i> 
+								 <i	class="num_i3 num_i" value="240" is="off"></i> 
+								 <i	class="num_i4 num_i" value="360" is="off"></i>
 								<!-- 数字部分结束 -->
 
 								<div class="clear"></div>
