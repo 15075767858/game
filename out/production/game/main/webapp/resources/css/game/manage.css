@@ -1,0 +1,239 @@
+/**************************** 鐢ㄦ埛绠＄悊椤甸潰 ********************************/
+/* 涓讳綋鍐呭寮� */
+.mains{
+	padding:40px 0 100px;
+}
+.mains_w{
+	color:#505050;
+	font-size:14px;	
+	background-color:#fff;
+}
+/* 鍒楄〃涓婂崐閮ㄥ垎 */
+.mains_t{
+	padding:20px 30px;
+}
+.mains_t>h3{
+	font-size:20px;
+	line-height:50px;
+	border-bottom:1px solid #c7d0d7;
+	font-weight:200;
+	background:url(../images/reg_line.png) no-repeat left 16px;
+	padding-left:12px;
+}
+.main_box{
+	margin-top:20px;
+	height:26px;
+}
+#form>span{
+	float:left;
+	line-height:26px;
+	margin-right:8px;
+}
+#form>input{
+	float:left;
+	width:170px;
+	height:21px;
+	line-height:21px;
+	border:1px solid #c7d0d7;
+	padding:2px 0 1px 6px;
+	margin-right:10px;
+	color:#505050;
+}
+#form>.reg{
+	margin-left:10px;
+}
+#form>.btn{
+	width:94px;
+	height:22px;
+	border:1px solid #c7d0d7;
+	background-color:#f5f5f5;
+	letter-spacing:2px;
+	cursor:pointer;
+	color:#666;
+}
+#form>.btn:hover{
+	background-color:#e5e5e5;
+}
+
+/* 鍒楄〃涓嬪崐閮ㄥ垎 */
+.mains_b{
+	padding-bottom:100px;
+}
+.table{
+	width:100%;
+}
+/* 绗竴琛�*/
+.table .tr1{
+	/*height:32px;*/
+	line-height:32px;
+	border:1px solid #c7d0d7;
+	border-left:none;
+	border-right:none;
+	background-color:#f7f7f7;
+}
+.table .tr1>td{
+	border-right:1px solid #c7d0d7;	
+	text-align:center;
+	position:relative;
+}
+.table .tr1>.td1{
+	width:30px;
+}
+.table .tr1>.td2{
+	width:52px;
+}
+.table .tr1>.td3{
+	width:94px;	
+}
+.table .tr1>.td5{
+	width:130px;
+}
+.table .tr1>.td7{
+	width:136px;
+}
+.table .tr1>.td9{
+	width:88px;	
+}
+.table .tr1>.td10{
+	width:104px;
+	border-right:none;
+}
+.table .tr1>.td3>.arrow_t,
+.table .tr1>.td5>.arrow_t,
+.table .tr1>.td8>.arrow_t,
+.table .tr1>.td9>.arrow_t{
+	width:0; 
+	height:0; 
+	border-width:4px; 
+	border-style:dashed; 
+	border-color:transparent; 
+	border-top-width:0; 
+	border-bottom-style:solid; 
+	border-bottom-color:#505050; 
+	overflow:hidden; 
+	position:absolute; 
+	top:13px; 
+	right:16px;	
+	cursor:pointer;
+}
+.table .tr1>.td3>.arrow_b,
+.table .tr1>.td5>.arrow_b,
+.table .tr1>.td8>.arrow_b,
+.table .tr1>.td9>.arrow_b{
+	width:0; 
+	height:0; 
+	border-width:4px; 
+	border-style:dashed; 
+	border-color:transparent; 
+	border-bottom-width:0; 
+	border-top-style:solid; 
+	border-top-color:#505050; 
+	overflow:hidden; 
+	position:absolute; 
+	top:18px; 
+	right:16px;	
+	cursor:pointer;
+}
+.table .tr1>.td4{
+	width:92px;
+}
+
+/* 绗簩琛�*/
+.table .tr2{
+	height:34px;
+	line-height:34px;
+	border-bottom:1px solid #c7d0d7;
+	background-color:#fff;
+	font-size:12px;
+}
+.table .tr2>.td1>i{
+	display:block;
+	width:15px;
+	height:15px;
+	background:url(../images/check1.png) no-repeat 0 0;
+	margin-left:7px;
+	cursor:pointer;
+}
+.table .tr2>.td1>i.chec{
+	background-position:-17px 0;
+}
+.table .tr2>.td2>.tds{
+	width:52px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.table .tr2>.td3>.tds{
+	width:94px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.table .tr2>.td4>input{
+	width:84px;
+	height:24px;
+	border:1px solid #c7d0d7;
+	margin-left:3px;
+	color:#505050;
+}
+.table .tr2>.td7>input,
+.table .tr2>.td8>input{
+	width:118px;
+	height:24px;
+	border:1px solid #c7d0d7;
+	margin-left:8px;
+	text-align:center;
+	color:#505050;	
+}
+.table .tr2>.td9>input,select{
+	width:78px;
+	height:24px;
+	border:1px solid #c7d0d7;
+	margin-left:1px;
+	text-align:center;	
+	color:#505050;
+}
+.table .tr2>.td9>.arrow_b{
+	right:10px;
+	top:15px;
+}
+.table .tr2>.td10>a,input{
+	cursor:pointer;
+	text-align:center;
+	color:#505050;
+	float:left;
+	width:38px;
+	line-height:20px;
+	border:1px solid #c7d0d7;
+	margin-left:8px;
+}
+.table .tr2>.td10>a:hover,input:hover{
+	color:#505050;
+	background-color:#e5e5e5;
+}
+.table .baocun{
+	background: white;
+}
+.table .baocun:hover{
+	color:#505050;
+	background-color:#e5e5e5;
+}
+/* 浠樿垂涓嬫媺閮ㄥ垎 */
+.table .tr2>.td9>.xia_u{
+	position:absolute;
+	left:4px;
+	top:28px;
+	z-index:2;
+	width:78px;
+	border:1px solid #C7D0D7;
+	background-color:#fff;
+	border-top:0;
+	display:none;
+}
+.table .tr2>.td9>.xia_u>li{
+	line-height:22px;
+	cursor:pointer;
+}
+.table .tr2>.td9>.xia_u>li:hover{
+	background-color:#e5e5e5;
+}

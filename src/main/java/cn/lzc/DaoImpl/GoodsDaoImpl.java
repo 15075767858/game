@@ -1,17 +1,15 @@
 package cn.lzc.DaoImpl;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-
-import org.apache.ibatis.session.SqlSession;
-import org.junit.Test;
-
 import cn.lzc.Dao.GoodsDao;
 import cn.lzc.model.Goods;
 import cn.lzc.model.Page;
 import cn.lzc.utils.DBAccess;
+import org.apache.ibatis.session.SqlSession;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 
 public class GoodsDaoImpl {
 
@@ -68,12 +66,10 @@ public class GoodsDaoImpl {
 		}
 		return list;
 	}
-	@Test
 	public void test2(){
-	List list=	findGoodsByName("¶È");
+	List list=	findGoodsByName("ï¿½ï¿½");
 	System.out.println(list.size());
 	}
-	@Test
 	public void test3(){
 	Goods goods=	findGoodsByID(1466);
 	System.out.println("goods.getRiqi="+goods.getRiqi()
@@ -162,9 +158,8 @@ public class GoodsDaoImpl {
 		return l;
 	}
 	
-	@Test
 	public void test(){
-	System.out.println(findGoodsGuige("ÎÂ¶È¼Æ"));
+	System.out.println(findGoodsGuige("ï¿½Â¶È¼ï¿½"));
 	}
 	
 }

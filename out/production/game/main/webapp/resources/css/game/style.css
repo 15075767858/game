@@ -1,0 +1,207 @@
+/* CSS Document */
+/*初始化  reset*/
+body { height:100%;}
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul { margin: 0; padding: 0; }
+body, button, input, select, textarea { font: 12px/1.5 "Microsoft YaHei",tahoma,arial,sans-serif,"宋体"; }
+h1, h2, h3, h4, h5, h6, button, input, select, textarea { font-size: 100%; }
+address, cite, dfn, em, var, i { font-style: normal; }
+code, kbd, pre, samp { font-family: courier new,courier,monospace; }
+small { font-size: 12px; }
+ol, ul, dl, dd, dt { list-style: none; }
+a { text-decoration: none; color: #505050; }
+a:hover { color: #009ddc; }
+fieldset, img { border: 0; vertical-align: top; display: block; }
+textarea { resize: none; }
+a, input, button, select, textarea { outline: none; border: 0; }
+input, textarea{ box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box}
+a, button { cursor: pointer; }
+table { border-collapse: collapse; border-spacing: 0; }
+/*清除浮动*/
+.clearfix:before, .clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.clear { clear:both; height:0; }
+
+
+/**************************** 部分公共样式 ********************************/
+.wrap { width: 1000px; margin: 0 auto; }
+.fl { float: left; }
+.fr { float: right; }
+.fl, .fr { display: inline; }
+.noMargin{ margin-right:0!important; }
+.noBorder{ border-bottom:0!important; }
+/* 头部开始 */
+.headser{
+	height:90px;
+}
+.headser h1{
+	float:left;
+	line-height:90px;
+	padding:0 30px 0 10px;
+	font-size:30px;	
+	font-weight:500;
+}
+h1 a{
+	color:#0079a9;
+}
+.head_u{
+	/*overflow:hidden;*/
+}
+.head_u li{
+	float:left;
+	font-size:18px;
+	color:#606060;
+	position:relative;
+}
+.head_u li>a{
+	display:block;
+	padding:0 25px;
+	line-height:90px;
+}
+.head_u li>a:hover{
+	color:#606060;
+}
+
+.head_u li>.current,
+.head_u li>.current:hover{
+	background-color:#008fc7;
+	color:#fff;	
+}
+.head_u li>a>i{
+	width:0; 
+	height:0; 
+	border-width:4px; 
+	border-style:dashed; 
+	border-color:transparent; 
+	border-bottom-width:0; 
+	border-top-style:solid; 
+	border-top-color:#fff; 
+	overflow:hidden; 
+	position:absolute; 
+	right:12px;
+	top:50%; 
+	margin-top:-2px;
+}
+
+/* 彩种弹框部分 */
+.cai{
+	position:absolute;
+	left:0;
+	top:90px;
+	padding:14px 15px;
+	background-color:#f3f4f4;
+	z-index:3;
+	font-size:14px;
+	width:270px;
+	display:none;
+}
+.cai1{
+	margin-bottom:4px;
+}
+.cai1 .aa{
+	float:left;
+	height:22px;
+	line-height:22px;
+	padding:0;
+	margin-right:6px;
+	width:80px;
+}
+.cai1 .aa:hover{
+	color:#ff6102;
+}
+.cai1 .cai_s{
+	width:1px;
+	height:16px;
+	background-color:#505050;
+	float:left;
+	margin:4px 10px 0 0;
+}
+
+/* 小彩球弹框部分 */
+.head_btn{
+	position:relative;
+}
+
+.small{
+	width:72px;
+	height:31px;
+	line-height:31px;
+	background:url(/game/resources/images/nav_btn.png) no-repeat;
+	margin-top:20px;
+	font-size:14px;
+	color:#0079a9;
+	position:relative;
+	cursor:pointer;
+}
+.small>span{
+	padding-left:8px;
+}
+.small>i{
+	position:absolute;
+	right:8px;
+	top:50%;
+	margin-top:-2px;
+	width:7px;
+	height:4px;
+	overflow:hidden;
+	background:url(/game/resources/images/arrows.png) no-repeat 0 0;
+}
+
+.head_t{
+	width:135px;
+	position:absolute;
+	right:0;
+	top:90px;
+	background-color:#f3f4f4;
+	display:none;
+}
+.head_t>a{
+	display:block;
+	line-height:40px;
+	padding-left:15px;
+	color:#505050;
+	font-size:18px;
+}
+.head_t>a:hover{
+	background-color:#c7d0d7;
+}
+.head_t>i{
+	position:absolute;
+	right:10px;
+	top:-8px;
+	width:15px;
+	height:8px;
+	background:url(/game/resources/images/arrows.png) no-repeat 0 -6px;
+}
+
+/* 主体开始 */
+.mains{
+	width:100%;
+	min-width:1000px;
+	background:url(/game/resources/images/home_bg.jpg) no-repeat center top;
+}
+
+
+/* 底部开始 */
+.foot{
+	width:100%;
+	min-width:1000px;
+	min-height:120px;
+	background-color:#5c5c5c;
+	color:#fff;
+	font-size:14px;
+}
+.footer p{
+	text-align:center;	
+}
+.footer .link{
+	padding:34px 0 15px;
+}
+.link a{
+	padding:0 13px;
+	color:#fff;
+}
+.web span{
+	padding-left:14px;
+}

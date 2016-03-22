@@ -1,0 +1,154 @@
+
+/****************************************  娉ㄥ唽椤甸潰  **************************************/
+
+/* 娉ㄥ唽涓讳綋寮� */
+.main{
+	width:100%;
+	height:700px;
+	background:url(/game/resources/images/regBg.jpg) no-repeat center top;
+	min-width:1000px;
+}
+.mains{
+	position:relative;
+	height:700px;
+}
+.main_w{
+	width:404px;
+	padding:20px 30px 0;
+	border-radius:8px;
+	font-size:14px;
+	color:#444;
+	background-color:#fff;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-188px 0 0 -232px;
+	box-shadow:3px 3px 2px 1px #666;
+}
+.main_w h3{
+	font-size:22px;
+	font-weight:300;
+	line-height:46px;
+	border-bottom:1px solid #e5e5e5;
+	padding-left:15px;
+	background:url(/game/resources/images/reg_line.png) no-repeat left center;
+	letter-spacing:2px;
+}
+/* 杈撳叆妗嗛儴鍒�*/
+.main_u{
+	padding:30px 0 7px 0;
+}
+.main_u li{
+	margin-bottom:30px;
+	position:relative;
+}
+.main_u li span{
+	float:left;
+	width:90px;
+	line-height:38px;
+	letter-spacing:2px;
+}
+.main_u li input{
+	float:left;
+	width:302px;
+	height:24px;
+	line-height:24px;
+	padding:6px 0 6px 10px;
+	border:1px solid #e5e5e5;
+	border-radius:5px;
+	font-size:14px;
+	color:#999;
+}
+.main_u li .error{
+	border-color:#b40;
+}
+.main_u li a{
+	display:block;
+	width:404px;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	color:#fff;
+	font-size:20px;
+	letter-spacing:3px;
+}
+.main_u li a input[type=submit]{
+	background:url(/game/resources/images/btns.png) no-repeat 0 0;
+	width:393px;
+	height:31px;
+	text-align:center;
+	color:#fff;
+	font-size:20px;
+	letter-spacing:3px;
+}
+.main_u li em{
+	position:absolute;
+	left:102px;
+	top:9px;
+	color:#999;
+}
+.main_u li .pass{
+	background:none;
+	position:relative;
+	z-index:2;
+}
+.main_u li .words{
+	position:absolute;
+	left:92px;
+	top:40px;
+	color:#b40;
+	display:none;
+}
+.main_u .botton{
+	margin-bottom:15px;
+	padding-top:10px;
+}
+
+
+/* 鍒嗙被鍒楄〃閮ㄥ垎 */
+.list{
+	width:100%;
+	background-color:#eee;
+	min-width:1000px;
+	padding-top:30px;
+}
+.item{
+	width:300px;
+	margin:0 50px 50px 0;
+	overflow:hidden;
+	color:#666;
+}
+.icon_f{
+	width:54px;
+	height:54px;
+	background:url(/game/resources/images/list_pic1.jpg) no-repeat;
+	margin:2px 8px 0 0;
+}
+.icon1{
+	background-image:url(/game/resources/images/list_pic2.png);
+}
+.icon2{
+	background-image:url(/game/resources/images/list_pic3.png);
+}
+.icon3{
+	background-image:url(/game/resources/images/list_pic4.png);
+}
+.icon4{
+	background-image:url(/game/resources/images/list_pic5.png);
+}
+.icon5{
+	background-image:url(/game/resources/images/list_pic6.png);
+}
+.txt{
+	width:230px;
+}
+.txt h5{
+	font-size:18px;
+	font-weight:100;
+	line-height:30px;
+}
+.txt p{
+	margin-top:5px;
+	font-size:12px;
+	color:#999;
+}

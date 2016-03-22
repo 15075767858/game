@@ -1,17 +1,14 @@
 package cn.lzc.DaoImpl;
 
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import org.apache.ibatis.session.SqlSession;
-import org.junit.Test;
-
 import cn.lzc.Dao.UserDao;
 import cn.lzc.model.User;
 import cn.lzc.model.UserVip;
 import cn.lzc.utils.DBAccess;
+import org.apache.ibatis.session.SqlSession;
+
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDaoImpl {
 
@@ -196,7 +193,6 @@ public class UserDaoImpl {
 		return uservip;
 	}
 	
-	@Test
 	public void test9(){
 		UserVip uservip=new UserVip();
 		uservip.setDate_end(new Timestamp(144564));

@@ -1,0 +1,128 @@
+/**************************** 瀵嗙爜鍙樻洿椤甸潰 ********************************/
+/* 涓讳綋鍐呭寮� */
+.mains{
+	padding:40px 0 100px;
+}
+.mains_w{
+	color:#505050;
+	font-size:14px;	
+	background-color:#fff;
+}
+.change{
+	padding:30px;
+	width:940px;
+}
+.change_b1{
+	width:442px;
+	min-height:240px;
+	margin:0 50px 20px 0;
+	float:left;
+}
+.change_b1>h4{
+	height:46px;
+	line-height:46px;
+	border-bottom:1px solid #c7d0d7;
+	background:url(/game/resources/images/reg_line.png) no-repeat left 15px;
+	font-size:20px;
+	font-weight:normal;
+	padding-left:12px;
+}
+/* 涓汉璧勬枡閮ㄥ垎 */
+.chang_w{
+	padding:28px 0 0 20px;
+}
+.user{
+	height:26px;
+	line-height:26px;
+	margin-bottom:10px;
+}
+.user>span{
+	float:left;
+}
+.user>.s1{
+	width:98px;
+	text-align:right;
+}
+.user>.inp{
+	width:220px;
+	height:21px;
+	line-height:21px;
+	border:1px solid #c7d0d7;
+	padding:3px 0 2px 10px;
+	float:left;
+}
+
+.user>.user_btn,
+.pass_b>.inps_btn{
+	width:94px;
+	height:30px;
+	border:1px solid #c7d0d7;
+	cursor:pointer;
+}
+.user>.user_btn:hover,
+.pass_b>.inps_btn:hover{
+	background-color:#e5e5e5;
+}
+.user_b{
+	padding-left:96px;
+	padding-top:15px;
+}
+
+/* 浠樿垂鐘舵�閮ㄥ垎 */
+.chang_w1{
+	padding:28px 0 0 60px;
+}
+.chang_w1>p{
+	width:94px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #c7d0d7;
+	text-align:center;
+}
+
+/* 淇敼鐧诲綍瀵嗙爜閮ㄥ垎 */
+.pass{
+	margin-bottom:26px;
+	position:relative;
+}
+.pass>span{
+	float:left;
+	width:98px;
+	height:26px;
+	line-height:26px;
+	margin-right:5px;
+	text-align:right;
+}
+.pass>.inps{
+	width:220px;
+	height:21px;
+	line-height:21px;
+	border:1px solid #c7d0d7;
+	padding:3px 0 2px 10px;
+	float:left;
+}
+.pass>.words{
+	position:absolute;
+	left:104px;
+	top:28px;
+	color:#ff0000;
+	display:none;
+}
+.pass>.s2{
+	position:absolute;
+	left:92px;
+	top:27px;
+	font-size:12px;
+	width:300px;
+	color:#999;
+}
+.new{
+	position:relative;
+}
+.pass_b{
+	padding:15px 0 0 104px;
+}
+/* 璐︽埛瀹夊叏閮ㄥ垎 */
+.chang_w1>.time{
+	width:304px;
+}
