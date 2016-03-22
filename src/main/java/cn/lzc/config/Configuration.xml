@@ -24,6 +24,6 @@
 	<mappers>
 		<mapper resource="cn/lzc/config/sqlxml/GoodsMapper.xml" />
 		<mapper resource="cn/lzc/config/sqlxml/UserMapper.xml" />
-		<!-- <mapper resource="cn/lzc/config/sqlxml/UserVipMapper.xml" /> -->
+		<mapper resource="cn/lzc/config/sqlxml/GameResultMapper.xml" />
 	</mappers>
 </configuration>

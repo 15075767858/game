@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.lzc.Dao.GameResultDao">
+
+  <resultMap type="cn.lzc.model.GameResult" id="resultGame">
+<id column="id" jdbcType="INTEGER"  property="id"/>
+<result column="type" jdbcType="INTEGER"  property="type"/>
+<result column="time" jdbcType="INTEGER"  property="time"/>
+<result column="data" jdbcType="VARCHAR"  property="data"/>
+</resultMap> 
+
+
+<select id="findGameResultByType"  parameterType="int" resultMap="resultGame">
+		SELECT * FROM ssc_data where type=#{type} order by time 
+	</select>
+</mapper>
