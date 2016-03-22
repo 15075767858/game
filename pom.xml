@@ -1,11 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>manager-goodsmanager</groupId>
-	<artifactId>goodsmanager</artifactId>
-	<packaging>war</packaging>
+	<groupId>manager-game</groupId>
+	<artifactId>game</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>goodsmanager</name>
+	<name>game</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -91,16 +90,7 @@
 			<artifactId>mybatis</artifactId>
 			<version>3.2.8</version>
 		</dependency>
-		<dependency>
-			<groupId>org.junit</groupId>
-			<artifactId>com.springsource.org.junit</artifactId>
-			<version>4.7.0</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-		</dependency>
-
+		
 
 	</dependencies>
 
