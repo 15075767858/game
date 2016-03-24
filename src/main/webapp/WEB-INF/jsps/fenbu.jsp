@@ -409,6 +409,8 @@
         break;
         default:
         $("#lengreTable .tr2").remove();
+        var haoma=result.shuzi;
+        result=result.jieguo;
         for (var i = 0; i < result.length; i++) {
         console.log(result[i].length)
         $("#lengreTable tbody").append(
@@ -425,8 +427,36 @@
         $("#lengreTable tbody tr:last-child").append(
         '<td class="td3">' + result[i][result[i].length-1] + '</td>'
         );
-        
         };
+        $("#lengreTable thead tr").remove();
+        $("#lengreTable thead ").append(
+        '<tr class="tr1"></tr>'
+        )
+        $("#lengreTable thead tr").append(
+        '<td class="td1">期号</td>\
+        <td class="td3">开奖号码</td>'
+        )
+        for(var j=0;j<haoma.length;j++){
+         $("#lengreTable thead tr").append(
+        '<td class="td4">'+haoma[j]+'</td>'
+        )}
+        $("#lengreTable thead tr").append(
+        '<td class="td3">位置</td>'
+        )
+        /* '<td class="td1">期号</td>\
+        <td class="td3">开奖号码</td>\
+        <td class="td4">十位</td>\
+        <td class="td3">个位</td>\
+        <td class="td4">龙虎</td>\
+        <td class="td4">十位</td>\
+        <td class="td3">个位</td>\
+        <td class="td4">龙虎</td>\
+        <td class="td4">龙虎</td>\
+        <td class="td4">十位</td>\
+        <td class="td3">个位</td>\
+        <td class="td4">龙虎</td>\
+        <td class="td4">位置</td>' */
+        //alert(haoma);
         
         
         break;

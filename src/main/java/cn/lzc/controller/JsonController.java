@@ -153,18 +153,19 @@ public class JsonController {
 		String weizhi = (String) map.get("weizhi");
 		String lr = (String) map.get("lr");
 		String haoma=(String)map.get("haoma");
-		System.out.println(haoma.replaceAll(" ",""));
 		int type = 1;
 		if (caizhong.equals("cqssc")) {
 			type = 1;
 		}
 		l = new GameResultDaoImpl().findGameResultByType(type);
+		Map res=new HashMap();
 
 		List StringList = GameUtils.printMapSort("01", (ArrayList) l, weizhi,
 				haoma, lengreqishu, lr);
-		String[] s = { "0123456789", "##121", "34561", "С��", "С˫", "��",
-				"����" };
-
+		char[] resHaoMa = GameUtils.getHaoMa("01", (ArrayList) l, weizhi,
+				haoma, lengreqishu, lr);
+		//String[] s = { "0123456789", "##121", "34561", "С��", "С˫", "��","����" };
+		res.put("shuzi", resHaoMa);
 		if (zongqishu > StringList.size()) {
 			zongqishu = StringList.size();
 		}
@@ -187,7 +188,8 @@ public class JsonController {
 						.println(dangqianshijian + "      " + vipdaoqishijian);
 				System.out.println(dangqianshijian < vipdaoqishijian);
 				if (dangqianshijian < vipdaoqishijian) {
-					return StringList;
+					res.put("jieguo",StringList);
+					return res;
 				}
 			}
 		} catch (Exception e) {
@@ -199,8 +201,8 @@ public class JsonController {
 		}
 		System.out.println(StringList);
 		
-		
-		return StringList;
+		res.put("jieguo",StringList);
+		return res;
 	}
 
 	@RequestMapping(value = { "gameForm" }, produces = { "application/json; charset=utf-8" })

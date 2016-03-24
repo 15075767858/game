@@ -241,8 +241,15 @@ public class GameUtils {
 		if(lr.equals("redaoleng")){
 			ArrayUtils.reverse(numHot);
 		}
+		System.out.println(clientHaoMa);
+		String str="";
+		for(int i=0;i<numHot.length;i++){
+			if(clientHaoMa.indexOf(String.valueOf(numHot[i]))>-1){
+				str+=String.valueOf(numHot[i]);
+			}
+		}
 		
-		return numHot;
+		return str.toCharArray();
 	}
 	
 	public static char[] intToChar(int[] numArray) {
