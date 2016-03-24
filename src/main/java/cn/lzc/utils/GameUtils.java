@@ -1,17 +1,23 @@
 package cn.lzc.utils;
 
 import cn.lzc.model.GameResult;
+
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import javax.rmi.CORBA.Util;
+
+import org.apache.commons.lang.ArrayUtils;
+import org.springframework.util.comparator.InvertibleComparator;
 
 public class GameUtils {
 	static int fengeflag = 0;
 
 	public static List printMap(String haoMap, String qiHao, String haoMa,
 			String clientweizhi, char[] numHot, String clientHaoMa) {
-		String iszhong = "Œ¥÷–Ω±£°";
+		String iszhong = "Êú™‰∏≠Â•ñÔºÅ";
 
 		List res = new ArrayList();
 		while (haoMa.length() < 5) {
@@ -19,7 +25,7 @@ public class GameUtils {
 		}
 
 		String weizhi = "wqbsg";
-
+		// System.out.println("haoMa"+haoMa);
 		char wan = haoMa.charAt(0);
 		char qian = haoMa.charAt(1);
 		char bai = haoMa.charAt(2);
@@ -31,9 +37,9 @@ public class GameUtils {
 
 		char[] haoma = numHot;
 		boolean flag = false;
-
+		// System.out.println("-" + haoMa + "-");
 		for (int i = 0; i < haoma.length; i++) {
-			System.out.print(clientHaoMa.indexOf(numHot[i]));
+			// System.out.print(clientHaoMa.indexOf(numHot[i]));
 			if (clientHaoMa.indexOf(numHot[i]) >= 0) {
 				if (wan != haoma[i]) {
 					wan = '*';
@@ -66,21 +72,24 @@ public class GameUtils {
 					ge = ' ';
 				}
 
-				System.out.print("  " + wan + " " + qian + " " + bai + " "
-						+ shi + " " + ge + "      ");
-				res.add(wan + qian + bai + shi + ge);
+				// System.out.print("  " + wan + " " + qian + " " + bai + " " +
+				// shi + " " + ge + "   ");
+				res.add(String.valueOf(wan) + "" + String.valueOf(qian) + ""
+						+ String.valueOf(bai) + "" + String.valueOf(shi) + ""
+						+ String.valueOf(ge));
 
-				fengeflag++;
-				if (i == haoma.length - 1 && fengeflag % 70 != 0) {
-					System.out.println(" ");
-				}
-
-				if (fengeflag % 70 == 0) {
-					System.out.println(" ");
-					System.out
-							.println("…≥∫Õ…–º∆ªÆ»∫£∫146431310------------------------------------"
-									+ "----------------------------------------------------------------");
-				}
+				// System.out.print("+" + wan + qian + bai + shi + ge + "+");
+				/*
+				 * fengeflag++; if (i == haoma.length - 1 && fengeflag % 70 !=
+				 * 0) { System.out.println(" "); }
+				 * 
+				 * if (fengeflag % 70 == 0) { System.out.println(" ");
+				 * System.out
+				 * .println("Ê≤ôÂíåÂ∞öËÆ°ÂàíÁæ§146431310------------------------------------"
+				 * +
+				 * "----------------------------------------------------------------"
+				 * ); }
+				 */
 				wan = haoMa.charAt(0);
 				qian = haoMa.charAt(1);
 				bai = haoMa.charAt(2);
@@ -95,11 +104,11 @@ public class GameUtils {
 	public static String getWeiZhi(String haoMa) {
 		char[] wei3 = haoMa.substring(2, haoMa.length()).toCharArray();
 		if ((wei3[0] == wei3[1]) && (wei3[1] == wei3[2]))
-			return "±™◊”";
+			return "Ë±πÂ≠ê";
 		if ((wei3[0] == wei3[1]) || (wei3[1] == wei3[2])) {
-			return "◊È6";
+			return "ÁªÑ6";
 		}
-		return "◊È3";
+		return "ÁªÑ3";
 	}
 
 	public static int[] numHot(List<String> qiHaos, List<String> haoMas) {
@@ -180,26 +189,33 @@ public class GameUtils {
 
 		for (int k = 0; k < hotNumSort.length; k++) {
 			int num = hotNumSort[k];
-
-			System.out.println(num % 10 + "≥ˆœ÷µƒ¥Œ ˝ «£∫" + num / 10 + "     ");
+			System.out.println(num % 10 + "Âá∫Áé∞ÁöÑÊ¨°Êï∞ÊòØÔºö" + num / 10 + "     ");
 		}
 		return hotNumSort;
 	}
 
 	public static List printMapSort(String haoMap,
 			ArrayList<GameResult> gameResult, String clientWeizhi,
-			String clientHaoMa) {
+			String clientHaoMa,int lengreqishu,String lr) {
+
+		System.out.println(lengreqishu);
 		List qiHaos = new ArrayList();
 		List haoMas = new ArrayList();
 		for (int i = 0; i < gameResult.size(); i++) {
-			qiHaos.add( ((GameResult) gameResult.get(i)).getTime()+"");
+			qiHaos.add(((GameResult) gameResult.get(i)).getTime() + "");
 			haoMas.add(((GameResult) gameResult.get(i)).getData().replaceAll(
-					",", "")+"");
+					",", "")
+					+ "");
 		}
-
 		List l = new ArrayList();
-		System.out.println(haoMap + "---------" + qiHaos + "---" + haoMas);
-		char[] numHot = intToChar(numHot(qiHaos, haoMas));
+		// System.out.println(haoMap + "---------" + qiHaos + "---" + haoMas);
+		
+		char[] numHot = intToChar(numHot(qiHaos.subList(0, lengreqishu), haoMas.subList(0, lengreqishu)));
+		
+		if(lr.equals("redaoleng")){
+			ArrayUtils.reverse(numHot);
+		}
+		System.out.println(numHot);
 		for (int i = qiHaos.size() - 1; i >= 0; i--) {
 			l.add(printMap(haoMap, (String) qiHaos.get(i),
 					(String) haoMas.get(i), clientWeizhi, numHot, clientHaoMa));
@@ -208,6 +224,27 @@ public class GameUtils {
 		return l;
 	}
 
+	public static char[] getHaoMa(String haoMap,
+			ArrayList<GameResult> gameResult, String clientWeizhi,
+			String clientHaoMa,int lengreqishu,String lr){
+		List qiHaos = new ArrayList();
+		List haoMas = new ArrayList();
+		for (int i = 0; i < gameResult.size(); i++) {
+			qiHaos.add(((GameResult) gameResult.get(i)).getTime() + "");
+			haoMas.add(((GameResult) gameResult.get(i)).getData().replaceAll(
+					",", "")
+					+ "");
+		}
+		
+		char[] numHot = intToChar(numHot(qiHaos.subList(0, lengreqishu), haoMas.subList(0, lengreqishu)));
+		
+		if(lr.equals("redaoleng")){
+			ArrayUtils.reverse(numHot);
+		}
+		
+		return numHot;
+	}
+	
 	public static char[] intToChar(int[] numArray) {
 		char[] charArray = new char[numArray.length];
 		for (int i = 0; i < numArray.length; i++) {

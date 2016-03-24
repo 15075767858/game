@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//src/main/java/cn/lzc/controller/JsonController.java=UTF-8
+encoding//src/main/java/cn/lzc/utils/StringUtil.java=UTF-8
 encoding//src/main/webapp/WEB-INF/jsps/change.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsps/fenbu.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsps/home.jsp=UTF-8

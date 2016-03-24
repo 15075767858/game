@@ -148,7 +148,7 @@ kaijiangshijian.xjsscTime = [ "10:10", "10:20", "10:30", "10:40", "10:50",
 			if (oCurDate.getTime() - oStrDate.getTime() < 0)// 如果当前时间大于字符串时间
 			{
 				vGloblDate = aConf;
-				console.log(vGloblDate);
+				//console.log(vGloblDate);
 				break;
 			}
 
@@ -180,9 +180,9 @@ kaijiangshijian.xjsscTime = [ "10:10", "10:20", "10:30", "10:40", "10:50",
 		oDateEnd.setHours(getCouDo()[0]);
 		oDateEnd.setMinutes(getCouDo()[1]);
 		oDateEnd.setSeconds(0);
-		console.log(oDateEnd.getTime() + "     " + oDateNow.getTime())
+		//console.log(oDateEnd.getTime() + "     " + oDateNow.getTime())
 		iRemain = (oDateEnd.getTime() - oDateNow.getTime()) / 1000;
-		console.log(iRemain + "秒倒计时");
+		//console.log(iRemain + "秒倒计时");
 		if (iRemain == 1) {
 			// 在这里进行获取开奖信息请求更新网页
 			var data = $(".time>p>span")[0].innerHTML;

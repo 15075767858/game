@@ -55,10 +55,18 @@ util.getfenbuData = function(oForm, attr) {
 		var aI = $(aDiv[i]).find("i");
 		var str = "";
 		for (var j = 0; j < aI.length; j++) {
-			if ($(aI[j]).attr("is") == "on")
+			if ($(aI[j]).attr("is") == "on"){
+				if($(aDiv[i]).attr(attr)=="haoma")
+					str += $(aI[j]).attr("value");
+				else
 				str += $(aI[j]).attr("value") + " ";
+			}
 		}
-		datas[$(aDiv[i]).attr(attr)] = str.substring(0, str.length - 1);
+		if($(aDiv[i]).attr(attr)=="haoma")
+			datas[$(aDiv[i]).attr(attr)] = str.substring(0, str.length);
+			else
+			datas[$(aDiv[i]).attr(attr)] = str.substring(0, str.length - 1);
+			
 	}
 	console.log(datas);
 	return datas;

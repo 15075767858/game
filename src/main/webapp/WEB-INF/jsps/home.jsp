@@ -49,7 +49,6 @@
 				<li><a href="javascript:;">开奖记录<i class="arr"></i></a></li>
 				<li><a href="javascript:;">模拟验证<i class="arr"></i></a></li>
 				<li><a href="javascript:;">平台推荐<i class="arr"></i></a></li>
-				<li><a href="javascript:;">用户管理<i class="arr"></i></a></li>
 			</ul>
 			<div class="head_btn fr">
 				<div class="small">
@@ -2601,7 +2600,6 @@
 				
 				}
 			}
-
 			oForm.onsubmit = function(e) {
 
 				e.preventDefault();
@@ -2618,14 +2616,7 @@
 			}
 
 		})()
-		
-		
-		
-		
-	
-		
-		
-		
+
 	</script>
 </body>
 </html>

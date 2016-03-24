@@ -39,6 +39,7 @@
 		SELECT * FROM ssc_vip where user_id = #{user_id} and type=
 		#{type}
 	</select>
+	
 	<select id="findUser" parameterType="cn.lzc.model.User"
 		resultMap="result">
 		SELECT * FROM ssc_user where username=#{username} and
