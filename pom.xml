@@ -3,6 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>manager-game</groupId>
 	<artifactId>game</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>game</name>
 	<url>http://maven.apache.org</url>
