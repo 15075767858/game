@@ -106,19 +106,19 @@ public class JsonController
     {
     }
     if (id <= 0) {
-      return new String[] { "è¯·å…ˆç™»å½•" };
+      return new String[] { "ÇëÏÈµÇÂ¼" };
     }
 
     User user = new UserDaoImpl().findUserByUserId(id);
     if (!pw.equals(user.getPassword())) {
-      return new String[] { "æ—§å¯†ç é”™è¯¯" };
+      return new String[] { "¾ÉÃÜÂë´íÎó" };
     }
 
     if (!npw.equals(anpw)) {
       return Integer.valueOf(1);
     }
     if ((npw.length() < 6) || (npw.length() > 16)) {
-      return new String[] { "å¯†ç ä¸ç¬¦åˆè§„åˆ™" };
+      return new String[] { "ÃÜÂë²»·ûºÏ¹æÔò" };
     }
 
     new UserDaoImpl().changeUserPassWord(user);
@@ -153,7 +153,7 @@ public class JsonController
 
     List StringList = GameUtils.printMapSort("01", (ArrayList)l, weizhi, "123456");
     System.out.println(StringList);
-    String[] s = { "0123456789", "##121", "34561", "å°å•", "å°åŒ", "é¾™", "ç»„å…­" };
+    String[] s = { "0123456789", "##121", "34561", "Ð¡µ¥", "Ð¡Ë«", "Áú", "×éÁù" };
 
     if (zongqishu > StringList.size()) {
       zongqishu = StringList.size();
@@ -167,14 +167,14 @@ public class JsonController
     System.out.println(ps);
 
     List l = new ArrayList();
-    String[] s = { "0123456789", "##121", "34561", "æœªä¸­å¥–" };
-    String[] s1 = { "0123456780", "##122", "34562", "å·²ä¸­å¥–" };
-    String[] s2 = { "0123456781", "##123", "34563", "æœªä¸­å¥–" };
-    String[] s3 = { "0123456782", "##124", "34564", "å·²ä¸­å¥–" };
-    String[] s4 = { "0123456783", "##125", "34565", "æœªä¸­å¥–" };
-    String[] s5 = { "0123456784", "##126", "34566", "å·²ä¸­å¥–" };
-    String[] s6 = { "0123456785", "##127", "34567", "å·²ä¸­å¥–" };
-    String[] s7 = { "0123456786", "##128", "34568", "æœªä¸­å¥–" };
+    String[] s = { "0123456789", "##121", "34561", "Î´ÖÐ½±" };
+    String[] s1 = { "0123456780", "##122", "34562", "ÒÑÖÐ½±" };
+    String[] s2 = { "0123456781", "##123", "34563", "Î´ÖÐ½±" };
+    String[] s3 = { "0123456782", "##124", "34564", "ÒÑÖÐ½±" };
+    String[] s4 = { "0123456783", "##125", "34565", "Î´ÖÐ½±" };
+    String[] s5 = { "0123456784", "##126", "34566", "ÒÑÖÐ½±" };
+    String[] s6 = { "0123456785", "##127", "34567", "ÒÑÖÐ½±" };
+    String[] s7 = { "0123456786", "##128", "34568", "Î´ÖÐ½±" };
 
     l.add(s);
     l.add(s1);
@@ -191,7 +191,7 @@ public class JsonController
   @ResponseBody
   public Object upload(@RequestParam(value="file", required=false) MultipartFile file, HttpServletRequest request, ModelMap model)
   {
-    System.out.println("å¼€å§‹");
+    System.out.println("¿ªÊ¼");
     String path = request.getSession().getServletContext()
       .getRealPath("upload");
     String fileName = file.getOriginalFilename();
@@ -210,7 +210,7 @@ public class JsonController
       fileName);
 
     Map m = new HashMap();
-    m.put("data", "è¿™é‡Œè¿”å›žpathè·¯å¾„ä¸­çš„æ–‡ä»¶å†…å®¹");
+    m.put("data", "ÕâÀï·µ»ØpathÂ·¾¶ÖÐµÄÎÄ¼þÄÚÈÝ");
 
     return m;
   }
@@ -230,7 +230,7 @@ public class JsonController
         uservip.setUser_id(user.getId());
         uservip.setType(1);
         uservip = new UserDaoImpl().findUserVipByIdType(uservip);
-        String[] str = { user.getId(), user.getUsername(), user.getPassword(), user.getRegdate().toLocaleString().split(" ")[0], uservip.getDate_start().toLocaleString().split(" ")[0], uservip.getDate_end().toLocaleString().split(" ")[0] };
+        String[] str = { user.getId()+"", user.getUsername(), user.getPassword(), user.getRegdate().toLocaleString().split(" ")[0], uservip.getDate_start().toLocaleString().split(" ")[0], uservip.getDate_end().toLocaleString().split(" ")[0] };
         l.add(str);
         return l;
       }
