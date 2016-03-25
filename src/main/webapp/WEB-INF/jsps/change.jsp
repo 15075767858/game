@@ -55,10 +55,15 @@
 			</ul>
 			<div class="head_btn fr">
 				<div class="small">
-					<span>小彩球</span> <i></i>
+					<span>
+					${user.username}
+					</span>
+					<span>
+					${user.nickname}
+					</span> <i></i>
 				</div>
 				<div class="head_t">
-					<a href="javascript:;">修改密码</a> <a href="javascript:;">退出登录</a> <i></i>
+					<a href="change.html">修改密码</a> <a href="login.html">退出登录</a> <i></i>
 				</div>
 			</div>
 			<div class="clear"></div>

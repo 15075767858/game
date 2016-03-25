@@ -29,7 +29,7 @@ public class GameController {
 	public String login(Model model){
 		//User user = new User();
 		//model.addAttribute("user", user);
-		
+		request.getSession().setAttribute("userid",null);
 		return "login";
 	}
 	
@@ -37,6 +37,7 @@ public class GameController {
 	public String register(Model model){
 		//User user = new User();
 		//model.addAttribute("user", user);
+		
 		return "register";
 	}
 	@RequestMapping(value="/change.html",method=RequestMethod.GET)
@@ -51,11 +52,15 @@ public class GameController {
 		}
 		
 		List l = new UserDaoImpl().findUserVipByUserId(id);
+		
 		model.addAttribute("user",new UserDaoImpl().findUserByUserId(id));
 		model.addAttribute("VipList",l);
+		/*int id = (Integer) request.getSession().getAttribute("userid");
+		User user = new UserDaoImpl().findUserByUserId(id);
+		model.addAttribute("user", user);*/
 		
-		//User user = new User();
-		//model.addAttribute("user", user);
+		User user = new UserDaoImpl().findUserByUserId(id);
+		model.addAttribute("user", user);
 		return "change";
 	}
 	@RequestMapping(value="/manage.html",method=RequestMethod.GET)
@@ -81,6 +86,7 @@ public class GameController {
 		try {
 			int id =(Integer) request.getSession().getAttribute("userid");
 			User user =new UserDaoImpl().findUserByUserId(id);
+			model.addAttribute("user",new UserDaoImpl().findUserByUserId(id));
 		} catch (Exception e) {
 			return "login";
 			// TODO: handle exception
@@ -122,6 +128,7 @@ public class GameController {
 		try {
 			int id =(Integer) request.getSession().getAttribute("userid");
 			User user =new UserDaoImpl().findUserByUserId(id);
+			model.addAttribute("user",new UserDaoImpl().findUserByUserId(id));
 		} catch (Exception e) {
 			return "login";
 			// TODO: handle exception

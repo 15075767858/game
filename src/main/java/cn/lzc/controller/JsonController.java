@@ -207,7 +207,6 @@ public class JsonController {
 				System.out.println(dangqianshijian < vipdaoqishijian);
 				if (dangqianshijian < vipdaoqishijian) {
 					res.put("jieguo", StringList);
-					
 					return res;
 				}
 			}

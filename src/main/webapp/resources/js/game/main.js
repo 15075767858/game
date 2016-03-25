@@ -7,6 +7,17 @@ function loadimage() {
 			+ Math.random();
 }
 
+$(document).ready(function(){
+var smallSpan=$(".small span");
+console.log($.trim($(smallSpan[1]).html()))
+
+if($.trim($(smallSpan[1]).html())==""){
+	$(smallSpan[1]).hide();
+}else{
+	$(smallSpan[0]).hide();
+}
+
+})
 var util = {};
 
 util.userForm = function(formid, type, url, attr, success, error) {
