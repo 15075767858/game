@@ -1,14 +1,6 @@
 package cn.lzc.controller;
 
-import cn.lzc.DaoImpl.GameResultDaoImpl;
-import cn.lzc.DaoImpl.UserDaoImpl;
-import cn.lzc.model.User;
-import cn.lzc.model.UserVip;
-import cn.lzc.utils.GameUtils;
-import cn.lzc.utils.StringUtil;
-
 import java.io.File;
-import java.io.PrintStream;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,9 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,6 +18,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+
+import cn.lzc.DaoImpl.GameResultDaoImpl;
+import cn.lzc.DaoImpl.UserDaoImpl;
+import cn.lzc.model.GameResult;
+import cn.lzc.model.User;
+import cn.lzc.model.UserVip;
+import cn.lzc.utils.GameUtils;
+import cn.lzc.utils.StringUtil;
 
 @Controller
 @RequestMapping({ "/json" })
@@ -65,17 +63,26 @@ public class JsonController {
 	public Object userRegister(@RequestBody String ps) {
 		System.out.println(ps);
 		Map map = StringUtil.urlToMap(ps);
-		String un = (String) map.get("username");
-		String fpw = (String) map.get("firstpassword");
-		String lpw = (String) map.get("lastpassword");
-
-		User user = new UserDaoImpl().findUserByUserName((String) map
-				.get("username"));
-		if (user != null) {
-			return Integer.valueOf(1);
+		String un = String.valueOf(map.get("username")).trim();
+		String fpw = String.valueOf(map.get("firstpassword"));
+		String lpw = String.valueOf(map.get("lastpassword"));
+		User user = new UserDaoImpl().findUserByUserName(un);
+		if (StringUtil.isNumeric(un.substring(0, 1))) {
+			return new String[] { "用户名首字母不能是数字" };
 		}
-		if (!fpw.equals(lpw)) {
-			return Integer.valueOf(2);
+
+		if (un.length() < 6 && un.length() > 16) {
+			return new String[] { "用户名应该为6-16位" };
+		}
+
+		if (user != null) {
+			return 1;
+		}
+		if (fpw.length() < 6 || fpw.length() > 16) {
+			return new String[] { "密码应该为6-16位" };
+		}
+		if (fpw.equals(lpw) == false) {
+			return 2;
 		}
 		user = new User();
 		user.setUsername(un);
@@ -90,8 +97,12 @@ public class JsonController {
 	@ResponseBody
 	public Object changeName(@RequestBody String ps) {
 		System.out.println(ps);
-
-		return Integer.valueOf(0);
+		Map map = StringUtil.urlToMap(ps);
+		int id = (Integer) request.getSession().getAttribute("userid");
+		User user = new UserDaoImpl().findUserByUserId(id);
+		user.setNickname((String) map.get("username"));
+		new UserDaoImpl().changeUserNickName(user);
+		return 0;
 	}
 
 	@RequestMapping(value = { "changePassword" }, produces = { "application/json; charset=utf-8" })
@@ -100,9 +111,9 @@ public class JsonController {
 		System.out.println(ps);
 
 		Map map = StringUtil.urlToMap(ps);
-		String pw = (String) map.get("oldpassword");
-		String npw = (String) map.get("newpassword");
-		String anpw = (String) map.get("againNewPassword");
+		String pw = String.valueOf(map.get("oldpassword")).trim();
+		String npw = String.valueOf(map.get("newpassword")).trim();
+		String anpw = String.valueOf(map.get("againNewPassword")).trim();
 		int id = 0;
 		try {
 			id = ((Integer) this.request.getSession().getAttribute("userid"))
@@ -110,21 +121,22 @@ public class JsonController {
 		} catch (Exception localException) {
 		}
 		if (id <= 0) {
-			return new String[] { "���ȵ�¼" };
+			return new String[] { "未登录" };
 		}
 
 		User user = new UserDaoImpl().findUserByUserId(id);
 		if (!pw.equals(user.getPassword())) {
-			return new String[] { "���������" };
+			return new String[] { "旧密码错误" };
 		}
 
 		if (!npw.equals(anpw)) {
 			return Integer.valueOf(1);
 		}
 		if ((npw.length() < 6) || (npw.length() > 16)) {
-			return new String[] { "���벻��Ϲ���" };
+			return new String[] { "密码长度不能小于6位或者大于16位" };
 		}
 
+		user.setPassword(npw);
 		new UserDaoImpl().changeUserPassWord(user);
 		System.out.println(user.getUsername());
 
@@ -135,8 +147,14 @@ public class JsonController {
 	@ResponseBody
 	public Object kaijiangjieguo(@RequestBody String ps) {
 		System.out.println(ps);
-
-		String[] s = { "20160111-052", "20160111-051", "3", "5", "8", "9", "2" };
+		Map map=StringUtil.urlToMap(ps);
+		int type=1;
+		type=GameUtils.getTypeByCaiZhong((String)map.get("caizhong"));
+		List<GameResult> resList =new GameResultDaoImpl().findGameResultByType(type);
+		String[] s =GameUtils.getTopKaijiang(resList.get(resList.size()-2));
+		//getTypeByCaiZhong
+		//getTopKaijiang
+//		= { "20160111-052", "20160111-051", "3", "5", "8", "9", "2" };
 		return s;
 	}
 
@@ -152,19 +170,19 @@ public class JsonController {
 		String caizhong = (String) map.get("caizhong");
 		String weizhi = (String) map.get("weizhi");
 		String lr = (String) map.get("lr");
-		String haoma=(String)map.get("haoma");
+		String haoma = (String) map.get("haoma");
 		int type = 1;
-		if (caizhong.equals("cqssc")) {
-			type = 1;
-		}
+		type=GameUtils.getTypeByCaiZhong(caizhong);
+	
 		l = new GameResultDaoImpl().findGameResultByType(type);
-		Map res=new HashMap();
+		Map res = new HashMap();
 
 		List StringList = GameUtils.printMapSort("01", (ArrayList) l, weizhi,
 				haoma, lengreqishu, lr);
 		char[] resHaoMa = GameUtils.getHaoMa("01", (ArrayList) l, weizhi,
 				haoma, lengreqishu, lr);
-		//String[] s = { "0123456789", "##121", "34561", "С��", "С˫", "��","����" };
+		// String[] s = { "0123456789", "##121", "34561", "С��", "С˫",
+		// "��","����" };
 		res.put("shuzi", resHaoMa);
 		if (zongqishu > StringList.size()) {
 			zongqishu = StringList.size();
@@ -175,7 +193,7 @@ public class JsonController {
 		try {
 			userid = (Integer) request.getSession().getAttribute("userid");
 			System.out.println("userid" + userid);
-			StringList = StringList.subList(5, StringList.size());
+			StringList = StringList.subList(0, StringList.size());
 			// new UserDaoImpl().findUserVipById(Integer.parseInt(userid));
 			List<UserVip> UserVipList = new UserDaoImpl()
 					.findUserVipByUserId(userid);
@@ -188,7 +206,8 @@ public class JsonController {
 						.println(dangqianshijian + "      " + vipdaoqishijian);
 				System.out.println(dangqianshijian < vipdaoqishijian);
 				if (dangqianshijian < vipdaoqishijian) {
-					res.put("jieguo",StringList);
+					res.put("jieguo", StringList);
+					
 					return res;
 				}
 			}
@@ -200,8 +219,8 @@ public class JsonController {
 			StringList = StringList.subList(5, StringList.size());
 		}
 		System.out.println(StringList);
-		
-		res.put("jieguo",StringList);
+
+		res.put("jieguo", StringList);
 		return res;
 	}
 
@@ -270,17 +289,29 @@ public class JsonController {
 		if (!username.trim().equals("")) {
 			try {
 				User user = new UserDaoImpl().findUserByUserName(username);
-				System.out.println(user);
+				
 				UserVip uservip = new UserVip();
+				
 				uservip.setUser_id(user.getId());
 				uservip.setType(1);
 				uservip = new UserDaoImpl().findUserVipByIdType(uservip);
+				System.out.println(uservip);
+				if(uservip!=null){
 				String[] str = { user.getId() + "", user.getUsername(),
 						user.getPassword(),
-						user.getRegdate().toLocaleString().split(" ")[0],
-						uservip.getDate_start().toLocaleString().split(" ")[0],
-						uservip.getDate_end().toLocaleString().split(" ")[0] };
+						(user.getRegdate() + "").split(" ")[0],
+						(uservip.getDate_start() + "").split(" ")[0],
+						(uservip.getDate_end() + "").split(" ")[0] };
 				l.add(str);
+				}else{
+					String[] str = { user.getId() + "", user.getUsername(),
+							user.getPassword(),
+							(user.getRegdate() + "").split(" ")[0],
+							"",
+							""};
+					l.add(str);
+				}
+				
 				return l;
 			} catch (Exception localException) {
 			}
@@ -292,11 +323,21 @@ public class JsonController {
 		UserVip uservip = new UserVip();
 		uservip.setDate_start(date_start);
 		uservip.setDate_end(date_end);
-		System.out.println(new UserDaoImpl().findUserVipByPayDate(uservip));
-		String[] str = { "1", "xiaoA", "12345", "1999-9-9", "2015-1-1",
-				"2016-1-1" };
+		List<UserVip> userviplist = new UserDaoImpl()
+				.findUserVipByPayDate(uservip);
+		for (int i = 0; i < userviplist.size(); i++) {
+			UserVip uv = userviplist.get(i);
+			User us = new UserDaoImpl().findUserByUserId(uv.getUser_id());
+			String[] str = { String.valueOf(us.getId()), us.getUsername(),
+					us.getPassword(), (us.getRegdate() + "").split(" ")[0],
+					(uv.getDate_start() + "").split(" ")[0],
+					(uv.getDate_end() + "").split(" ")[0] };
+			// String[] str = { "1", "xiaoA", "12345", "1999-9-9", "2015-1-1",
+			// "2016-1-1" };
+			l.add(str);
+		}
 
-		l.add(str);
+		// l.add(new UserDaoImpl().findUserVipByPayDate(uservip));
 
 		return l;
 	}

@@ -2,6 +2,8 @@ package cn.lzc.utils;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * �ַ�����
@@ -29,7 +31,6 @@ public class StringUtil {
 				map.put(par[0], "");	
 			}
 		}
-		
 		return map;
 	}
 
@@ -40,7 +41,14 @@ public class StringUtil {
 			return false;
 		}
 	}
-
+	public static boolean isNumeric(String str){ 
+		   Pattern pattern = Pattern.compile("[0-9]*"); 
+		   Matcher isNum = pattern.matcher(str);
+		   if( !isNum.matches() ){
+		       return false; 
+		   } 
+		   return true; 
+		}
 	/**
 	 * �ж��Ƿ��ǿ�
 	 * 

@@ -1,4 +1,7 @@
+
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -72,7 +75,7 @@
 						<h4>个人资料</h4>
 						<div class="chang_w">
 							<div class="user">
-								<span class="s1">用户名：</span> <span>ui1234</span>
+								<span class="s1">用户名：</span> <span>${user.username} </span>
 								<div class="clear"></div>
 							</div>
 							<div class="user">
@@ -89,40 +92,49 @@
 				<div class="change_b1 noMargin">
 					<h4>付费状态</h4>
 					<div class="chang_w chang_w1">
-						<p>未付费</p>
+						<ul id=fufei>
+							 <c:forEach items="${VipList}" varStatus="i" var="k">
+								<li >付费类型 : <span class="fufeitype">${k.type}</span></li>
+								<li class="fufeishijian">开始时间 : <span class="">${k.date_start}</span></li>
+								<li class="fufeishijian">结束时间 : <span class="">${k.date_end}</span>
+								</li>
+							</c:forEach>
+						</ul>
+						<p >未付费</p>
 					</div>
 				</div>
 				<div class="change_b1">
-				
+
 					<h4>修改登录密码</h4>
 					<form id="changePassword">
 						<div class="chang_w">
 							<div class="pass">
-								<span>输入旧密码：</span> <input class="inps" type="password" name="oldpassword" value="" />
+								<span>输入旧密码：</span> <input class="inps" type="password"
+									name="oldpassword" value="" />
 								<div class="words">密码格式不对，请重新输入</div>
 								<div class="clear"></div>
 							</div>
 							<div class="pass new">
 								<span>输入新密码：</span> <input class="inps inp1" type="password"
-								name="newpassword"	value="" />
+									name="newpassword" value="" />
 								<div class="words">密码格式不对，请重新输入</div>
 								<span class="s2">6-16位字符，可使用字母或数字，不能和资金密码相同</span>
 								<div class="clear"></div>
 							</div>
 							<div class="pass">
 								<span>确认新密码：</span> <input class="inps inp2" type="password"
-								name="againNewPassword"	value="" />
+									name="againNewPassword" value="" />
 								<div class="words">两次输入的密码不相同，请重新输入</div>
 								<div class="clear"></div>
 							</div>
 							<div class="pass pass_b">
 								<input class="inps_btn" type="submit" value="提交修改" />
 							</div>
-					
+
 						</div>
-				</form>
+					</form>
 				</div>
-				
+
 				<div class="change_b1 noMargin">
 					<h4>账户安全</h4>
 					<div class="chang_w chang_w1">
@@ -156,6 +168,21 @@
 	<script type="text/javascript">
 		$(function() {
 			//密码判断部分
+			
+			if($("#fufei li").length>0)
+			{
+			$("#fufei").next("p").hide();
+			}
+			
+			$.each($(".fufeitype"),function(){
+			if($(this).html()==1){
+			$(this).html("时时彩");
+			}
+			 if($(this).html()==5){
+			$(this).html("分分彩");
+			} 
+			})
+			
 			$(".inp1").focus(function() {
 				var $this = $(this);
 				$this.css({
@@ -190,53 +217,52 @@
 				}
 			})
 		})
-		
-		function a(){}
-//修改用户名
-(function (){
-	var formid = "changenameForm";
-	var attr = "name";
-	var method = "post";
-	var url = "/game/json/changeName";
-	var success = function(result) {
-		switch (result) {
-		case 0:
-			alert("修改成功");
-			break;
-		case 1:
-			alert("用户名已经存在");
-			break;
-		default:
-			alert("修改成功新的用户名是"+result);
-			break;
-		}
-	}
-	new util.userForm(formid, method, url, attr, success);
-})();
 
-//修改密码
-(function (){
-	var formid = "changePassword";
-	var attr = "name";
-	var method = "post";
-	var url = "/game/json/changePassword";
-	var success = function(result) {
-		switch (result) {
-		case 0:
-			alert("修改成功");
-			break;
-		case 1:
-			alert("两次密码不一致");
-			break;
-		default:
-			alert(result);
-			break;
+		function a() {
 		}
-	}
-	new util.userForm(formid, method, url, attr, success);
-})();
- 
+		//修改用户名
+		(function() {
+			var formid = "changenameForm";
+			var attr = "name";
+			var method = "post";
+			var url = "/game/json/changeName";
+			var success = function(result) {
+				switch (result) {
+				case 0:
+					alert("修改成功");
+					break;
+				case 1:
+					alert("用户名已经存在");
+					break;
+				default:
+					alert("修改成功新的用户名是" + result);
+					break;
+				}
+			}
+			new util.userForm(formid, method, url, attr, success);
+		})();
 
+		//修改密码
+		(function() {
+			var formid = "changePassword";
+			var attr = "name";
+			var method = "post";
+			var url = "/game/json/changePassword";
+			var success = function(result) {
+				switch (result) {
+				case 0:
+					alert("修改成功");
+					break;
+				case 1:
+					alert("两次密码不一致");
+					break;
+				default:
+					alert(result);
+					break;
+				}
+			}
+			new util.userForm(formid, method, url, attr, success);
+		})();
 	</script>
 </body>
 </html>

@@ -19,4 +19,5 @@ public interface UserDao {
 	public UserVip findUserVipByIdType(UserVip uservip);
 	public void addUserVip(UserVip uservip);
 	public void updateUserVip(UserVip uservip);
+	public void changeUserNickName(User user);
 }

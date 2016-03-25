@@ -6,8 +6,15 @@ public class GameResult
   private int type;
   private int time;
   private String data;
-
-  public String getData()
+  private String number;
+  
+  public String getNumber() {
+	return number;
+}
+public void setNumber(String number) {
+	this.number = number;
+}
+public String getData()
   {
     return this.data;
   }

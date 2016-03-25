@@ -122,7 +122,9 @@ $(function () {
 	var method = "post";
 	var url = "/game/json/userLogin";
 	var success = function(result) {
+		loadimage()
 		switch (result) {
+		
 		case 0:
 			alert("登陆成功");
 			location.href = "/game/fenbu.html"

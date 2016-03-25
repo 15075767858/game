@@ -213,7 +213,7 @@
         <div class="lists">
         <div class="list">
         <p>
-        <span>分布图</span> <span>后四 </span><b>01</b>
+        <span id="fb_fenbutu">分布图</span> <span id="fb_weizhi">后四 </span><b id="fb_haoma">01</b><input type="button" value="正序" id="reversalTable"/>
         </p>
         <table class="table" id="lengreTable">
         <thead>
@@ -386,6 +386,25 @@
         } */
         //冷热分布
         (function () {
+        $("#reversalTable").on("click",function(){
+        if($(this).val()=="正序"){
+        $(this).val("倒序");
+        }
+        else{
+        $(this).val("正序")
+        }
+        var trs= $("#lengreTable tbody tr");
+         $("#lengreTable tbody tr").remove();
+        /* var arraytrs=[];
+        for(var i=0;i<trs.length;i++){
+       	arraytrs.push(trs[i]);
+        } */
+        
+        for (var i = trs.length - 1; i >= 0; i--) {
+		$("#lengreTable tbody").append(trs[i]);
+		}
+   
+        });
         $(document).ready(function () {
         $.ajax({
         type: method,
@@ -403,6 +422,27 @@
         var url = "/game/json/lengre";
 
         var success = function (result) {
+         //<span id="fb_fenbutu">分布图</span> <span id="fb_weizhi">后四 </span><b id="fb_haoma">01</b>
+         
+         //$("#fb_fenbutu").html();
+         var sweizhi=JSON.parse(localStorage.data).weizhi;
+         var str=""
+         if(sweizhi.indexOf("w"))
+         str+='万';
+         if(sweizhi.indexOf("q"))
+         str+=' 千';
+         if(sweizhi.indexOf("b"))
+         str+=' 百';
+         if(sweizhi.indexOf("s"))
+         str+=' 十';
+         if(sweizhi.indexOf("g"))
+         str+=' 个';
+         
+         $("#fb_weizhi").html("号码 : "+str);
+         
+         $("#fb_haoma").html("位置 : "+JSON.parse(localStorage.data).haoma);
+         
+         
         switch (result) {
         case 1:
         alert("输入有误请重新输入");
@@ -418,11 +458,12 @@
         )
          $("#lengreTable tbody tr:last-child").append(
         '<td class="td1">' + result[i][0]+ '</td>\
-        <td class="td2 colors dash">' + result[i][1]+ '</td>'
+        <td class="td2">' + result[i][1]+ '</td>'
         );
         for(var j=2;j<result[i].length-1;j++){
          $("#lengreTable tbody tr:last-child").append(
-        ' <td class="td3">' + result[i][j]+ '</td> '
+        ' <td class="td3 kaijiangshuzi">' + result[i][j]+ '</td> '
+        
         )};
         $("#lengreTable tbody tr:last-child").append(
         '<td class="td3">' + result[i][result[i].length-1] + '</td>'
@@ -443,6 +484,24 @@
         $("#lengreTable thead tr").append(
         '<td class="td3">位置</td>'
         )
+        var  kaijiangshuzi=$(".kaijiangshuzi")
+        $.each(kaijiangshuzi,function(){
+        var h=$(this).html();
+        
+        var str="";
+        for(var k=0;k<h.length;k++){
+        if(h[k]=="*")
+        {
+        str+='<i>*</i>';
+        }
+        else{
+        str+='<i class="ired">'+h[k]+'</i>';
+        }
+        }
+        //console.log(str)
+        $(this).html(str)
+        
+        });
         /* '<td class="td1">期号</td>\
         <td class="td3">开奖号码</td>\
         <td class="td4">十位</td>\
@@ -457,8 +516,6 @@
         <td class="td4">龙虎</td>\
         <td class="td4">位置</td>' */
         //alert(haoma);
-        
-        
         break;
         }
         }

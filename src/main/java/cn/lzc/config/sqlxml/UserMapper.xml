@@ -62,4 +62,8 @@
 		update ssc_user set password=#{password} where id=#{id}
 	</update>
 
+<update id="changeUserNickName" parameterType="cn.lzc.model.User">
+		update ssc_user set nickname=#{nickname} where id=#{id}
+	</update>
+
 </mapper>

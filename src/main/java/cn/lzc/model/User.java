@@ -12,28 +12,25 @@ public class User {
 
 	private Timestamp regdate;
 	private List payinfo;
-	public Timestamp getRegdate() {
-		return regdate;
+	private String nickname;
+	public int getId() {
+		return id;
 	}
 
-	public void setRegdate(Timestamp regdate) {
-		this.regdate = regdate;
+	public String getNickname() {
+		return nickname;
+	}
+
+	public String getPassword() {
+		return password;
 	}
 
 	public List getPayinfo() {
 		return payinfo;
 	}
 
-	public void setPayinfo(List payinfo) {
-		this.payinfo = payinfo;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public String getPassword() {
-		return password;
+	public Timestamp getRegdate() {
+		return regdate;
 	}
 
 	public String getUsername() {
@@ -44,8 +41,20 @@ public class User {
 		this.id = id;
 	}
 
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
+
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public void setPayinfo(List payinfo) {
+		this.payinfo = payinfo;
+	}
+
+	public void setRegdate(Timestamp regdate) {
+		this.regdate = regdate;
 	}
 	public void setUsername(String username) {
 		this.username = username;

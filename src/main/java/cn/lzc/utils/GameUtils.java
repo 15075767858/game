@@ -15,6 +15,7 @@ import org.springframework.util.comparator.InvertibleComparator;
 public class GameUtils {
 	static int fengeflag = 0;
 
+	
 	public static List printMap(String haoMap, String qiHao, String haoMa,
 			String clientweizhi, char[] numHot, String clientHaoMa) {
 		String iszhong = "未中奖！";
@@ -103,11 +104,12 @@ public class GameUtils {
 
 	public static String getWeiZhi(String haoMa) {
 		char[] wei3 = haoMa.substring(2, haoMa.length()).toCharArray();
-		if ((wei3[0] == wei3[1]) && (wei3[1] == wei3[2]))
+		if ((wei3[0] == wei3[1]) & (wei3[1] == wei3[2]))
 			return "豹子";
-		if ((wei3[0] == wei3[1]) || (wei3[1] == wei3[2])) {
+		if ((wei3[0] != wei3[1]) & (wei3[0]!= wei3[2])&(wei3[1]!=wei3[2])) {
 			return "组6";
 		}
+		
 		return "组3";
 	}
 
@@ -198,11 +200,12 @@ public class GameUtils {
 			ArrayList<GameResult> gameResult, String clientWeizhi,
 			String clientHaoMa,int lengreqishu,String lr) {
 
-		System.out.println(lengreqishu);
+		//System.out.println(lengreqishu);
 		List qiHaos = new ArrayList();
 		List haoMas = new ArrayList();
 		for (int i = 0; i < gameResult.size(); i++) {
-			qiHaos.add(((GameResult) gameResult.get(i)).getTime() + "");
+			qiHaos.add(((GameResult) gameResult.get(i)).getNumber() + "");
+			//System.out.println(gameResult.get(i).getNumber()+"-----------------------------------------------------");
 			haoMas.add(((GameResult) gameResult.get(i)).getData().replaceAll(
 					",", "")
 					+ "");
@@ -241,7 +244,7 @@ public class GameUtils {
 		if(lr.equals("redaoleng")){
 			ArrayUtils.reverse(numHot);
 		}
-		System.out.println(clientHaoMa);
+		//System.out.println(clientHaoMa);
 		String str="";
 		for(int i=0;i<numHot.length;i++){
 			if(clientHaoMa.indexOf(String.valueOf(numHot[i]))>-1){
@@ -260,4 +263,28 @@ public class GameUtils {
 
 		return charArray;
 	}
+	public static int getTypeByCaiZhong(String caizhong){
+		int type = 1;
+		if(caizhong==null){
+			return 1;
+		}
+		if (caizhong.equals("cqssc")) {
+			type = 1;
+		}
+		if (caizhong.equals("jxssc")) {
+			type = 3;
+		}
+		if (caizhong.equals("xjssc")) {
+			type = 12;
+		}
+		return type;
+	}
+	public static String[] getTopKaijiang(GameResult gr){
+		String hm=gr.getData().replaceAll(",", "");
+		String xiayiqi =gr.getNumber().split("-")[0]+"-0"+String.valueOf(Integer.valueOf(gr.getNumber().split("-")[1])+1);
+		System.out.println(xiayiqi);
+		String [] s ={xiayiqi,gr.getNumber(),hm.substring(0, 1),hm.substring(0, 1),hm.substring(1,2),hm.substring(2, 3),hm.substring(3, 4)};
+		return s;
+	}
+	
 }

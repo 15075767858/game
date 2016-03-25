@@ -40,18 +40,18 @@ function changeURLPar(destiny, par, par_value) {
 	window.onhashchange = function() {
 		caizhong = window.location.hash.replace(/#/g, "");
 		var sUrl;
-		if (location.href.indexOf("home")>0) {
-			 sUrl = "home.html?caizhong=" + caizhong + "#" + caizhong;
+		if (location.href.indexOf("home") > 0) {
+			sUrl = "home.html?caizhong=" + caizhong + "#" + caizhong;
 		}
-		if (location.href.indexOf("home")>0) {
-			 sUrl = "home.html?caizhong=" + caizhong + "#" + caizhong;
+		if (location.href.indexOf("home") > 0) {
+			sUrl = "home.html?caizhong=" + caizhong + "#" + caizhong;
 		}
-		
-		if (location.href.indexOf("fenbu")>0) {
-			 sUrl = "fenbu.html?caizhong=" + caizhong + "#" + caizhong;
+
+		if (location.href.indexOf("fenbu") > 0) {
+			sUrl = "fenbu.html?caizhong=" + caizhong + "#" + caizhong;
 		}
-		if (location.href.indexOf("fenbu")>0) {
-			 sUrl = "fenbu.html?caizhong=" + caizhong + "#" + caizhong;
+		if (location.href.indexOf("fenbu") > 0) {
+			sUrl = "fenbu.html?caizhong=" + caizhong + "#" + caizhong;
 		}
 		location.href = sUrl;
 	}
@@ -148,7 +148,7 @@ kaijiangshijian.xjsscTime = [ "10:10", "10:20", "10:30", "10:40", "10:50",
 			if (oCurDate.getTime() - oStrDate.getTime() < 0)// 如果当前时间大于字符串时间
 			{
 				vGloblDate = aConf;
-				//console.log(vGloblDate);
+				// console.log(vGloblDate);
 				break;
 			}
 
@@ -180,7 +180,7 @@ kaijiangshijian.xjsscTime = [ "10:10", "10:20", "10:30", "10:40", "10:50",
 		oDateEnd.setHours(getCouDo()[0]);
 		oDateEnd.setMinutes(getCouDo()[1]);
 		oDateEnd.setSeconds(0);
-		//console.log(oDateEnd.getTime() + "     " + oDateNow.getTime())
+		// console.log(oDateEnd.getTime() + " " + oDateNow.getTime())
 		iRemain = (oDateEnd.getTime() - oDateNow.getTime()) / 1000;
 		//console.log(iRemain + "秒倒计时");
 		if (iRemain == 1) {
@@ -189,7 +189,7 @@ kaijiangshijian.xjsscTime = [ "10:10", "10:20", "10:30", "10:40", "10:50",
 			$.ajax({
 				type : "post",
 				url : "/game/json/kaijiangjieguo",
-				data : data,
+				data : JSON.parse(localStorage.data),
 				dataType : 'json',
 				success : function(result) {
 					if (result == 1) {
@@ -208,17 +208,13 @@ kaijiangshijian.xjsscTime = [ "10:10", "10:20", "10:30", "10:40", "10:50",
 
 			});
 		}
-
 		iMin = parseInt(iRemain / 60);
 		iRemain %= 60;
-
 		iSec = iRemain;
-
 		oTxtMin0.innerHTML = fillZero(iMin, 2).split("")[0];
 		oTxtMin1.innerHTML = fillZero(iMin, 2).split("")[1];
 		oTxtSec0.innerHTML = fillZero(iSec, 2).split("")[0];
 		oTxtSec1.innerHTML = fillZero(iSec, 2).split("")[1];
-
 		// console.log(fillZero(iMin, 2));
 		// console.log(fillZero(iSec, 2));
 	}

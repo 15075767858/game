@@ -77,6 +77,20 @@ public class UserDaoImpl {
 		}
 		return user;
 	}
+	public int changeUserNickName(User user){
+		SqlSession sqlSession=null;
+		try {
+			sqlSession=DBAccess.getSqlSession();
+//		user=sqlSession.selectOne("findUser",user);
+		UserDao ud = sqlSession.getMapper(UserDao.class);
+		ud.changeUserNickName(user);
+		} catch (Exception e) {
+			System.out.println(e);
+		}finally{
+			sqlSession.close();
+		}
+		return 0;
+	}
 	public int changeUserPassWord(User user){
 		SqlSession sqlSession=null;
 		try {
